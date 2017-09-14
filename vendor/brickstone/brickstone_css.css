@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+/*Main Settings*/
+:root{
+	--stefeGreen: #6EB52C;
+	--stefeGray: #F5F5F5;
+	--stefeBlack: #333333;
+	--stefeFont:"vag-rundschrift-d";
+}
+
+h2{
+	font-family: var(--stefeFont);
+	font-weight: 100;
+	color: gray;
+	letter-spacing: 1.5px;
+	padding: 10px;
+	font-style: normal;
+	font-size: 1.7rem;
+}
+
+.container{
+	border-left: 1px solid var(--stefeGreen);
+	border-right: 1px solid var(--stefeGreen);
+}
+
+.navbar{
+	margin-top: 80px;
+	padding: 0 !important;
+}
+.navbar-stefe{
+	background-color: var(--stefeGreen);
+	font-weight: 400;
+	font-size: 1.5rem;
+	font-style: normal;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+a.nav-link{
+	color: white;
+	font-family: var(--stefeFont);
+}
+
+.logo{
+	position: absolute;
+	margin: -70px 0 0 -15px;
+}
+
+.stefe-dropdown{
+	background-color: var(--stefeGreen);
+	margin: 10px 10px;
+	border-radius: 5px;
+}
+a.btn.dropdown-toggle{
+	color: white;
+	font-family: var(--stefeFont);
+	font-weight: 100;
+	font-size: 1.1rem;
+}
+
+.header-pic{
+	width: 100%;
+	height: 776px;
+	background-image: url(../../img/header_pic.png);
+	background-color: red;
+}
