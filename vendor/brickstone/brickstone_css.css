@@ -8,6 +8,10 @@
 	--stefeFont:"vag-rundschrift-d";
 }
 
+html{
+	font-size: 90%;
+}
+
 h1{
 	font: 4rem var(--stefeFont);
 	margin-top: 30px;
