@@ -14,7 +14,6 @@ html{
 
 h1{
 	font: 4rem var(--stefeFont);
-	margin-top: 30px;
 	text-align: left;
 	position: relative;
 	z-index: 1;
@@ -106,4 +105,31 @@ a.btn.dropdown-toggle{
 	font-family: var(--stefeFont);
 	font-weight: 100;
 	font-size: 2rem;
+}
+
+.stefe-icon{
+	width: 100%;
+	height: auto;
+	background-color: var(--stefeGray);
+	padding: 10px;
+	border-radius: 12px;
+}
+
+.stefe-icon span{
+	font-family: var(--stefeFont);
+	font-size: 2.5rem;
+	font-weight: 100;
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	padding-bottom: 15px;
+}
+
+i.fa-custom{
+	font-size: 6.5rem;
+	color: var(--stefeGreen);
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	padding: 20px;
 }
