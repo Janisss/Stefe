@@ -14,6 +14,7 @@ h2{
 	color: gray;
 	letter-spacing: 1.5px;
 	padding: 10px;
+	margin: 5px 0;
 	font-style: normal;
 	font-size: 1.7rem;
 }
@@ -60,7 +61,17 @@ a.btn.dropdown-toggle{
 
 .header-pic{
 	width: 100%;
-	height: 386px;
+	height: 306px;
 	background-image: url(../../img/header_pic.png);
-	background-color: red;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.well{
+	background-color: var(--stefeGreen);
+	padding: 5vh;
+	color: white;
+	font-family: var(--stefeFont);
+	font-weight: 100;
+	font-size: 2rem;
 }
