@@ -4,6 +4,7 @@
 :root{
 	--stefeGreen: #6EB52C;
 	--stefeGray: #F5F5F5;
+	--stefeDark: #4D4D4D;
 	--stefeBlack: #333333;
 	--stefeFont:"vag-rundschrift-d";
 }
@@ -36,18 +37,26 @@ h1:before{
 
 h1 span{
 	background: #fff;
-	padding: 0 25px;
+	padding: 0 15px;
 }
 
 h2{
 	font-family: var(--stefeFont);
 	font-weight: 100;
-	color: gray;
+	color: var(--stefeDark);
 	letter-spacing: 1.5px;
 	padding: 10px;
 	margin: 5px 0;
 	font-style: normal;
 	font-size: 1.7rem;
+}
+
+span.subheader{
+	font-family: var(--stefeFont);
+	padding: 0 15px 20px;
+	display: block;
+	color: var(--stefeDark);
+	font-style: oblique;
 }
 
 .container{
@@ -87,7 +96,7 @@ a.btn.dropdown-toggle{
 	color: white;
 	font-family: var(--stefeFont);
 	font-weight: 100;
-	font-size: 1.1rem;
+	font-size: 1.3rem;
 }
 
 .header-pic{
@@ -105,6 +114,7 @@ a.btn.dropdown-toggle{
 	font-family: var(--stefeFont);
 	font-weight: 100;
 	font-size: 2rem;
+	text-align: justify
 }
 
 .stefe-icon{
