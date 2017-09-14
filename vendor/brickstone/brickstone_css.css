@@ -58,6 +58,12 @@ h3{
 	font-size: 2rem;
 }
 
+label{
+	font-family: var(--stefeFont);
+	font-size: 2rem;
+	color: white;
+}
+
 span.subheader{
 	font-family: var(--stefeFont);
 	padding: 0 15px 20px;
@@ -186,4 +192,19 @@ i.fa-custom{
 	background-color: var(--stefeGreen);
 	margin: 20px;
 	width: auto;
+}
+
+.map{
+	background-image: url(./../../img/map.png);
+	min-height: 400px;
+	background-size: cover;
+}
+
+.kontakt{
+	background-color: var(--stefeGreen);
+}
+
+.formwrapper{
+	max-width: 50%;
+	margin: 20px;
 }
