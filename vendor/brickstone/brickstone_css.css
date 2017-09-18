@@ -208,3 +208,17 @@ i.fa-custom{
 	max-width: 50%;
 	margin: 20px;
 }
+.thead-inverse th{
+	background-color: var(--stefeGreen);
+}
+
+.btn-warning{
+	background-color: #FECB00;
+	cursor: pointer;
+	border: none;
+}
+.btn-success{
+	background-color: var(--stefeGreen);
+	cursor: pointer;
+	border: none;
+}
