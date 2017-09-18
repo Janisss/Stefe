@@ -204,6 +204,15 @@ i.fa-custom{
 	background-color: var(--stefeGreen);
 }
 
+.header-admin{
+	background-image: url(./../../img/header_admin.png);
+	width: 100%;
+	background-position: center ;
+	height: 200px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 .formwrapper{
 	max-width: 50%;
 	margin: 20px;

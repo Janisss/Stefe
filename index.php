@@ -21,6 +21,21 @@
 
   <body>
 
+  	<?php
+	  use Medoo\Medoo;
+	  require  'Medoo.php';
+	  $database = new Medoo([
+		// required
+		'database_type' => 'mariadb',
+		'database_name' => 'stefe',
+		'server' => 'mariadb101.websupport.sk',
+		'username' => 'stefe',
+		'password' => 'stefe_pass',
+		'port' => 3312,
+		'charset' => 'utf8',
+		]);
+	?>
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-stefe">
       <div class="container">
@@ -100,50 +115,28 @@
 		   		<div class="divider"></div>
 		   		<div class="divider"></div>
 			   <h1><span>Aktuality</span></h1>
-			   <span class="subheader">Aktuality z mesta Banská Bystrica</span>
+			   <span class="subheader">Hlavné aktuality</span>
 				<div class="row" style="padding-left: 10px;padding-right:10px;">
-					<div class="col-lg-4 col-md-6 col-sm-6">
-						<article class="card">
-							<header class="title-header">
-								<h3>Novinka</h3>
-							</header>
-							<div class="card-block">
-								<div class="img-card">
-									<img src="./news/img1.jpg" alt="Movie" class="w-100" />
-								</div>
-								<p class="tagline card-text text-xs-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-								<a href="#" class="btn btn-block stefe-btn"><i class="fa fa-eye"></i> Čítať viac</a>
-							</div>
-						</article>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-6 card-bb">
-						<article class="card">
-							<header class="title-header">
-								<h3>Novinka</h3>
-							</header>
-							<div class="card-block">
-								<div class="img-card">
-									<img src="./news/img2.jpg" alt="Movie" class="w-100" />
-								</div>
-								<p class="tagline card-text text-xs-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-								<a href="#" class="btn btn-block stefe-btn"><i class="fa fa-eye"></i> Čítať viac</a>
-							</div>
-						</article>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-6 card-lc">
-						<article class="card">
-							<header class="title-header">
-								<h3>Novinka</h3>
-							</header>
-							<div class="card-block">
-								<div class="img-card">
-									<img src="./news/img3.jpg" alt="Movie" class="w-100" />
-								</div>
-								<p class="tagline card-text text-xs-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-								<a href="#" class="btn btn-block stefe-btn"><i class="fa fa-eye"></i> Čítať viac</a>
-							</div>
-						</article>
-					</div>
+
+					<?php
+						$news = $database->select("content", ["ID","nazov","text","image"]);
+						  foreach ($news as $data){
+							  echo "<div class='col-lg-4 col-md-6 col-sm-6'>
+							  			<article class='card'>
+							  				<header class='title-header'>
+							  					<h3>".$data["nazov"]."</h3>
+							  				</header>
+							  				<div class='card-block'>
+							  						<div class='img-card'>
+							  							<img src='./img/up/".$data["image"]."' alt='mini' class='w-100' />
+							  						</div>
+							  					<p class='tagline card-text text-xs-center'>".$data["text"]."</p>
+							  					<a href='./article.php?ID=".$data["ID"]."' class='btn btn-block stefe-btn'><i class='fa fa-eye'></i> Čítať viac</a>
+							  				</div>
+							  			</article>
+							  		</div>";
+						  }
+					?>
 					
 			</div>
 			

@@ -43,7 +43,11 @@
 
     <!-- navi end -->
     
+      <div class="container" style="padding: 0;">
+      	<div class="header-admin"></div>
+      </div>
       <div class="container">
+      	<div class="divider"></div>
         	<h1><span>Články</span></h1>
         	
 
