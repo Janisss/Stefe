@@ -119,14 +119,7 @@
 				<div class="row" style="padding-left: 10px;padding-right:10px;">
 
 					<?php
-						$news = $database->select("content", [
-							"ID",
-							"nazov",
-							"text",
-							"image"
-						],[
-							"status" => "<span style='color:var(--stefeGreen)'>publikované!</span>"
-						]);
+						$news = $database->select("content", ["ID","nazov","text","image"]);
 						  foreach ($news as $data){
 							  echo "<div class='col-lg-4 col-md-6 col-sm-6'>
 							  			<article class='card'>

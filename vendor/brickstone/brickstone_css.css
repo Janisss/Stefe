@@ -13,11 +13,6 @@ html{
 	font-size: 80%;
 }
 
-p{
-	font-size: 1.2rem;
-	color: var(--stefeBlack);
-}
-
 h1{
 	font: 4rem var(--stefeFont);
 	text-align: left;
@@ -61,12 +56,6 @@ h3{
 	padding: 10px 10px 5px;
 	font-weight: 100;
 	font-size: 2rem;
-}
-
-h4{
-	font-family: var(--stefeFont);
-	font-weight: 100;
-	font-size: 1.5rem;
 }
 
 label{
@@ -241,26 +230,4 @@ i.fa-custom{
 	background-color: var(--stefeGreen);
 	cursor: pointer;
 	border: none;
-}
-p.content{
-	min-height: 100%;
-}
-.img_decoration{
-	width: 15vw;
-	height: 15vw;
-	border-radius: 50%;
-	display: block;
-	margin: auto;
-}
-
-.modal-header{
-	border-bottom: 1px solid var(--stefeGreen);
-}
-
-.modal-footer{
-	border-top: 1px solid var(--stefeGreen);
-}
-
-.modal-title{
-	color: var(--stefeGreen);
 }

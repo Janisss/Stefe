@@ -20,16 +20,6 @@
   </head>
 
   <body>
-<!-- FACEBOOK -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/sk_SK/sdk.js#xfbml=1&version=v2.10&appId=441539876025445";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
 
   	<?php
 	  use Medoo\Medoo;
@@ -56,15 +46,12 @@
 		$subheader = $database->get("content", "datum", [
 				"ID" => $clanokID
 			]);
-		$image = $database->get("content", "image", [
-				"ID" => $clanokID
-			]);
 	?>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-stefe">
       <div class="container">
-      	<a href="./index.php"><img src="./img/logo.svg" alt="Stefe" class="logo"></a>
+       <img src="./img/logo.svg" alt="Stefe" class="logo">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -117,50 +104,7 @@
    <div class="container" style="padding-top:30px">
    	<h1><span><?php echo $header; ?></span></h1>
    	<span class="subheader"><?php echo "Vytvorené: ".$subheader; ?></span>
-   	<div class="row">
-   		<div class="col-lg-4"><?php echo "<img src='./img/up/".$image."' class='img_decoration'>"; ?></div>
-   		<div class="col-lg-8 align-self-center"><p class="content"><?php echo $text; ?></p></div>
-   	</div>
-   	<div class="divider"></div>
-   <!--fcb butt-->
-   	<div class="fb-share-button float-right" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Zdieľať</a></div>
-
-   	<!-- Aktuality -->
-   	<div class="divider"></div>
-		   		<div class="divider"></div>
-			   <h1><span>Ďalšie aktuality</span></h1>
-			   <span class="subheader">Zaujal Vás tento článok?</span>
-				<div class="row" style="padding-left: 10px;padding-right:10px;">
-
-					<?php
-						$news = $database->select("content", [
-              "ID",
-              "nazov",
-              "text",
-              "image"
-            ],[
-              "status" => "<span style='color:var(--stefeGreen)'>publikované!</span>"
-            ]);
-						  foreach ($news as $data){
-							  echo "<div class='col-lg-4 col-md-6 col-sm-6'>
-							  			<article class='card'>
-							  				<header class='title-header'>
-							  					<h3>".$data["nazov"]."</h3>
-							  				</header>
-							  				<div class='card-block'>
-							  						<div class='img-card'>
-							  							<img src='./img/up/".$data["image"]."' alt='mini' class='w-100' />
-							  						</div>
-							  					<p class='tagline card-text text-xs-center'>".$data["text"]."</p>
-							  					<a href='./article.php?ID=".$data["ID"]."' class='btn btn-block stefe-btn'><i class='fa fa-eye'></i> Čítať viac</a>
-							  				</div>
-							  			</article>
-							  		</div>";
-						  }
-					?>
-					
-			</div>
-   	
+   	<p><?php echo $text; ?></p>
 	<div class="divider"></div>
 	<div class="divider"></div>
 	<div class="divider"></div>
