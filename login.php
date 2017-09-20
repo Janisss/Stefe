@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -48,7 +51,8 @@
 			]);
 	  	  		
 		  		if ($checkpass == $postheslo) {
-		  			header('Location: ./admin.php');
+					$_SESSION["myname"] = $postmeno;
+		  			header("Location: ./admin.php");
 					exit;
 		  		}
 		  		else{

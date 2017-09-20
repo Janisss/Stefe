@@ -86,7 +86,11 @@
    </div>
    <div class="container" style="padding: 0;">
    		<div class="well">
-   			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sunt deleniti corporis tempora culpa amet, blanditiis accusamus voluptate, dicta! Vero, nihil! Impedit harum veritatis, molestias tempora. Officia mollitia beatae aliquam!
+   			<blockquote class="blockquote">
+			  <div class="myslienka"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+			  Integer posuere erat a ante.Integer posuere erat a ante.</p></div>
+			  <footer class="blockquote-footer">Generálny riaditeľ STEFE SK <cite title="Source Title">Celé Meno</cite></footer>
+			</blockquote>
    		</div>
    </div>
    <div class="container" style="padding-top:30px">
@@ -119,7 +123,14 @@
 				<div class="row" style="padding-left: 10px;padding-right:10px;">
 
 					<?php
-						$news = $database->select("content", ["ID","nazov","text","image"]);
+						$news = $database->select("content", [
+							"ID",
+							"nazov",
+							"text",
+							"image"
+						],[
+							"status" => "<span style='color:var(--stefeGreen)'>publikované!</span>"
+						]);
 						  foreach ($news as $data){
 							  echo "<div class='col-lg-4 col-md-6 col-sm-6'>
 							  			<article class='card'>
@@ -129,8 +140,7 @@
 							  				<div class='card-block'>
 							  						<div class='img-card'>
 							  							<img src='./img/up/".$data["image"]."' alt='mini' class='w-100' />
-							  						</div>
-							  					<p class='tagline card-text text-xs-center'>".$data["text"]."</p>
+							  						</div>".$data["text"]."
 							  					<a href='./article.php?ID=".$data["ID"]."' class='btn btn-block stefe-btn'><i class='fa fa-eye'></i> Čítať viac</a>
 							  				</div>
 							  			</article>
@@ -221,7 +231,6 @@
     	</div>
     	</div>
     </footer>
-
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
