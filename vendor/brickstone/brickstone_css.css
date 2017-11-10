@@ -220,11 +220,21 @@ i.fa-customB{
 }
 
 .title-header{
-	background-color: var(--stefeGray);
+	background-color: var(--stefeGreen);
+	color: white;
 }
 
 .img-card{
 	margin: 20px;
+	height: 200px;
+	overflow: hidden;
+}
+
+.card{
+	border-radius: 10px;
+	overflow: hidden;
+	margin-bottom: 20px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .card-text{
@@ -281,7 +291,9 @@ p.content{
 .img-round{
 	width: 20vw;
 	height: 20vw;
-	border-radius: 50%;
+	max-width: 300px;
+	max-height: 300px;
+	border-radius: 20px;
 	display: block;
 	margin: auto;
 	overflow: hidden;
@@ -521,3 +533,25 @@ video.profilvid{
         padding: 6px 12px;
       }
 /*MAPS END*/
+
+.wrapperimg{
+	width: 100%;
+	max-height: 300px;
+	overflow: hidden;
+}
+
+.miniimage{
+	height: 200px;
+	width: 100%;
+	background-size: cover;
+}
+
+.title-header h3{
+	display: block !important;
+}
+.card h3{
+	display: none;
+}
+
+
+

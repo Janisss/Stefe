@@ -156,20 +156,21 @@
 							"status" => "<span style='color:var(--stefeGreen)'>publikované!</span>",
 							"alarm" => "nie"
 						]);
-
+					
 						$numbernewsread = 1;
 						$limitnews = 3; // koľko noviniek zobrazí
-						  foreach ($news as $data){
+						  foreach (array_reverse($news) as $data){
+							  $cleantext = strip_tags($data["text"]);
 						  		if ($numbernewsread <= $limitnews) {
-						  			echo "<div class='col-lg-4 col-md-6 col-sm-6'>
+						  			echo "<div class='col-lg-4 col-md-4 col-sm-4 col-xs-6'>
 							  			<article class='card'>
 							  				<header class='title-header'>
 							  					<h3>".$data["nazov"]."</h3>
 							  				</header>
 							  				<div class='card-block'>
 							  						<div class='img-card'>
-							  							<img src='./img/up/".$data["image"]."' alt='mini' class='w-100' />
-							  						</div><div class='newsintro'>".$data["text"]."
+														<div class='miniimage' style='background-image: url(./img/up/".$data["image"].")'></div>
+							  						</div><div class='newsintro'><p>".$cleantext."</p>
 							  					</div><a href='./article.php?ID=".$data["ID"]."' class='btn btn-block stefe-btn'>Čítať viac</a>
 							  				</div>
 							  			</article>
@@ -181,20 +182,12 @@
 					?>
 					
 			</div>
-			
-			<!-- video --> 
-			<div class="divider"></div>
-			<div class="divider"></div>
-				<h1><span>Jeden z nás</span></h1>
-					<span class="subheader">Pozrite si profil zamestnanca</span>
-						<video class="profilvid" loop controls poster="./vid/poster.jpg">
-							<source src="./vid/Paralax.mp4" type="video/mp4">
-							Váš prehliadač nepodporuje prehrávanie tohoto videa.							
-						</video>
-				<h3>Meno: Mgr. Adriana Kožiaková</h3>
-				<span class="subheader">Pozícia: Špecialista marketingu a komunikácie</span>
-				<p class="maintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum aliquid, eligendi iure repellat accusamus, deleniti earum magnam mollitia reprehenderit dicta. Eius voluptate fugiat, placeat dolore? Sequi saepe vero, non vitae.</p>
-				<a href="#" class="btn stefe-btn float-right">Pozrieť si celé video.</a>
+	   
+	   		<!-- video -->
+		   <div class="divider"></div>
+		    <div class="embed-responsive embed-responsive-16by9">
+				<iframe class="embed-responsive-item" src="http://www.youtube.com/embed?max-results=1&controls=0&showinfo=0&rel=0&listType=user_uploads&list=bigairvmeste" frameborder="0" allowfullscreen style="padding:5px"></iframe>
+		   </div>
 			
 			<!-- KARIERA -->
 			<div class="divider"></div>

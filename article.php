@@ -77,7 +77,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav m-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Stefe SK
+              <a class="nav-link" href="./index.php">Stefe SK
                 <span class="sr-only">(current)</span>
               </a>
             </li>
@@ -125,7 +125,7 @@
    	<h1><span><?php echo $header; ?></span></h1>
    	<span class="subheader"><a href="./index.php">Späť </a><?php echo "Vytvorené: ".$subheader; ?></span>
    	<div class="row">
-   		<div class="col-lg-4"><?php echo"<div class='img-round' style='background-image: url(./img/up/".$image.")'>" ?></div></div>
+   		<div class="col-lg-4"><?php echo"<div class='wrapperimg'><div class='img-round' style='background-image: url(./img/up/".$image.")'></div>" ?></div></div>
    		<div class="col-lg-8 align-self-center"><p class="content"><?php echo $text; ?></p></div>
    	</div>
    	<div class="divider"></div>

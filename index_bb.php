@@ -185,8 +185,8 @@
 			<!-- VYPADKY -->
 			<div class="divider"></div>
 		   		<div class="divider"></div>
-			   <h1 id="vypadky"><span>Výpadky</span></h1>
-			   <span class="subheader">Aktuálne výpadky v: Banská Bystrica</span>
+			   <h1 id="vypadky"><span>Oznamy</span></h1>
+			   <span class="subheader">Aktuálne oznamy v: Banská Bystrica</span>
 					<button data-toggle="modal" data-target="#vypadokModal" class="btn alert-danger" style="margin-left: 15px;">Nahlásiť výpadok!</button><br><br>
 				<div class="row" style="padding-left: 10px;padding-right:10px;">
 				
@@ -227,19 +227,7 @@
 			</div>
 			<!-- VYPADKY END -->
 			<div class="divider"></div>
-			<!-- OZNAMY -->
-			<h1 id="oznamy"><span>Oznamy</span></h1>
-			<span class="subheader">Oznamy a dokumenty vo forme PDF.</span>
-				<p class="maintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex mollitia impedit minus ullam quaerat animi ad sed, labore incidunt quos cumque architecto quia, eaque voluptatibus, dignissimos. Rem magnam inventore quas.</p>
-					<ul>
-						<li>Ozanm 1 <a href="#">Stiahnúť PDF <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></li>
-						<li>Oznam 2 <a href="#">Stiahnúť PDF <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></li>
-						<li>Oznam 3 <a href="#">Stiahnúť PDF <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></li>
-						<li>Oznam 4 <a href="#">Stiahnúť PDF <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></li>
-						<li>Oznam 5 <a href="#">Stiahnúť PDF <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></li>
-						<li>Oznam 6 <a href="#">Stiahnúť PDF <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></li>
-					</ul>
-			<!-- OZNAMY END-->
+			
 	<div class="divider"></div>
 	<div class="divider"></div>
 	<div class="divider"></div>
@@ -250,7 +238,7 @@
     <footer id="kontakty">
     <div class="row nopadding">
     	<div class="col-md-6 map nopadding">
-    		<iframe src="https://snazzymaps.com/embed/16372" width="100%" height="400px" style="border:none;"></iframe>
+    		<iframe src="https://snazzymaps.com/embed/16372" width="100%" height="410px" style="border:none;"></iframe>
     	</div>
     	<div class="col-md-6 kontakt nopadding">
     		<div class="divider"></div>
@@ -273,169 +261,45 @@
     		</form>
     	<i class="fa fa-facebook fa-3x" style="padding: 0 0 20px 20px; color: white;" aria-hidden="true"></i>
 	    <i class="fa fa-google-plus-square fa-3x" style="padding: 0 0 20px 20px; color: white;" aria-hidden="true"></i>
-    	<a class="float-right" style="padding-right: 15px; color: white;" href="./sitemap.php"><h4>Mapa stránky</h4></a> 		
+    	<a class="float-right" style="padding-right: 15px; color: white;" href="./sitemap.php"><h4>Mapa stránky</h4></a>		
+    	<a class="float-right" style="padding-right: 15px; color: white;" href="./sitemap.php"><h4>Informácie</h4></a>		
     	</div>
     	</div>
     </footer>
     <!-- Modal -->
-<div id="vypadokModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
+			<div id="vypadokModal" class="modal fade" role="dialog">
+			  <div class="modal-dialog">
 
-    <!-- Modal VYPADOK content-->
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal">&times;</button>
-		        <h4 class="modal-title">Nahlásiť výpadok</h4>
-		      </div>
-		      <div class="modal-body">
-		        
-	<div class="pac-card" id="pac-card">
-      <div>
-        <div id="title">
-          Vyplňte prosím lokalitu výpadku
-        </div>
-        <div id="type-selector" class="pac-controls">
-          <input type="radio" name="type" id="changetype-all" checked="checked">
-          <label for="changetype-all">All</label>
+				<!-- Modal VYPADOK content-->
+				<div class="modal-content">
+				  <div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Nahlásiť výpadok</h4>
+				  </div>
+				  <div class="modal-body">
+					<form action="">
+						<div class="form-group">
+							<label for="exampleInputEmail1">Vaše meno</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Vaše meno">
+							<small id="emailHelp" class="form-text text-muted">Vaše údaje sú u nás v bezpečí.</small>
 
-          <input type="radio" name="type" id="changetype-establishment">
-          <label for="changetype-establishment">Establishments</label>
+							<label for="exampleInputEmail1">Váš email</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Váš email">
 
-          <input type="radio" name="type" id="changetype-address">
-          <label for="changetype-address">Addresses</label>
+							<label for="exampleInputEmail1">Telefónne číslo</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Telefónne číslo">
+							<small id="emailHelp" class="form-text text-muted">Aby sme Vás mohli kontaktovať o riešení.</small>
 
-          <input type="radio" name="type" id="changetype-geocode">
-          <label for="changetype-geocode">Geocodes</label>
-        </div>
-        <div id="strict-bounds-selector" class="pac-controls">
-          <input type="checkbox" id="use-strict-bounds" value="">
-          <label for="use-strict-bounds">Strict Bounds</label>
-        </div>
-      </div>
-      <div id="pac-container">
-        <input id="pac-input" type="text"
-            placeholder="Začnite písať sem">
-      </div>
-    </div>
-    <div id="map" style="height: 250px;"></div>
-    <div id="infowindow-content">
-      <img src="" width="16" height="16" id="place-icon">
-      <span id="place-name"  class="title"></span><br>
-      <span id="place-address"></span>
-    </div>
-	<form action="">
-		<div class="form-group">
-		 	<label for="exampleInputEmail1">Vaše meno</label>
-		 	<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Vaše meno">
-			<small id="emailHelp" class="form-text text-muted">Vaše údaje sú u nás v bezpečí.</small>
+							<textarea name="" id="" class="form-control"></textarea>
+						</div>
+					</form>
 
-		 	<label for="exampleInputEmail1">Váš email</label>
-		 	<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Váš email">
 
-		 	<label for="exampleInputEmail1">Telefónne číslo</label>
-		 	<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Telefónne číslo">
-			<small id="emailHelp" class="form-text text-muted">Aby sme Vás mohli kontaktovať o riešení.</small>
-
-			<textarea name="" id="" class="form-control"></textarea>
-		</div>
-	</form>
-    <script>
-      // This example requires the Places library. Include the libraries=places
-      // parameter when you first load the API. For example:
-      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
-
-      function initMap() {
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -33.8688, lng: 151.2195},
-          zoom: 13
-        });
-        var card = document.getElementById('pac-card');
-        var input = document.getElementById('pac-input');
-        var types = document.getElementById('type-selector');
-        var strictBounds = document.getElementById('strict-bounds-selector');
-
-        map.controls[google.maps.ControlPosition.TOP_RIGHT].push(card);
-
-        var autocomplete = new google.maps.places.Autocomplete(input);
-
-        // Bind the map's bounds (viewport) property to the autocomplete object,
-        // so that the autocomplete requests use the current map bounds for the
-        // bounds option in the request.
-        autocomplete.bindTo('bounds', map);
-
-        var infowindow = new google.maps.InfoWindow();
-        var infowindowContent = document.getElementById('infowindow-content');
-        infowindow.setContent(infowindowContent);
-        var marker = new google.maps.Marker({
-          map: map,
-          anchorPoint: new google.maps.Point(0, -29)
-        });
-
-        autocomplete.addListener('place_changed', function() {
-          infowindow.close();
-          marker.setVisible(false);
-          var place = autocomplete.getPlace();
-          if (!place.geometry) {
-            // User entered the name of a Place that was not suggested and
-            // pressed the Enter key, or the Place Details request failed.
-            window.alert("No details available for input: '" + place.name + "'");
-            return;
-          }
-
-          // If the place has a geometry, then present it on a map.
-          if (place.geometry.viewport) {
-            map.fitBounds(place.geometry.viewport);
-          } else {
-            map.setCenter(place.geometry.location);
-            map.setZoom(17);  // Why 17? Because it looks good.
-          }
-          marker.setPosition(place.geometry.location);
-          marker.setVisible(true);
-
-          var address = '';
-          if (place.address_components) {
-            address = [
-              (place.address_components[0] && place.address_components[0].short_name || ''),
-              (place.address_components[1] && place.address_components[1].short_name || ''),
-              (place.address_components[2] && place.address_components[2].short_name || '')
-            ].join(' ');
-          }
-
-          infowindowContent.children['place-icon'].src = place.icon;
-          infowindowContent.children['place-name'].textContent = place.name;
-          infowindowContent.children['place-address'].textContent = address;
-          infowindow.open(map, marker);
-        });
-
-        // Sets a listener on a radio button to change the filter type on Places
-        // Autocomplete.
-        function setupClickListener(id, types) {
-          var radioButton = document.getElementById(id);
-          radioButton.addEventListener('click', function() {
-            autocomplete.setTypes(types);
-          });
-        }
-
-        setupClickListener('changetype-all', []);
-        setupClickListener('changetype-address', ['address']);
-        setupClickListener('changetype-establishment', ['establishment']);
-        setupClickListener('changetype-geocode', ['geocode']);
-
-        document.getElementById('use-strict-bounds')
-            .addEventListener('click', function() {
-              console.log('Checkbox clicked! New state=' + this.checked);
-              autocomplete.setOptions({strictBounds: this.checked});
-            });
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-uCVQo6SJpLqxzsnflcnXvxGyvr5uRpU&libraries=places&callback=initMap"
-        async defer></script>
-
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		      </div>
-		    </div>
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				  </div>
+				</div>
 
 		  </div>
 		</div>
