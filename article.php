@@ -54,9 +54,13 @@
 		$header = $database->get("content", "nazov", [
 				"ID" => $clanokID
 			]);
+	  	
 		$text = $database->get("content", "text", [
 				"ID" => $clanokID
 			]);
+	  	$outputtextstyle = preg_replace('/(<[^>]+) style=".*?"/i', '$1', $text); //remove style attr
+		$outputtext = str_replace("<strong>" , "", $outputtextstyle);// remove strong style
+	  
 		$subheader = $database->get("content", "datum", [
 				"ID" => $clanokID
 			]);
@@ -126,7 +130,7 @@
    	<span class="subheader"><a href="./index.php">Späť </a><?php echo "Vytvorené: ".$subheader; ?></span>
    	<div class="row">
    		<div class="col-lg-4"><?php echo"<div class='wrapperimg'><div class='img-round' style='background-image: url(./img/up/".$image.")'></div>" ?></div></div>
-   		<div class="col-lg-8 align-self-center"><p class="content"><?php echo $text; ?></p></div>
+   		<div class="col-lg-8 align-self-center"><p class="content"><?php echo $outputtext; ?></p></div>
    	</div>
    	<div class="divider"></div>
    <!--fcb butt-->
