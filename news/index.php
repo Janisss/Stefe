@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Stefe.sk - Hlavná stránka</title>
+    <title>Stefe.sk - Banská Bystrica</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -17,20 +17,9 @@
     <!-- Custom styles for this template -->
     <link href="vendor/brickstone/brickstone_css.css" rel="stylesheet" type="text/css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/vendor/snazzy/snazzy-info-window.min.css">
-	<script src="https://maps.googleapis.com/maps/api/js?key={{AIzaSyAwlvXnSvFdiMFgMJOvjAs9C3Bk3JbmhHo}}"></script>
-	<script src="./vendor/snazzy/snazzy-info-window.min.js"></script>
-	<script src="./js/smooth-scroll.js"></script>
   </head>
 
   <body>
-
-<script>
-	var scroll = new SmoothScroll('a[href*="#"]', {
-		ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
-		offset: 120, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
-	});
-</script>
 
   	<?php
 	  use Medoo\Medoo;
@@ -49,12 +38,6 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-stefe">
-    	<div class="preheader">
-    		<div class="lang float-right">
-					<a href="">SK</a>	
-					<a href="">DE</a>	
-			</div>
-    	</div>
       <div class="container">
        <img src="./img/logo.svg" alt="Stefe" class="logo">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,36 +46,34 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav m-auto">
             <li class="nav-item active">
-              <a data-scroll class="nav-link" href="#">Stefe SK</a>
+              <a class="nav-link" href="#">Stefe SK
+                <span class="sr-only">(current)</span>
+              </a>
             </li>
             <li class="nav-item">
-              <a data-scroll class="nav-link" href="#sluzby">Služby</a>
+              <a class="nav-link" href="#">Služby</a>
             </li>
             <li class="nav-item">
-              <a data-scroll class="nav-link" href="#aktuality">Aktuality</a>
+              <a class="nav-link" href="#">Aktuality</a>
             </li>
             <li class="nav-item">
-              <a data-scroll class="nav-link" href="#kariera">Kariéra</a>
+              <a class="nav-link" href="#">Kariéra</a>
             </li>
             <li class="nav-item">
-              <a data-scroll class="nav-link" href="#referencie">Referencie</a>
-            </li>
-            <li class="nav-item">
-              <a data-scroll class="nav-link" href="#kontakty">Kontakty</a>
+              <a class="nav-link" href="#">Kontakty</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-
-   <div class="container first">
+   <div class="container">
    	<div class="row">
    		<div class="col-md-6 float-left hidden-md-down"><h2>STEFE - My Vás rozpálime!</h2></div>
    		<div class="col-md-6 float-right">
 			<div class="dropdown show float-right stefe-dropdown">
 			  <a class="btn dropdown-toggle" href="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vyberte vaše mesto</a>
 			  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-				<a class="dropdown-item" href="./index_bb.php">Banská Bystrica</a>
+				<a class="dropdown-item" href="#">Banská Bystrica</a>
 				<a class="dropdown-item" href="#">Rimavská Sobota</a>
 			  </div>
 			</div>
@@ -100,7 +81,7 @@
    	</div>
    </div>
    <div class="container-fluid" style="padding: 0;">
-		<div class="header-pic sk">
+		<div class="header-pic">
 		</div>
    </div>
    <div class="container" style="padding: 0;">
@@ -108,41 +89,36 @@
    			<blockquote class="blockquote">
 			  <div class="myslienka"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
 			  Integer posuere erat a ante.Integer posuere erat a ante.</p></div>
-			  <footer class="blockquote-footer">Generálny riaditeľ STEFE SK <cite title="Source Title">Ing. Ondrej Borguľa</cite></footer>
+			  <footer class="blockquote-footer">Generálny riaditeľ STEFE SK <cite title="Source Title">Celé Meno</cite></footer>
 			</blockquote>
    		</div>
    </div>
    <div class="container" style="padding-top:30px">
-  		<h1 id="sluzby"><span>Služby</span></h1>
+  		<h1><span>Služby</span></h1>
   		<span class="subheader">Vyberte si z ponuky naších služieb</span>
 			<div class="row" style="padding-left: 10px;padding-right:10px;">
-				<div class="col-lg-6 col-md-6 col-sm-12 menu-one">
-						<div class="hover-menu">
-							<ul class="hover">
-								<a href="" onclick="return false;"><li><i class="fa fa-fire" aria-hidden="true"></i> Teplo</li></a>
-								<a href="" onclick="return false;"><li><i class="fa fa-bolt" aria-hidden="true"></i> Elektrická energia</li></a>
-								<a href="" onclick="return false;"><li><i class="fa fa-snowflake-o" aria-hidden="true"></i> Chlad</li></a>
-								<a href="" onclick="return false;"><li><i class="fa fa-envira" aria-hidden="true"></i> Biomasa</li></a>
-							</ul>
-						</div>
-					<div class="stefe-icon"><i class="fa fa-thermometer fa-custom" aria-hidden="true"></i><span>Výroba a dodávka energií</span></div>
-				</div>
+				<div class="col-lg-3 col-md-6"><div class="stefe-icon"><i class="fa fa-thermometer fa-custom" aria-hidden="true"></i><span>Teplo</span></div></div>
 				
-				<div class="col-lg-6 col-md-6 col-sm-12"><div class="stefe-icon"><i class="fa fa-snowflake-o fa-custom" aria-hidden="true"></i><span>Výstavba a montáž</span></div></div>
+				<div class="col-lg-3 col-md-6"><div class="stefe-icon"><i class="fa fa-snowflake-o fa-custom" aria-hidden="true"></i><span>Chlad</span></div></div>
 				
+				<div class="col-lg-3 col-md-6"><div class="stefe-icon"><i class="fa fa-gears fa-custom" aria-hidden="true"></i><span>Revízie</span></div></div>
+				
+				<div class="col-lg-3 col-md-6"><div class="stefe-icon"><i class="fa fa-volume-control-phone fa-custom" aria-hidden="true"></i><span>Dispečing</span></div></div>
 			</div>
 			<div class="divider"></div>
 			<div class="row" style="padding-left: 10px;padding-right:10px;">
-				<div class="col-lg-4 col-md-4 col-sm-12"><div class="stefe-icon"><i class="fa fa-pencil-square-o fa-custom" aria-hidden="true"></i><span>Eko efektivita</span></div></div>
+				<div class="col-lg-3 col-md-6"><div class="stefe-icon"><i class="fa fa-pencil-square-o fa-custom" aria-hidden="true"></i><span>Projekty</span></div></div>
 				
-				<div class="col-lg-4 col-md-4 col-sm-12"><div class="stefe-icon"><i class="fa fa-wrench fa-custom" aria-hidden="true"></i><span>Správa meradiel</span></div></div>
+				<div class="col-lg-3 col-md-6"><div class="stefe-icon"><i class="fa fa-wrench fa-custom" aria-hidden="true"></i><span>Servis</span></div></div>
 				
-				<div class="col-lg-4 col-md-4 col-sm-12"><div class="stefe-icon"><i class="fa fa-file-text-o fa-custom" aria-hidden="true"></i><span>Správa objektov</span></div></div>
+				<div class="col-lg-3 col-md-6"><div class="stefe-icon"><i class="fa fa-refresh fa-custom" aria-hidden="true"></i><span>Obnova</span></div></div>
+				
+				<div class="col-lg-3 col-md-6"><div class="stefe-icon"><i class="fa fa-file-text-o fa-custom" aria-hidden="true"></i><span>Certifikáty</span></div></div>
 			</div>
 		   		
 		   		<div class="divider"></div>
 		   		<div class="divider"></div>
-			   <h1 id="aktuality"><span>Aktuality</span></h1>
+			   <h1><span>Aktuality</span></h1>
 			   <span class="subheader">Hlavné aktuality</span>
 				<div class="row" style="padding-left: 10px;padding-right:10px;">
 
@@ -153,15 +129,10 @@
 							"text",
 							"image"
 						],[
-							"status" => "<span style='color:var(--stefeGreen)'>publikované!</span>",
-							"alarm" => "nie"
+							"status" => "<span style='color:var(--stefeGreen)'>publikované!</span>"
 						]);
-
-						$numbernewsread = 1;
-						$limitnews = 3; // koľko noviniek zobrazí
 						  foreach ($news as $data){
-						  		if ($numbernewsread <= $limitnews) {
-						  			echo "<div class='col-lg-4 col-md-6 col-sm-6'>
+							  echo "<div class='col-lg-4 col-md-6 col-sm-6'>
 							  			<article class='card'>
 							  				<header class='title-header'>
 							  					<h3>".$data["nazov"]."</h3>
@@ -169,38 +140,21 @@
 							  				<div class='card-block'>
 							  						<div class='img-card'>
 							  							<img src='./img/up/".$data["image"]."' alt='mini' class='w-100' />
-							  						</div><div class='newsintro'>".$data["text"]."
-							  					</div><a href='./article.php?ID=".$data["ID"]."' class='btn btn-block stefe-btn'>Čítať viac</a>
+							  						</div>".$data["text"]."
+							  					<a href='./article.php?ID=".$data["ID"]."' class='btn btn-block stefe-btn'><i class='fa fa-eye'></i> Čítať viac</a>
 							  				</div>
 							  			</article>
 							  		</div>";
-							  		$numbernewsread += 1;
-						  		}else{
-						  			 }
-						  	}
+						  }
 					?>
 					
 			</div>
 			
-			<!-- video --> 
-			<div class="divider"></div>
-			<div class="divider"></div>
-				<h1><span>Jeden z nás</span></h1>
-					<span class="subheader">Pozrite si profil zamestnanca</span>
-						<video class="profilvid" loop controls poster="./vid/poster.jpg">
-							<source src="./vid/Paralax.mp4" type="video/mp4">
-							Váš prehliadač nepodporuje prehrávanie tohoto videa.							
-						</video>
-				<h3>Meno: Mgr. Adriana Kožiaková</h3>
-				<span class="subheader">Pozícia: Špecialista marketingu a komunikácie</span>
-				<p class="maintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum aliquid, eligendi iure repellat accusamus, deleniti earum magnam mollitia reprehenderit dicta. Eius voluptate fugiat, placeat dolore? Sequi saepe vero, non vitae.</p>
-				<a href="#" class="btn stefe-btn float-right">Pozrieť si celé video.</a>
-			
 			<!-- KARIERA -->
 			<div class="divider"></div>
 		   		<div class="divider"></div>
-			   <h1 id="kariera"><span>Kariéra</span></h1>
-			   <span class="subheader">Hľadať prácu</span>
+			   <h1><span>Kariéra</span></h1>
+			   <span class="subheader">Hľadať prácu v: Banská Bystrica</span>
 				<div class="row" style="padding-left: 10px;padding-right:10px;">
 					<div class="col-lg-4 col-md-6 col-sm-6">
 						<article class="card">
@@ -212,7 +166,7 @@
 									<img src="./news/img1.jpg" alt="Movie" class="w-100" />
 								</div>
 								<p class="tagline card-text text-xs-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-								<a href="#" class="btn btn-block stefe-btn">Čítať viac</a>
+								<a href="#" class="btn btn-block stefe-btn"><i class="fa fa-eye"></i> Čítať viac</a>
 							</div>
 						</article>
 					</div>
@@ -226,7 +180,7 @@
 									<img src="./news/img2.jpg" alt="Movie" class="w-100" />
 								</div>
 								<p class="tagline card-text text-xs-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-								<a href="#" class="btn btn-block stefe-btn">Čítať viac</a>
+								<a href="#" class="btn btn-block stefe-btn"><i class="fa fa-eye"></i> Čítať viac</a>
 							</div>
 						</article>
 					</div>
@@ -240,51 +194,23 @@
 									<img src="./news/img3.jpg" alt="Movie" class="w-100" />
 								</div>
 								<p class="tagline card-text text-xs-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-								<a href="#" class="btn btn-block stefe-btn">Čítať viac</a>
+								<a href="#" class="btn btn-block stefe-btn"><i class="fa fa-eye"></i> Čítať viac</a>
 							</div>
 						</article>
 					</div>
 					
 			</div>
-			<!--Kariera koniec -->
-				<div class="divider"></div>
-			<!-- Referencie -->
-			<h1 id="referencie"><span>Referencie</span></h1>
-			<span class="subheader">Naši klienti a partneri.</span>
-			<p class="maintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, eaque nisi porro delectus ipsa, facere consectetur unde, eum est voluptatem quos odio, quidem repellendus minima optio debitis in labore earum.</p>
-				<div class="divider"></div>
-			<div class="row" style="text-align: center;">
-				<div class="col-md-3">
-					<img src="./img/galeria.png" alt="Galeria Lučenec">
-				</div>
-				<div class="col-md-3">
-					<h2>Referencia 2</h2>
-					<i class="fa fa-question fa-3x" aria-hidden="true"></i>
-				</div>
-				<div class="col-md-3">
-					<h2>Referencia 3</h2>
-					<i class="fa fa-question fa-3x" aria-hidden="true"></i>
-				</div>
-				<div class="col-md-3">
-					<h2>Referencia 4</h2>
-					<i class="fa fa-question fa-3x" aria-hidden="true"></i>
-				</div>
-			</div>
-			<!-- Referencie end -->
-
+	<div class="divider"></div>
 	<div class="divider"></div>
 	<div class="divider"></div>
 	<div class="divider"></div>
 	<div class="divider"></div>
    </div>
 	
-    <footer id="kontakty">
-    <div class="row nopadding">
-    	<div class="col-md-6 map nopadding">
-    		<iframe src="https://snazzymaps.com/embed/16372" width="100%" height="400px" style="border:none;"></iframe>
-    	</div>
-    	<div class="col-md-6 kontakt nopadding">
-    		<div class="divider"></div>
+    <footer>
+    <div class="row">
+    	<div class="col-md-6 map"></div>
+    	<div class="col-md-6 kontakt">
     		<form action="">
     			<div class="formwrapper">
     				<div class="form-group">
@@ -301,10 +227,7 @@
 						<button class="stefe-btn btn">Odoslať</button>
 			  	  </div>
     			</div>
-    		</form>
-    	<i class="fa fa-facebook fa-3x" style="padding: 0 0 20px 20px; color: white;" aria-hidden="true"></i>
-	    <i class="fa fa-google-plus-square fa-3x" style="padding: 0 0 20px 20px; color: white;" aria-hidden="true"></i>
-    	<a class="float-right" style="padding-right: 15px; color: white;" href="./sitemap.php"><h4>Mapa stránky</h4></a> 		
+    		</form>    		
     	</div>
     	</div>
     </footer>

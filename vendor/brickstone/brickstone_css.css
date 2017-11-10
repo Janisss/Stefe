@@ -18,8 +18,21 @@ p{
 	color: var(--stefeBlack);
 }
 
+p.maintext{
+	padding: 0 15px;
+}
+
+.vypadok{
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+}
+
+.container.first{
+	margin-top: 120px;
+}
+
 h1{
-	font: 4rem var(--stefeFont);
+	font: 3.5rem var(--stefeFont);
 	text-align: left;
 	position: relative;
 	z-index: 1;
@@ -58,7 +71,7 @@ h2{
 
 h3{
 	font-family: var(--stefeFont);
-	padding: 10px 10px 5px;
+	padding: 10px 10px 5px 20px;
 	font-weight: 100;
 	font-size: 2rem;
 }
@@ -96,9 +109,12 @@ span.subheader{
 }
 
 .navbar{
-	margin-top: 60px;
+	margin-top: -60px;
 	padding: 5px !important;
 	height:60px;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
 }
 .navbar-stefe{
 	background-color: var(--stefeGreen);
@@ -119,6 +135,11 @@ a.nav-link{
 
 a.nav-link:hover{
 	color: var(--stefeDark);
+}
+
+a:hover{
+	color: var(--stefeDark);
+	text-decoration: none !important;
 }
 
 .logo{
@@ -142,11 +163,19 @@ a.btn.dropdown-toggle{
 .header-pic{
 	width: 100%;
 	height: 306px;
-	background-image: url(../../img/header_pic.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 }
+
+.header-pic.sk{
+	background-image: url(../../img/header_pic.png);
+}
+
+.header-pic.bb{
+	background-image: url(../../img/header_pic_bb.png);
+}
+
 .well{
 	background-color: var(--stefeGreen);
 	padding: 3vh 6vh;
@@ -179,6 +208,13 @@ i.fa-custom{
 	padding: 20px;
 }
 
+i.fa-customB{
+	font-size: 5.5rem;
+	text-align: center;
+	width: 100%;
+	margin-top: 25%;
+}
+
 .divider{
 	height: 20px;
 }
@@ -203,14 +239,9 @@ i.fa-custom{
 	font-size: 1.3rem;
 	color: white;
 	background-color: var(--stefeGreen);
-	margin: 20px;
+	margin: 10px;
 	width: auto;
-}
-
-.map{
-	background-image: url(./../../img/map.png);
-	min-height: 400px;
-	background-size: cover;
+	font-weight: 100;
 }
 
 .kontakt{
@@ -248,8 +279,8 @@ p.content{
 	min-height: 100%;
 }
 .img-round{
-	width: 25vw;
-	height: 25vw;
+	width: 20vw;
+	height: 20vw;
 	border-radius: 50%;
 	display: block;
 	margin: auto;
@@ -278,6 +309,7 @@ p.content{
 	position: fixed;
 	top:0;
 	right: 0;
+	z-index: 30;
 }
 
 .modal-dialog{
@@ -306,9 +338,9 @@ p.content{
 .myslienka:after{
 	content: "\f10e";
 	font-size: 2rem;
-	font-family:FontAwesome;
+	font-family: FontAwesome;
 	float: right;
-	color:white;
+	color: white;
 }
 
 .blockquote-footer{
@@ -316,6 +348,176 @@ p.content{
 	margin-top: 2rem;
 }
 
-.card iframe{
+.newsintro{
+	height: 5rem;
+	overflow: hidden;
+}
+
+.card iframe, .card h1, .card h2, .card h4{
 	display: none;
 }
+
+.menu-one:hover .hover-menu{
+	opacity: 1;
+	transition: all .5s ease;
+}
+
+.hover-menu{
+	position: absolute;
+	top:0;
+	left:15px;
+	bottom:0;
+	right: 15px;
+	opacity: 0;
+	transition: all .5s ease;
+	border-radius: 12px;
+	background: var(--stefeGreen);
+}
+
+ul.hover{
+	padding: 20px 30px;
+}
+
+ul.hover li{
+	background: var(--stefeGreen);
+	list-style: none;
+	margin: 10px 0;
+	padding: 1px;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 600;
+	border-radius: 5px;
+	transition: all .2s ease;
+	cursor: pointer;
+	color: white;
+}
+
+ul.hover li:hover{
+	background: white;
+	color: var(--stefeGreen);
+}
+ul.hover li:hover a{
+	color: var(--stefeGreen);
+	transition: all .2s ease;
+}
+
+ul.hover li a{
+	color: white;
+	text-transform: uppercase;
+}
+
+ul.sitemap a{
+	font-size: 2rem;
+	color: var(--stefeGreen);
+}
+
+video.profilvid{
+	width: 100%;
+}
+
+.lang{
+	position: absolute;
+	padding: 0 5px;
+	background: var(--stefeGreen);
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	right: 16%;
+	top: 60px;
+}
+.lang a{
+	color: white;
+	font-size: 1rem;
+}
+
+.btn-sm{
+	display: block;
+	margin: 2px;
+}
+.preheader{
+	background-color: white;
+	height: 60px;
+	width: 100%;
+	position: absolute;
+	top: -60px;
+	left: 0;
+}
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.disp{
+	text-align: center;
+	background: white;
+	padding: 5px 0;
+}
+
+/*MAPS*/
+ #description {
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+      }
+
+      #infowindow-content .title {
+        font-weight: bold;
+      }
+
+      #infowindow-content {
+        display: none;
+      }
+
+      #map #infowindow-content {
+        display: inline;
+      }
+
+      .pac-card {
+        margin: 10px 10px 0 0;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        background-color: #fff;
+        font-family: Roboto;
+      }
+
+      #pac-container {
+        padding-bottom: 12px;
+        margin-right: 12px;
+      }
+
+      .pac-controls {
+        display: inline-block;
+        padding: 5px 11px;
+      }
+
+      .pac-controls label {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+      }
+
+      #pac-input {
+        background-color: #fff;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 400px;
+      }
+
+      #pac-input:focus {
+        border-color: #4d90fe;
+      }
+
+      #title {
+        color: #fff;
+        background-color: #4d90fe;
+        font-size: 25px;
+        font-weight: 500;
+        padding: 6px 12px;
+      }
+/*MAPS END*/

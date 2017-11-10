@@ -17,6 +17,10 @@
     <!-- Custom styles for this template -->
     <link href="vendor/brickstone/brickstone_css.css" rel="stylesheet" type="text/css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/vendor/snazzy/snazzy-info-window.min.css">
+	<script src="https://maps.googleapis.com/maps/api/js?key={{AIzaSyAwlvXnSvFdiMFgMJOvjAs9C3Bk3JbmhHo}}"></script>
+	<script src="/vendor/snazzy/snazzy-info-window.min.js"></script>
+  <script src="/js/smooth-scroll.js"></script>
   </head>
 
   <body>
@@ -63,6 +67,8 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-stefe">
+      <div class="preheader">
+      </div>
       <div class="container">
       	<a href="./index.php"><img src="./img/logo.svg" alt="Stefe" class="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -91,7 +97,9 @@
         </div>
       </div>
     </nav>
-   <div class="container">
+
+
+   <div class="container first">
    	<div class="row">
    		<div class="col-md-6 float-left hidden-md-down"><h2>STEFE - My Vás rozpálime!</h2></div>
    		<div class="col-md-6 float-right">
@@ -106,12 +114,11 @@
    	</div>
    </div>
    <div class="container-fluid" style="padding: 0;">
-		<div class="header-pic">
+		<div class="header-pic sk">
 		</div>
    </div>
    <div class="container" style="padding: 0;">
    		<div class="well">
-   			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sunt deleniti corporis tempora culpa amet, blanditiis accusamus voluptate, dicta! Vero, nihil! Impedit harum veritatis, molestias tempora. Officia mollitia beatae aliquam!
    		</div>
    </div>
    <div class="container" style="padding-top:30px">
@@ -139,7 +146,8 @@
               "text",
               "image"
             ],[
-              "status" => "<span style='color:var(--stefeGreen)'>publikované!</span>"
+              "status" => "<span style='color:var(--stefeGreen)'>publikované!</span>",
+              "alarm" => "nie"
             ]);
 						  foreach ($news as $data){
 							  echo "<div class='col-lg-4 col-md-6 col-sm-6'>
@@ -150,8 +158,8 @@
 							  				<div class='card-block'>
 							  						<div class='img-card'>
 							  							<img src='./img/up/".$data["image"]."' alt='mini' class='w-100' />
-							  						</div>".$data["text"]."
-							  					<a href='./article.php?ID=".$data["ID"]."' class='btn btn-block stefe-btn'><i class='fa fa-eye'></i> Čítať viac</a>
+							  						</div><div class='newsintro'>".$data["text"]."
+							  					</div><a href='./article.php?ID=".$data["ID"]."' class='btn btn-block stefe-btn'><i class='fa fa-eye'></i> Čítať viac</a>
 							  				</div>
 							  			</article>
 							  		</div>";
@@ -167,29 +175,35 @@
 	<div class="divider"></div>
    </div>
 	
-    <footer>
-    <div class="row">
-    	<div class="col-md-6 map"></div>
-    	<div class="col-md-6 kontakt">
-    		<form action="">
-    			<div class="formwrapper">
-    				<div class="form-group">
-						<label for="meno">Kontaktuje nás:</label>
-						<input type="name" class="form-control" aria-describedby="emailHelp" placeholder="Vaše meno a priezvisko">
-				  	</div>
-				  	<div class="form-group">
-						<input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email">
-				  	</div>
-				  	<div class="form-group">
-						<textarea rows="5" class="form-control"></textarea>
-			  	  </div>
-			  	  <div class="form-group">
-						<button class="stefe-btn btn">Odoslať</button>
-			  	  </div>
-    			</div>
-    		</form>    		
-    	</div>
-    	</div>
+    <footer id="kontakty">
+    <div class="row nopadding">
+      <div class="col-md-6 map nopadding">
+        <iframe src="https://snazzymaps.com/embed/16372" width="100%" height="400px" style="border:none;"></iframe>
+      </div>
+      <div class="col-md-6 kontakt nopadding">
+        <div class="divider"></div>
+        <form action="">
+          <div class="formwrapper">
+            <div class="form-group">
+            <label for="meno">Kontaktuje nás:</label>
+            <input type="name" class="form-control" aria-describedby="emailHelp" placeholder="Vaše meno a priezvisko">
+            </div>
+            <div class="form-group">
+            <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email">
+            </div>
+            <div class="form-group">
+            <textarea rows="5" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+            <button class="stefe-btn btn">Odoslať</button>
+            </div>
+          </div>
+        </form>
+      <i class="fa fa-facebook fa-3x" style="padding: 0 0 20px 20px; color: white;" aria-hidden="true"></i>
+      <i class="fa fa-google-plus-square fa-3x" style="padding: 0 0 20px 20px; color: white;" aria-hidden="true"></i>
+      <a class="float-right" style="padding-right: 15px; color: white;" href="./sitemap.php"><h4>Mapa stránky</h4></a>    
+      </div>
+      </div>
     </footer>
 
     <!-- Bootstrap core JavaScript -->

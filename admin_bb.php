@@ -3,9 +3,13 @@
 	$sessionname = $_SESSION["myname"];
 if (isset($_POST["logout"])) {
 	session_destroy();
-	header("Location: ./admin.php");
+	header("Location: ./admin_bb.php");
 	exit;
 };
+function refreshMe(){
+    header("Location: ./admin_bb.php");
+};
+
 if ($sessionname == ""){
 	header("Location: ./login.php");
 	exit;
@@ -20,7 +24,7 @@ if ($sessionname == ""){
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Stefe.sk - Banská Bystrica</title>
+    <title>Stefe.sk ADMIN - Banská Bystrica</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -29,8 +33,8 @@ if ($sessionname == ""){
     <!-- Custom styles for this template -->
     <link href="vendor/brickstone/brickstone_css.css" rel="stylesheet" type="text/css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <script src="/js/smooth-scroll.js"></script>
     <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
+    <script src="/js/smooth-scroll.js"></script>
   	<script>tinymce.init({ selector:'textarea#clanoktext',plugins: "media",menubar: "insert",
   toolbar: "media styleselect" });</script>
   </head>
@@ -48,12 +52,12 @@ if ($sessionname == ""){
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav m-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#clanky">Články
+              <a class="nav-link" href="#">
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#vypadky">Výpadky</a>
+              <a class="nav-link" href="#"></a>
             </li>
           </ul>
         </div>
@@ -64,11 +68,13 @@ if ($sessionname == ""){
     
       <div class="container first" style="padding: 0;">
       	<div class="header-admin">
-			<h3 style="color: white;">Admin - STEFE SK</h3>
+      		<h3 style="color: white;">Admin - Banská Bystrica</h3>
       	</div>
       </div>
       <div class="container">
-      	<div class="divider"></div>
+
+
+<div class="divider"></div>
         	<h1 id="clanky"><span>Články</span></h1>
         	
 		<button type="button" class="btn stefe-btn btn-sm float-right" data-toggle="modal" data-target="#novyclanok" style="margin:0;font-size: 1.1rem;">+ pridať článok</button>
@@ -81,7 +87,6 @@ if ($sessionname == ""){
       <th>Názov</th>
       <th>Obsah</th>
       <th>Status</th>
-      <th>Upraviť</th>
     </tr>
   </thead>
   <tbody>
@@ -154,21 +159,24 @@ if ($sessionname == ""){
 		"status",
 		"edit"
 		], [
-		"alarm" => "nie"
+		"alarm" => "nie",
+		"loc" => "bb"
 		]);
 
 			foreach($datas_main as $data)
 		{
-			echo "<tr><th scope='row'>".$data["ID"]."</th><td>".$data["autor"]."</td><td>".$data["datum"]."</td><td>".$data["nazov"]."</td><td>".$data["text"]."</td><td>".$data["status"]."</td><td><form method='post' action='admin.php'><input type='text' name='idedit' hidden value='".$data["ID"]."'><input type='submit' name='zobraz' class='btn btn-success btn-sm' value='Uverejniť'> <input type='submit' name='skryt' class='btn btn-warning btn-sm' value='Skryť'> <input type='submit' name='del' class='btn btn-danger btn-sm' value='X'></form></td></tr>";
+			echo "<tr><th scope='row'>".$data["ID"]."</th><td>".$data["autor"]."</td><td>".$data["datum"]."</td><td>".$data["nazov"]."</td><td>".$data["text"]."</td><td>".$data["status"]."</td></tr>";
 		}
 ?>
   </tbody>
 </table>
 
-<!-- ALARMY -->
-<div class="divider"></div>
-<h1 id="vypadky"><span>Výpadky</span></h1>
-<table class="table">
+
+      	<div class="divider"></div>
+        	<h1><span>Výpadky</span></h1>
+        	
+		<button type="button" class="btn stefe-btn btn-sm float-right" data-toggle="modal" data-target="#novyvypadok" style="margin:0;font-size: 1.1rem;">+ pridať výpadok</button>
+	  <table class="table">
   <thead class="thead-inverse">
     <tr>
       <th>ID</th>
@@ -177,13 +185,12 @@ if ($sessionname == ""){
       <th>Názov</th>
       <th>Obsah</th>
       <th>Status</th>
-      <th>Upraviť</th>
+      <th>Ukončené?</th>
     </tr>
   </thead>
   <tbody>
-<?php	  
-	  
-	  $datas_errors = $database->select("content", [
+<?php	  	  
+	  $datas_vypadky = $database->select("content", [
 		"ID",
 		"autor",
 		"datum",
@@ -195,17 +202,74 @@ if ($sessionname == ""){
 		"alarm" => "ano"
 		]);
 
-			foreach($datas_errors as $data)
+			foreach($datas_vypadky as $data)
 		{
-			echo "<tr><th scope='row'>".$data["ID"]."</th><td>".$data["autor"]."</td><td>".$data["datum"]."</td><td>".$data["nazov"]."</td><td>".$data["text"]."</td><td>".$data["status"]."</td><td><form method='post' action='admin.php'><input type='text' name='idedit' hidden value='".$data["ID"]."'><input type='submit' name='del' class='btn btn-danger btn-sm' value='X'></form></td></tr>";
+			echo "<tr><th scope='row'>".$data["ID"]."</th><td>".$data["autor"]."</td><td>".$data["datum"]."</td><td>".$data["nazov"]."</td><td>".$data["text"]."</td><td>".$data["status"]."</td><td><form method='post' action='admin_bb.php'><input type='text' name='idedit' hidden value='".$data["ID"]."'><input type='submit' name='skryt' class='btn btn-warning btn-sm' value='Ukončiť!'></form></td></tr>";
 		}
 ?>
   </tbody>
 </table>
+
 </div><!-- /container -->
 
-
 <!-- POPUP HEADER TEXT -->
+<div id="novyvypadok" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Pridať výpadok</h4>
+      </div>
+      <div class="modal-body">
+       	<form action="admin_bb.php" method="post">
+        	<div class="form-group">
+        		<p>Názov výpadku:</p>
+			    <input type="text" class="form-control" id="nadpis" aria-describedby="nadpisHelp" name="alarm">
+			    <small id="nadpisHelp" class="form-text text-muted">Tento nadpis sa zobrazí v hlavičke článku.</small>
+			</div>
+			<div class="form-group">
+			    <?php echo "<input type='text' class='form-control' id='datum' name='date' value='".date("d-m-Y")."' readonly hidden>"; ?>
+			</div>
+			<div class="form-group">
+			    <?php echo "<input type='text' class='form-control' id='user' name='user' value='".$myname."' readonly hidden>"; ?>
+			</div>
+			<div class="form-group">
+			    <?php echo "<input type='text' class='form-control' id='loc' name='loc' value='".$myloc."' readonly hidden>"; ?>
+			</div>
+			<div class="form-group">
+				<p>Popis lokality a výpadku:</p>
+				<textarea class="form-control" name="vypadoktext"></textarea>
+     		</div>
+      </div>
+      <div class="modal-footer">
+        <input type="submit" name="pridatvypadok" class="btn stefe-btn" value="Odoslať">
+        <?php
+			if(isset($_POST["pridatvypadok"])){
+					$database->insert("content",[
+						"autor" => $myname,
+						"datum" => $_POST["date"],
+						"nazov" => $_POST["alarm"],
+						"text" => $_POST["vypadoktext"],
+						"status" => "<span style='color:var(--stefeGreen)'>publikované!</span>",
+						"loc" => "bb",
+						"alarm" => "ano"
+					]);
+				
+				}else{
+				};
+					
+		?>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- POPUP HEADER TEXT END -->
+
+<!-- POPUP SECOND -->
 <div id="novyclanok" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
@@ -216,10 +280,10 @@ if ($sessionname == ""){
 	        <h4 class="modal-title">Pridať článok</h4>
 	      </div>
     		<div class="modal-body">
-		        <form action="admin.php" method="post" enctype="multipart/form-data">
+		        <form action="admin_bb.php" method="post" enctype="multipart/form-data">
 		        	<div class="form-group">
 		        		<p>Nadpis článku:</p>
-					    <input type="text" class="form-control" id="nadpis" aria-describedby="nadpisHelp" name="nadpis">
+					    <input type="text" class="form-control" id="nadpis" aria-describedby="nadpisHelp" placeholder="Nadpis článku" name="nadpis">
 					    <small id="nadpisHelp" class="form-text text-muted">Tento nadpis sa zobrazí v hlavičke článku.</small>
 					</div>
 					<div class="form-group">
@@ -231,9 +295,8 @@ if ($sessionname == ""){
 					<div class="form-group">
 					    <?php echo "<input type='text' class='form-control' id='loc' name='loc' value='".$myloc."' readonly hidden>"; ?>
 					</div>
-					<p>Prosím vyberte fotku článku*:</p>
+					<p>Prosím vyberte fotku článku:</p>
 					<input type="file" name="fileToUpload" id="fileToUpload"><br><br>
-					<p>Obsah článku:</p>
 					<textarea id="clanoktext" name="clanoktext"></textarea>
 		    </div>
 		      <div class="modal-footer">
@@ -270,10 +333,14 @@ if ($sessionname == ""){
 								"datum" => $_POST["datum"],
 								"nazov" => $_POST["nadpis"],
 								"text" => $_POST["clanoktext"],
-								"loc" => $myloc,
+								"loc" => "bb",
 								"alarm" => "nie",
 								"image" => basename( $_FILES["fileToUpload"]["name"])
 							]);
+							$emailbody = 'Bol pridaný nový článok pre Stefe Banská Bystrica.<br />Článok čaká na vaše schválenie <a href="http://brickstone.design/stefe/admin.php">tu.</a>';
+									
+								mail('info@brickstone.design', '-> Nový článok Banská Bystrica', $emailbody ,'Content-Type: text/html; charset=UTF-8');
+								refreshMe();
 							
 						} else {
 						}
@@ -284,13 +351,10 @@ if ($sessionname == ""){
     </div>
   </div>
   </div>
-  <div class="divider"></div>
-  <div class="divider"></div>
-  <div class="divider"></div>
- 
-<!-- POPUP HEADER TEXT END -->
+
+
 <div class="logout">
-	<form action="admin.php" method="post">
+	<form action="admin_bb.php" method="post">
 	<?php
 		echo $myname;
 	 ?>
