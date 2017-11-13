@@ -71,7 +71,6 @@ h2{
 
 h3{
 	font-family: var(--stefeFont);
-	padding: 10px 10px 5px 20px;
 	font-weight: 100;
 	font-size: 2rem;
 }
@@ -222,6 +221,11 @@ i.fa-customB{
 .title-header{
 	background-color: var(--stefeGreen);
 	color: white;
+	height: 6rem;
+}
+
+.title-header h3{
+	padding: 10px 10px 5px 20px;
 }
 
 .img-card{
@@ -553,5 +557,23 @@ video.profilvid{
 	display: none;
 }
 
+.ref-icon{
+	border-radius: 12px;
+	overflow: hidden;
+}
 
+.img-stolicka {
+	background-image: url(./../../img/stolicka.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 300px;
+}
 
+.inzeraty {
+	background: #c8cacb;
+	background: -moz-linear-gradient(-45deg, #c8cacb 0%, #fcfcfc 56%, #f2f2f2 60%, #dddfdf 100%);
+	background: -webkit-linear-gradient(-45deg, #c8cacb 0%,#fcfcfc 56%,#f2f2f2 60%,#dddfdf 100%);
+	background: linear-gradient(175deg, #c8cacb 0%,#fcfcfc 56%,#f2f2f2 60%,#dddfdf 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c8cacb', endColorstr='#dddfdf',GradientType=1 );
+}

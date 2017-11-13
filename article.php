@@ -128,10 +128,12 @@
    <div class="container" style="padding-top:30px">
    	<h1><span><?php echo $header; ?></span></h1>
    	<span class="subheader"><a href="./index.php">Späť </a><?php echo "Vytvorené: ".$subheader; ?></span>
+	<article class="main-content">
    	<div class="row">
    		<div class="col-lg-4"><?php echo"<div class='wrapperimg'><div class='img-round' style='background-image: url(./img/up/".$image.")'></div>" ?></div></div>
    		<div class="col-lg-8 align-self-center"><p class="content"><?php echo $outputtext; ?></p></div>
    	</div>
+	</article>
    	<div class="divider"></div>
    <!--fcb butt-->
    	<div class="fb-share-button float-right" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Zdieľať</a></div>
@@ -145,33 +147,41 @@
 
 					<?php
 						$news = $database->select("content", [
-              "ID",
-              "nazov",
-              "text",
-              "image"
-            ],[
-              "status" => "<span style='color:var(--stefeGreen)'>publikované!</span>",
-              "alarm" => "nie"
-            ]);
-						  foreach ($news as $data){
-							  echo "<div class='col-lg-4 col-md-6 col-sm-6'>
+							"ID",
+							"nazov",
+							"text",
+							"image"
+						],[
+							"status" => "<span style='color:var(--stefeGreen)'>publikované!</span>",
+							"alarm" => "nie"
+						]);
+					
+						$numbernewsread = 1;
+						$limitnews = 9; // koľko noviniek zobrazí
+						  foreach (array_reverse($news) as $data){
+							  $cleantext = strip_tags($data["text"]);
+						  		if ($numbernewsread <= $limitnews) {
+						  			echo "<div class='col-lg-4 col-md-4 col-sm-4 col-xs-6'>
 							  			<article class='card'>
 							  				<header class='title-header'>
 							  					<h3>".$data["nazov"]."</h3>
 							  				</header>
 							  				<div class='card-block'>
 							  						<div class='img-card'>
-							  							<img src='./img/up/".$data["image"]."' alt='mini' class='w-100' />
-							  						</div><div class='newsintro'>".$data["text"]."
-							  					</div><a href='./article.php?ID=".$data["ID"]."' class='btn btn-block stefe-btn'><i class='fa fa-eye'></i> Čítať viac</a>
+														<div class='miniimage' style='background-image: url(./img/up/".$data["image"].")'></div>
+							  						</div><div class='newsintro'><p>".$cleantext."</p>
+							  					</div><a href='./article.php?ID=".$data["ID"]."' class='btn btn-block stefe-btn'>Čítať viac</a>
 							  				</div>
 							  			</article>
 							  		</div>";
-						  }
+							  		$numbernewsread += 1;
+						  		}else{
+						  			 }
+						  	}
 					?>
 					
 			</div>
-   	
+	  
 	<div class="divider"></div>
 	<div class="divider"></div>
 	<div class="divider"></div>

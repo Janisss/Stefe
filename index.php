@@ -71,11 +71,11 @@
             <li class="nav-item">
               <a data-scroll class="nav-link" href="#aktuality">Aktuality</a>
             </li>
-            <li class="nav-item">
-              <a data-scroll class="nav-link" href="#kariera">Kariéra</a>
+			<li class="nav-item">
+              <a data-scroll class="nav-link" href="#referencie">Referencie</a>
             </li>
             <li class="nav-item">
-              <a data-scroll class="nav-link" href="#referencie">Referencie</a>
+              <a data-scroll class="nav-link" href="#kariera">Kariéra</a>
             </li>
             <li class="nav-item">
               <a data-scroll class="nav-link" href="#kontakty">Kontakty</a>
@@ -188,79 +188,45 @@
 		    <div class="embed-responsive embed-responsive-16by9">
 				<iframe class="embed-responsive-item" src="http://www.youtube.com/embed?max-results=1&controls=0&showinfo=0&rel=0&listType=user_uploads&list=bigairvmeste" frameborder="0" allowfullscreen style="padding:5px"></iframe>
 		   </div>
+	   
+	   		<!-- Referencie -->
+			<h1 id="referencie"><span>Referencie</span></h1>
+			<span class="subheader">Naši klienti a partneri.</span>
+			<p class="maintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, eaque nisi porro delectus ipsa, facere consectetur unde, eum est voluptatem quos odio, quidem repellendus minima optio debitis in labore earum.</p>
+				<div class="divider"></div>
+			<div class="row" style="text-align: center;margin:0 5px;">
+				<div class="col-md-3">
+					<div class="ref-icon"><img src="./img/SVG icons/shopping.svg" alt="Nákupné centrá"></div>
+				</div>
+				<div class="col-md-3">
+					<div class="ref-icon"><img src="./img/SVG icons/theatre_sport.svg" alt="Umenie šport a kultúra"></div>
+				</div>
+				<div class="col-md-3">
+					<div class="ref-icon"><img src="./img/SVG icons/flats.svg" alt="Obytné zóny"></div>
+				</div>
+				<div class="col-md-3">
+					<div class="ref-icon"><img src="./img/SVG icons/industry.svg" alt="Industriálne zóny"></div>
+				</div>
+			</div>
+			<!-- Referencie end -->
 			
 			<!-- KARIERA -->
 			<div class="divider"></div>
 		   		<div class="divider"></div>
 			   <h1 id="kariera"><span>Kariéra</span></h1>
 			   <span class="subheader">Hľadať prácu</span>
-				<div class="row" style="padding-left: 10px;padding-right:10px;">
-					<div class="col-lg-4 col-md-6 col-sm-6">
-						<article class="card">
-							<header class="title-header">
-								<h3>Ponuka</h3>
-							</header>
-							<div class="card-block">
-								<div class="img-card">
-									<img src="./news/img1.jpg" alt="Movie" class="w-100" />
-								</div>
-								<p class="tagline card-text text-xs-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-								<a href="#" class="btn btn-block stefe-btn">Čítať viac</a>
-							</div>
-						</article>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-6 card-bb">
-						<article class="card">
-							<header class="title-header">
-								<h3>Ponuka</h3>
-							</header>
-							<div class="card-block">
-								<div class="img-card">
-									<img src="./news/img2.jpg" alt="Movie" class="w-100" />
-								</div>
-								<p class="tagline card-text text-xs-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-								<a href="#" class="btn btn-block stefe-btn">Čítať viac</a>
-							</div>
-						</article>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-6 card-lc">
-						<article class="card">
-							<header class="title-header">
-								<h3>Ponuka</h3>
-							</header>
-							<div class="card-block">
-								<div class="img-card">
-									<img src="./news/img3.jpg" alt="Movie" class="w-100" />
-								</div>
-								<p class="tagline card-text text-xs-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-								<a href="#" class="btn btn-block stefe-btn">Čítať viac</a>
-							</div>
-						</article>
-					</div>
+			<div class="row inzeraty" style="margin:10px;padding: 20px;">
 					
+					<div class="col-md-3 img-stolicka"></div>
+					<div class="col-md-9">
+						<h3>Príďte do tepla!</h3>
+						<p>HĽADÁME TECHNIKA TEPELNÉHO HOSPODÁRSTVA PRE STEFE MARTIN, a.s.</p>
+					</div>
+				
 			</div>
 			<!--Kariera koniec -->
 				<div class="divider"></div>
-			<!-- Referencie -->
-			<h1 id="referencie"><span>Referencie</span></h1>
-			<span class="subheader">Naši klienti a partneri.</span>
-			<p class="maintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, eaque nisi porro delectus ipsa, facere consectetur unde, eum est voluptatem quos odio, quidem repellendus minima optio debitis in labore earum.</p>
-				<div class="divider"></div>
-			<div class="row" style="text-align: center;">
-				<div class="col-md-3">
-
-				</div>
-				<div class="col-md-3">
-					
-				</div>
-				<div class="col-md-3">
-					
-				</div>
-				<div class="col-md-3">
-					
-				</div>
-			</div>
-			<!-- Referencie end -->
+			
 
 	<div class="divider"></div>
 	<div class="divider"></div>
