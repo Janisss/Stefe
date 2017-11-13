@@ -248,19 +248,16 @@
 				<div class="divider"></div>
 			<div class="row" style="text-align: center;">
 				<div class="col-md-3">
-					<img src="./img/galeria.png" alt="Galeria Lučenec">
+
 				</div>
 				<div class="col-md-3">
-					<h2>Referencia 2</h2>
-					<i class="fa fa-question fa-3x" aria-hidden="true"></i>
+					
 				</div>
 				<div class="col-md-3">
-					<h2>Referencia 3</h2>
-					<i class="fa fa-question fa-3x" aria-hidden="true"></i>
+					
 				</div>
 				<div class="col-md-3">
-					<h2>Referencia 4</h2>
-					<i class="fa fa-question fa-3x" aria-hidden="true"></i>
+					
 				</div>
 			</div>
 			<!-- Referencie end -->
