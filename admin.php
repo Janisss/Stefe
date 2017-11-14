@@ -219,8 +219,13 @@ if ($sessionname == ""){
 		        <form action="admin.php" method="post" enctype="multipart/form-data">
 		        	<div class="form-group">
 		        		<p>Nadpis článku:</p>
-					    <input type="text" class="form-control" id="nadpis" aria-describedby="nadpisHelp" name="nadpis">
+					    <input name="nadpis" type="text" class="form-control" id="nadpis" maxlength="25" aria-describedby="nadpisHelp">
 					    <small id="nadpisHelp" class="form-text text-muted">Tento nadpis sa zobrazí v hlavičke článku.</small>
+					</div>
+					<div class="form-group">
+	        		  <p>Krátky popis článku:</p>
+					    <input name="introtext" type="text" class="form-control" id="introtext" maxlength="110" aria-describedby="nadpisHelp">
+					    <small id="nadpisHelp" class="form-text text-muted">Tento popis sa zobrazí v miniatúrnom náhlade článku.</small>
 					</div>
 					<div class="form-group">
 					    <?php echo "<input type='text' class='form-control' id='datum' name='datum' value='".date("d-m-Y")."' readonly hidden>"; ?>
@@ -269,6 +274,7 @@ if ($sessionname == ""){
 								"autor" => $myname,
 								"datum" => $_POST["datum"],
 								"nazov" => $_POST["nadpis"],
+								"intro" => $_POST["introtext"],
 								"text" => $_POST["clanoktext"],
 								"loc" => $myloc,
 								"alarm" => "nie",

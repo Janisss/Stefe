@@ -150,7 +150,7 @@
 						$news = $database->select("content", [
 							"ID",
 							"nazov",
-							"text",
+							"intro",
 							"image"
 						],[
 							"status" => "<span style='color:var(--stefeGreen)'>publikované!</span>",
@@ -160,7 +160,7 @@
 						$numbernewsread = 1;
 						$limitnews = 3; // koľko noviniek zobrazí
 						  foreach (array_reverse($news) as $data){
-							  $cleantext = strip_tags($data["text"]);
+							  $cleantext = strip_tags($data["intro"]);
 						  		if ($numbernewsread <= $limitnews) {
 						  			echo "<div class='col-lg-4 col-md-4 col-sm-4 col-xs-6'>
 							  			<article class='card'>
@@ -186,7 +186,7 @@
 	   		<!-- video -->
 		   <div class="divider"></div>
 		    <div class="embed-responsive embed-responsive-16by9">
-				<iframe class="embed-responsive-item" src="http://www.youtube.com/embed?max-results=1&controls=0&showinfo=0&rel=0&listType=user_uploads&list=bigairvmeste" frameborder="0" allowfullscreen style="padding:5px"></iframe>
+				<iframe class="embed-responsive-item" src="http://www.youtube.com/embed?max-results=1&controls=0&showinfo=0&rel=0&listType=user_uploads&list=STEFE" frameborder="0" allowfullscreen style="padding:5px"></iframe>
 		   </div>
 	   
 	   		<!-- Referencie -->
