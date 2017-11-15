@@ -194,16 +194,16 @@
 			<p class="maintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, eaque nisi porro delectus ipsa, facere consectetur unde, eum est voluptatem quos odio, quidem repellendus minima optio debitis in labore earum.</p>
 				<div class="divider"></div>
 			<div class="row" style="text-align: center;margin:0 5px;">
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-6 col-xs-6">
 					<div class="ref-icon"><img src="./img/SVG icons/shopping.svg" alt="Nákupné centrá"></div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-6 col-xs-6">
 					<div class="ref-icon"><img src="./img/SVG icons/theatre_sport.svg" alt="Umenie šport a kultúra"></div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-6 col-xs-6">
 					<div class="ref-icon"><img src="./img/SVG icons/flats.svg" alt="Obytné zóny"></div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-6 col-xs-6">
 					<div class="ref-icon"><img src="./img/SVG icons/industry.svg" alt="Industriálne zóny"></div>
 				</div>
 			</div>
@@ -211,18 +211,45 @@
 			
 			<!-- KARIERA -->
 			<div class="divider"></div>
-		   		<div class="divider"></div>
-			   <h1 id="kariera"><span>Kariéra</span></h1>
-			   <span class="subheader">Hľadať prácu</span>
+		   	<div class="divider"></div>
+			<h1 id="kariera"><span>Kariéra</span></h1>
+			<span class="subheader">Hľadať prácu</span>
 			<div class="row inzeraty" style="margin:10px;padding: 20px;">
-					
 					<div class="col-md-3 img-stolicka"></div>
 					<div class="col-md-9">
-						<h3>Príďte do tepla!</h3>
-						<p>HĽADÁME TECHNIKA TEPELNÉHO HOSPODÁRSTVA PRE STEFE MARTIN, a.s.</p>
+						<h2>Príďte do tepla!</h2>
+						<hr>
+						<p><strong>HĽADÁME TECHNIKA TEPELNÉHO HOSPODÁRSTVA PRE STEFE MARTIN, a.s.</strong></p>
+						<p><strong>Pozícia:</strong> <span>technik tepelného hospodárstva</span></p>
+						<p><strong>Miesto výkonu:</strong> <span>Banská Bystrica</span></p>
+						<p><strong>Nástup:</strong> <span>ihneď</span></p>
+							<div class="inzeraty-content">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis consectetur saepe est, fugit ad exercitationem cumque iure earum expedita. Tempora provident voluptates voluptatibus quam ea, nihil libero temporibus corporis eum.</p>
+								<p>Tel. kontakt: 090932093</p>
+								<p>Email kontakt: info@info.sk</p>
+							</div>
 					</div>
-				
+	   				<div class="inzeraty-after stefe-btn"><i class="fa fa-arrows-v" aria-hidden="true"></i> Viac</div>
 			</div>
+	   
+	   		<div class="row inzeraty" style="margin:10px;padding: 20px;">
+					<div class="col-md-3 img-stolicka"></div>
+					<div class="col-md-9">
+						<h2>Príďte do tepla!</h2>
+						<hr>
+						<p><strong>HĽADÁME TECHNIKA TEPELNÉHO HOSPODÁRSTVA PRE STEFE MARTIN, a.s.</strong></p>
+						<p><strong>Pozícia:</strong> <span>technik tepelného hospodárstva</span></p>
+						<p><strong>Miesto výkonu:</strong> <span>Banská Bystrica</span></p>
+						<p><strong>Nástup:</strong> <span>ihneď</span></p>
+							<div class="inzeraty-content">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis consectetur saepe est, fugit ad exercitationem cumque iure earum expedita. Tempora provident voluptates voluptatibus quam ea, nihil libero temporibus corporis eum.</p>
+								<p>Tel. kontakt: 090932093</p>
+								<p>Email kontakt: info@info.sk</p>
+							</div>
+					</div>
+					<div class="inzeraty-after stefe-btn"><i class="fa fa-arrows-v" aria-hidden="true"></i> Viac</div>
+			</div>
+
 			<!--Kariera koniec -->
 				<div class="divider"></div>
 			
@@ -267,6 +294,13 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	  
+	  <script>
+	  	$(".inzeraty-after.stefe-btn").click(function(){
+			$(this).closest(".row.inzeraty").find(".inzeraty-content").toggleClass("active");
+		});
+		
+	  </script>
 
   </body>
 

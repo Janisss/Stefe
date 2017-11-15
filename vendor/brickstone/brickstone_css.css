@@ -69,6 +69,12 @@ h2{
 	font-size: 1.7rem;
 }
 
+.inzeraty h2{
+	font-size: 2.5rem;
+	padding: 5px 0;
+	margin: 0;
+}
+
 h3{
 	font-family: var(--stefeFont);
 	font-weight: 100;
@@ -564,11 +570,10 @@ video.profilvid{
 }
 
 .img-stolicka {
-	background-image: url(./../../img/stolicka.png);
+	background-image: url(./../../img/chair_in_ice_v1.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
-	min-height: 300px;
 }
 
 .inzeraty {
@@ -577,4 +582,26 @@ video.profilvid{
 	background: -webkit-linear-gradient(-45deg, #c8cacb 0%,#fcfcfc 56%,#f2f2f2 60%,#dddfdf 100%);
 	background: linear-gradient(175deg, #c8cacb 0%,#fcfcfc 56%,#f2f2f2 60%,#dddfdf 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c8cacb', endColorstr='#dddfdf',GradientType=1 );
+	border-radius: 10px;
+}
+
+.inzeraty-after{
+	width: 100px;
+	height: 25px;
+	text-align: center;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	position: relative;
+	margin: 0 auto -20px;
+	cursor: pointer;
+}
+
+.inzeraty-content {
+	padding:0;
+	max-height:0;
+	overflow: hidden;
+	transition: max-height 1s ease;
+}
+.inzeraty-content.active{
+	max-height: 500px;
 }
