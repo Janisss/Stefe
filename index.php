@@ -106,9 +106,8 @@
    <div class="container" style="padding: 0;">
    		<div class="well">
    			<blockquote class="blockquote">
-			  <div class="myslienka"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-			  Integer posuere erat a ante.Integer posuere erat a ante.</p></div>
-			  <footer class="blockquote-footer">Generálny riaditeľ STEFE SK <cite title="Source Title">Ing. Ondrej Borguľa</cite></footer>
+			  <div class="myslienka"><p>Spoľahlivý a férový partner prispôsobujúci sa individuálnym potrebám každého zákazníka.</p></div>
+			  <footer class="blockquote-footer"><cite title="Source Title">Ing. Ondrej Borguľa/STEFE SK, a.s.: </cite></footer>
 			</blockquote>
    		</div>
    </div>
