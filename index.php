@@ -187,6 +187,7 @@
 		    <div class="embed-responsive embed-responsive-16by9">
 				<iframe class="embed-responsive-item" src="http://www.youtube.com/embed?max-results=1&controls=0&showinfo=0&rel=0&listType=user_uploads&list=STEFE" frameborder="0" allowfullscreen style="padding:5px"></iframe>
 		   </div>
+		   <div class="divider"></div>
 	   
 	   		<!-- Referencie -->
 			<h1 id="referencie"><span>Referencie</span></h1>
@@ -214,41 +215,39 @@
 		   	<div class="divider"></div>
 			<h1 id="kariera"><span>Kariéra</span></h1>
 			<span class="subheader">Hľadať prácu</span>
-			<div class="row inzeraty" style="margin:10px;padding: 20px;">
-					<div class="col-md-3 img-stolicka"></div>
-					<div class="col-md-9">
-						<h2>Príďte do tepla!</h2>
-						<hr>
-						<p><strong>HĽADÁME TECHNIKA TEPELNÉHO HOSPODÁRSTVA PRE STEFE MARTIN, a.s.</strong></p>
-						<p><strong>Pozícia:</strong> <span>technik tepelného hospodárstva</span></p>
-						<p><strong>Miesto výkonu:</strong> <span>Banská Bystrica</span></p>
-						<p><strong>Nástup:</strong> <span>ihneď</span></p>
-							<div class="inzeraty-content">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis consectetur saepe est, fugit ad exercitationem cumque iure earum expedita. Tempora provident voluptates voluptatibus quam ea, nihil libero temporibus corporis eum.</p>
-								<p>Tel. kontakt: 090932093</p>
-								<p>Email kontakt: info@info.sk</p>
-							</div>
-					</div>
-	   				<div class="inzeraty-after stefe-btn"><i class="fa fa-arrows-v" aria-hidden="true"></i> Viac</div>
-			</div>
 	   
-	   		<div class="row inzeraty" style="margin:10px;padding: 20px;">
-					<div class="col-md-3 img-stolicka"></div>
-					<div class="col-md-9">
-						<h2>Príďte do tepla!</h2>
-						<hr>
-						<p><strong>HĽADÁME TECHNIKA TEPELNÉHO HOSPODÁRSTVA PRE STEFE MARTIN, a.s.</strong></p>
-						<p><strong>Pozícia:</strong> <span>technik tepelného hospodárstva</span></p>
-						<p><strong>Miesto výkonu:</strong> <span>Banská Bystrica</span></p>
-						<p><strong>Nástup:</strong> <span>ihneď</span></p>
-							<div class="inzeraty-content">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis consectetur saepe est, fugit ad exercitationem cumque iure earum expedita. Tempora provident voluptates voluptatibus quam ea, nihil libero temporibus corporis eum.</p>
-								<p>Tel. kontakt: 090932093</p>
-								<p>Email kontakt: info@info.sk</p>
-							</div>
-					</div>
-					<div class="inzeraty-after stefe-btn"><i class="fa fa-arrows-v" aria-hidden="true"></i> Viac</div>
-			</div>
+	   		<?php
+						$inzeraty = $database->select("inzeraty", [
+							"nadpis",
+							"popis",
+							"pozicia",
+							"miesto",
+							"nastup",
+							"obsah"
+						],[
+							"show" => true,
+						]);
+					
+						  foreach (array_reverse($inzeraty) as $data){
+							  $cleaninzerat = strip_tags($data["obsah"]);
+						  			echo "<div class='row inzeraty' style='margin:10px;padding: 20px;'>
+											<div class='col-md-3 img-stolicka'></div>
+												<div class='col-md-9'>
+												<h2>".$data["nadpis"]."</h2>
+												<hr>
+												<p><strong>".$data["popis"]."</strong></p>
+												<p><strong>Pozícia:</strong> <span>".$data["pozicia"]."</span></p>
+												<p><strong>Miesto výkonu:</strong> <span>".$data["miesto"]."</span></p>
+												<p><strong>Nástup:</strong> <span>".$data["nastup"]."</span></p>
+												<div class='inzeraty-content'><p>".$cleaninzerat."</p>
+												</div>
+											</div>
+												<div class='inzeraty-after stefe-btn'><i class='fa fa-arrows-v' aria-hidden='true'></i> Viac</div>
+										</div>
+										";
+						  
+						  	}
+					?>
 
 			<!--Kariera koniec -->
 				<div class="divider"></div>

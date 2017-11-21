@@ -29,13 +29,12 @@ if ($sessionname == ""){
     <!-- Custom styles for this template -->
     <link href="vendor/brickstone/brickstone_css.css" rel="stylesheet" type="text/css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <script src="/js/smooth-scroll.js"></script>
-    <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
-  	<script>tinymce.init({ selector:'textarea#clanoktext',plugins: "media",menubar: "insert",
-  toolbar: "media styleselect" });</script>
+    <script src="js/smooth-scroll.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/simditor.css" />
   </head>
   <body>
-
+		
+	  
   	 <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-stefe">
     	<div class="preheader">
@@ -63,6 +62,7 @@ if ($sessionname == ""){
     <!-- navi end -->
     
       <div class="container first" style="padding: 0;">
+		  
       	<div class="header-admin">
 			<h3 style="color: white;">Admin - STEFE SK</h3>
       	</div>
@@ -237,9 +237,9 @@ if ($sessionname == ""){
 					    <?php echo "<input type='text' class='form-control' id='loc' name='loc' value='".$myloc."' readonly hidden>"; ?>
 					</div>
 					<p>Prosím vyberte fotku článku*:</p>
-					<input type="file" name="fileToUpload" id="fileToUpload"><br><br>
+					<input type="file" name="fileToUpload" id="fileToUpload" class="btn stefe-btn"><br><br>
 					<p>Obsah článku:</p>
-					<textarea id="clanoktext" name="clanoktext"></textarea>
+					<textarea id="clanoktext" name="clanoktext" placeholder="Obsah..."></textarea>
 		    </div>
 		      <div class="modal-footer">
 		        <input type="submit" name="pridatclanok" class="btn stefe-btn" value="Odoslať">
@@ -293,6 +293,8 @@ if ($sessionname == ""){
   <div class="divider"></div>
   <div class="divider"></div>
   <div class="divider"></div>
+	  
+
  
 <!-- POPUP HEADER TEXT END -->
 <div class="logout">
@@ -301,12 +303,33 @@ if ($sessionname == ""){
 		echo $myname;
 	 ?>
 	 |
-	 <button name="logout">Odhlásiť sa</button></form>
+	 <button name="logout" class="stefe-btn btn">Odhlásiť sa</button></form>
 </div>
 	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 	<script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/module.js"></script>
+	<script src="js/hotkeys.js"></script>
+	<script src="js/uploader.js"></script>
+	<script src="js/simditor.js"></script>
+	  <script>
+			var editor = new Simditor({textarea: $('#clanoktext'), 
+						toolbar: [
+							'title',
+							'italic',
+							'bold',
+							'underline',
+							'ol',
+							'ul',
+							'link',
+							'image'
+						],
+						cleanPaste: true,
+						upload: true,
+			});
+	</script>
+	
   </body>
 </html>

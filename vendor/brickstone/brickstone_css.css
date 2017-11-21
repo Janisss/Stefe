@@ -73,6 +73,7 @@ h2{
 	font-size: 2.5rem;
 	padding: 5px 0;
 	margin: 0;
+	color: var(--stefeGreen);
 }
 
 h3{
@@ -85,6 +86,15 @@ h4{
 	font-family: var(--stefeFont);
 	font-weight: 100;
 	font-size: 1.5rem;
+}
+
+/* text colors for article */
+.main-content h3{
+	color: var(--stefeDark);
+}
+
+.main-content b{
+	color: var(--stefeGreen);
 }
 
 .card-block p{
@@ -603,5 +613,5 @@ video.profilvid{
 	transition: max-height 1s ease;
 }
 .inzeraty-content.active{
-	max-height: 500px;
+	max-height: 200px;
 }

@@ -127,7 +127,7 @@
    </div>
    <div class="container" style="padding-top:30px">
    	<h1><span><?php echo $header; ?></span></h1>
-   	<span class="subheader"><a href="./index.php">Späť </a><?php echo "Vytvorené: ".$subheader; ?></span>
+   	<span class="subheader"><?php echo "Vytvorené: ".$subheader; ?><br><a href="./index.php">Späť </a></span>
 	<article class="main-content">
    	<div class="row">
    		<div class="col-lg-4"><?php echo"<div class='wrapperimg'><div class='img-round' style='background-image: url(./img/up/".$image.")'></div>" ?></div></div>
