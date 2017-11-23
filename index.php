@@ -112,26 +112,24 @@
    		</div>
    </div>
    <div class="container" style="padding-top:30px">
-  		<h1 id="sluzby"><span>Služby</span></h1>
+  		<h1 id="sluzby"><span>Produkty</span></h1>
   		<span class="subheader">Vyberte si z ponuky naších služieb</span>
-			<div class="row" style="padding-left: 10px;padding-right:10px;">
+			<div class="row">
 				<div class="col-lg-6 col-md-6 col-sm-12 menu-one">
 						<div class="hover-menu">
 							<ul class="hover">
-								<a href="" onclick="return false;"><li><i class="fa fa-fire" aria-hidden="true"></i> Teplo</li></a>
-								<a href="" onclick="return false;"><li><i class="fa fa-bolt" aria-hidden="true"></i> Elektrická energia</li></a>
+								<a href="" onclick="return false;"><li><i class="fa fa-fire" aria-hidden="true"></i> Diaľkové teplo</li></a>
 								<a href="" onclick="return false;"><li><i class="fa fa-snowflake-o" aria-hidden="true"></i> Chlad</li></a>
-								<a href="" onclick="return false;"><li><i class="fa fa-envira" aria-hidden="true"></i> Biomasa</li></a>
 							</ul>
 						</div>
-					<div class="stefe-icon"><i class="fa fa-thermometer fa-custom" aria-hidden="true"></i><span>Výroba a dodávka energií</span></div>
+					<div class="stefe-icon"><i class="fa fa-thermometer fa-custom" aria-hidden="true"></i><span>Výroba a dodávka</span></div>
 				</div>
 				
 				<div class="col-lg-6 col-md-6 col-sm-12"><div class="stefe-icon"><i class="fa fa-snowflake-o fa-custom" aria-hidden="true"></i><span>Výstavba a montáž</span></div></div>
 				
 			</div>
 			<div class="divider"></div>
-			<div class="row" style="padding-left: 10px;padding-right:10px;">
+			<div class="row">
 				<div class="col-lg-4 col-md-4 col-sm-12"><div class="stefe-icon"><i class="fa fa-pencil-square-o fa-custom" aria-hidden="true"></i><span>Eko efektivita</span></div></div>
 				
 				<div class="col-lg-4 col-md-4 col-sm-12"><div class="stefe-icon"><i class="fa fa-wrench fa-custom" aria-hidden="true"></i><span>Správa meradiel</span></div></div>
@@ -194,7 +192,7 @@
 			<span class="subheader">Naši klienti a partneri.</span>
 			<p class="maintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, eaque nisi porro delectus ipsa, facere consectetur unde, eum est voluptatem quos odio, quidem repellendus minima optio debitis in labore earum.</p>
 				<div class="divider"></div>
-			<div class="row" style="text-align: center;margin:0 5px;">
+			<div class="row" style="text-align: center;">
 				<div class="col-md-3 col-sm-6 col-xs-6">
 					<div class="ref-icon"><img src="./img/SVG icons/shopping.svg" alt="Nákupné centrá"></div>
 				</div>
@@ -223,14 +221,15 @@
 							"pozicia",
 							"miesto",
 							"nastup",
-							"obsah"
+							"obsah",
+							"kontakt"
 						],[
 							"show" => true,
 						]);
 					
 						  foreach (array_reverse($inzeraty) as $data){
 							  $cleaninzerat = strip_tags($data["obsah"]);
-						  			echo "<div class='row inzeraty' style='margin:10px;padding: 20px;'>
+						  			echo "<div class='row inzeraty'>
 											<div class='col-md-3 img-stolicka'></div>
 												<div class='col-md-9'>
 												<h2>".$data["nadpis"]."</h2>
@@ -240,6 +239,10 @@
 												<p><strong>Miesto výkonu:</strong> <span>".$data["miesto"]."</span></p>
 												<p><strong>Nástup:</strong> <span>".$data["nastup"]."</span></p>
 												<div class='inzeraty-content'><p>".$cleaninzerat."</p>
+												<hr>
+												<p>Vaše žiadosti spolu s profesijným životopisom a súhlasom k spracovaniu osobných údajov
+												v zmysle z.č. 24/2013 Z.z. zašlite na adresu: <b>STEFE SK, a.s.,
+												Na Troskách 26, 974 01 Banská Bystrica</b> alebo na <b>".$data['kontakt']."</b></p>
 												</div>
 											</div>
 												<div class='inzeraty-after stefe-btn'><i class='fa fa-arrows-v' aria-hidden='true'></i> Viac</div>
