@@ -16,6 +16,7 @@ html{
 p{
 	font-size: 1.2rem;
 	color: var(--stefeBlack);
+	font-family: Arial;
 }
 
 p.maintext{
@@ -90,6 +91,11 @@ h4{
 	font-family: var(--stefeFont);
 	font-weight: 100;
 	font-size: 1.5rem;
+}
+
+span.subheader.green{
+	color: var(--stefeGreen);
+	padding: 0 0 15px;
 }
 
 /* text colors for article */
@@ -356,29 +362,19 @@ p.content{
 .blockquote{
 	font-size: 2rem;
 }
-.myslienka p{
-	margin: 0 4rem;
+p.myslienka{
 	color: white;
-	font-family: Arial;
+	font-family: var(--stefeFont);
+	font-style: italic;
 	font-weight: 100;
-	font-size: 1.8rem;
-	text-align: justify
-}
-.myslienka:before{
-	content: "\f10d";
-	font-size: 2rem;
-	font-family: FontAwesome;
+	max-width: 510px;
+	font-size: 2.2rem;
+	text-align: center;
 	display: block;
-	color:white;
+	margin: auto;
+	letter-spacing: 1px;
 }
 
-.myslienka:after{
-	content: "\f10e";
-	font-size: 2rem;
-	font-family: FontAwesome;
-	float: right;
-	color: white;
-}
 
 .blockquote-footer{
 	color: var(--stefeDark);
@@ -673,4 +669,22 @@ video.profilvid{
 .simditor img{
 	max-width: 100% !important;
 	height: auto;
+}
+.autor {
+	text-align: center;
+	margin: 20px 0 0;
+	font-size: 1.5rem;
+}
+
+.teplo {
+	margin: 0 auto;
+	max-height: 0px;
+	overflow: hidden;
+	transition: all .5s ease;
+	max-width: 80%;
+	display: block;
+}
+
+.teplo.active{
+	max-height: 400px;
 }

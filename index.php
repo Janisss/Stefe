@@ -105,10 +105,8 @@
    </div>
    <div class="container" style="padding: 0;">
    		<div class="well">
-   			<blockquote class="blockquote">
-			  <div class="myslienka"><p>Spoľahlivý a férový partner prispôsobujúci sa individuálnym potrebám každého zákazníka.</p></div>
-			  <footer class="blockquote-footer"><cite title="Source Title">Ing. Ondrej Borguľa/STEFE SK, a.s.: </cite></footer>
-			</blockquote>
+				<p class="myslienka">„Spoľahlivý a férový partner prispôsobujúci sa individuálnym potrebám každého zákazníka.“</p>
+				<p class="autor">Ing. Ondrej Borguľa/STEFE SK, a.s.</p>
    		</div>
    </div>
    <div class="container" style="padding-top:30px">
@@ -118,7 +116,7 @@
 				<div class="col-lg-6 col-md-6 col-sm-12 menu-one">
 						<div class="hover-menu">
 							<ul class="hover">
-								<a href="" onclick="return false;"><li><i class="fa fa-fire" aria-hidden="true"></i> Diaľkové teplo</li></a>
+								<div class="teplo-btn"><li><i class="fa fa-fire" aria-hidden="true"></i> Diaľkové teplo</li></div>
 								<a href="" onclick="return false;"><li><i class="fa fa-snowflake-o" aria-hidden="true"></i> Chlad</li></a>
 							</ul>
 						</div>
@@ -126,9 +124,22 @@
 				</div>
 				
 				<div class="col-lg-6 col-md-6 col-sm-12"><div class="stefe-icon"><i class="fa fa-snowflake-o fa-custom" aria-hidden="true"></i><span>Výstavba a montáž</span></div></div>
-				
 			</div>
+	   		
 			<div class="divider"></div>
+	   		<div class="teplo">
+	   			<h3>Diaľkové teplo</h3>
+				<span class="subheader green">Výroba a dodávka</span>
+				<p>Bývate v Banskej Bystrici, Zvolene, Martine, Trnave, Rimavskej Sobote, Rožňave, Veľkom Krtíši, Revúcej, Klenovciach, Krupine, Levoči, Pliešovciach, Tornali, Brusne, Kováčovej alebo Kremnici?
+				V tom prípade ste s najväčšou pravdepodobnosťou klientom STEFE zakaždým, keď zapnete kúrenie alebo sa sprchujete. Sme Vaším dodávateľom tepla - mimochodom jedným z najväčších na Slovensku.
+				</p>
+				<p>Pravdepodobne máte v pivnici istú „vec“, ktorá vyzerá ako nejaký vykurovací kotol, na ktorom môžete regulovať prísun tepla. Tento predmet sa nazýva kompaktná odovzdávacia stanica tepla. Patrí nám. Je to konečný bod našich dobre izolovaných vedení, ktoré sú potiahnuté celým mestom až po kotolňu alebo elektráreň, v ktorej vyrábame potrebné teplo - efektívne, ekologicky a za férové ceny.</p>
+				<p>Máte otázku alebo nám chcete nahlásiť závadu?
+					<a href="#">Kontaktujte náš dispečing</a>. </p>
+				<p>Záleží nám na tom, aby sme Vám bezpečne dodali teplo. Naši dispečeri dohliadajú na naše kotly a kontrolujú sieť. Preto si môžete byť istí, že Vám chladno nebude: 24 hodín denne, 7 dní v týždni.</p>
+				<div class="divider"></div>
+	   		</div>
+	   
 			<div class="row">
 				<div class="col-lg-4 col-md-4 col-sm-12">
 					<div class="stefe-icon"><i class="fa fa-pencil-square-o fa-custom" aria-hidden="true"></i><span>Eko efektivita</span></div></div>
@@ -304,7 +315,9 @@
 	  	$(".inzeraty-after.stefe-btn").click(function(){
 			$(this).closest(".row.inzeraty").find(".inzeraty-content").toggleClass("active");
 		});
-		
+		$(".teplo-btn").click(function(){
+			$(".teplo").toggleClass("active");	  
+		});
 	  </script>
 
   </body>
