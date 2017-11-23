@@ -28,7 +28,7 @@
 <script>
 	var scroll = new SmoothScroll('a[href*="#"]', {
 		ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
-		offset: 120, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+		offset: 145, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
 	});
 </script>
 
@@ -116,8 +116,8 @@
 				<div class="col-lg-6 col-md-6 col-sm-12 menu-one">
 						<div class="hover-menu">
 							<ul class="hover">
-								<div class="teplo-btn"><li><i class="fa fa-fire" aria-hidden="true"></i> Diaľkové teplo</li></div>
-								<a href="" onclick="return false;"><li><i class="fa fa-snowflake-o" aria-hidden="true"></i> Chlad</li></a>
+								<a href="#scrollprodukty"><div class="teplo-btn"><li><i class="fa fa-fire" aria-hidden="true"></i> Diaľkové teplo</li></div></a>
+								<a href="#scrollprodukty"><div class="chlad-btn"><li><i class="fa fa-snowflake-o" aria-hidden="true"></i> Chlad</li></div></a>
 							</ul>
 						</div>
 					<div class="stefe-icon"><i class="fa fa-thermometer fa-custom" aria-hidden="true"></i><span>Výroba a dodávka</span></div>
@@ -127,18 +127,6 @@
 			</div>
 	   		
 			<div class="divider"></div>
-	   		<div class="teplo">
-	   			<h3>Diaľkové teplo</h3>
-				<span class="subheader green">Výroba a dodávka</span>
-				<p>Bývate v Banskej Bystrici, Zvolene, Martine, Trnave, Rimavskej Sobote, Rožňave, Veľkom Krtíši, Revúcej, Klenovciach, Krupine, Levoči, Pliešovciach, Tornali, Brusne, Kováčovej alebo Kremnici?
-				V tom prípade ste s najväčšou pravdepodobnosťou klientom STEFE zakaždým, keď zapnete kúrenie alebo sa sprchujete. Sme Vaším dodávateľom tepla - mimochodom jedným z najväčších na Slovensku.
-				</p>
-				<p>Pravdepodobne máte v pivnici istú „vec“, ktorá vyzerá ako nejaký vykurovací kotol, na ktorom môžete regulovať prísun tepla. Tento predmet sa nazýva kompaktná odovzdávacia stanica tepla. Patrí nám. Je to konečný bod našich dobre izolovaných vedení, ktoré sú potiahnuté celým mestom až po kotolňu alebo elektráreň, v ktorej vyrábame potrebné teplo - efektívne, ekologicky a za férové ceny.</p>
-				<p>Máte otázku alebo nám chcete nahlásiť závadu?
-					<a href="#">Kontaktujte náš dispečing</a>. </p>
-				<p>Záleží nám na tom, aby sme Vám bezpečne dodali teplo. Naši dispečeri dohliadajú na naše kotly a kontrolujú sieť. Preto si môžete byť istí, že Vám chladno nebude: 24 hodín denne, 7 dní v týždni.</p>
-				<div class="divider"></div>
-	   		</div>
 	   
 			<div class="row">
 				<div class="col-lg-4 col-md-4 col-sm-12">
@@ -150,6 +138,33 @@
 				<div class="col-lg-4 col-md-4 col-sm-12">
 					<div class="stefe-icon"><i class="fa fa-file-text-o fa-custom" aria-hidden="true"></i><span>Správa objektov</span></div></div>
 			</div>
+	   <!-- TEPLO -->
+	   <div id="scrollprodukty"></div>
+	   		<div class="teplo">
+				<div class="divider"></div>
+	   			<h3>Diaľkové teplo</h3>
+				<span class="subheader green">Výroba a dodávka</span>
+				<p>Bývate v Banskej Bystrici, Zvolene, Martine, Trnave, Rimavskej Sobote, Rožňave, Veľkom Krtíši, Revúcej, Klenovciach, Krupine, Levoči, Pliešovciach, Tornali, Brusne, Kováčovej alebo Kremnici?
+				V tom prípade ste s najväčšou pravdepodobnosťou klientom STEFE zakaždým, keď zapnete kúrenie alebo sa sprchujete. Sme Vaším dodávateľom tepla - mimochodom jedným z najväčších na Slovensku.
+				</p>
+				<p>Pravdepodobne máte v pivnici istú „vec“, ktorá vyzerá ako nejaký vykurovací kotol, na ktorom môžete regulovať prísun tepla. Tento predmet sa nazýva kompaktná odovzdávacia stanica tepla. Patrí nám. Je to konečný bod našich dobre izolovaných vedení, ktoré sú potiahnuté celým mestom až po kotolňu alebo elektráreň, v ktorej vyrábame potrebné teplo - efektívne, ekologicky a za férové ceny.</p>
+				<p>Máte otázku alebo nám chcete nahlásiť závadu?
+					<a href="#">Kontaktujte náš dispečing</a>. </p>
+				<p>Záleží nám na tom, aby sme Vám bezpečne dodali teplo. Naši dispečeri dohliadajú na naše kotly a kontrolujú sieť. Preto si môžete byť istí, že Vám chladno nebude: 24 hodín denne, 7 dní v týždni.</p>
+				<div class="divider"></div>
+				<a href="#produkty" class="close-produkty"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Produkty</a>
+	   		</div>
+	   <!-- CHLAD -->
+	   		<div class="chlad">
+				<div class="divider"></div>
+	   			<h3>Chlad</h3>
+				<span class="subheader green">Výroba a dodávka</span>
+				<p>Výrobu a dodávku chladu prevádzkuje STEFE na základe Vašich individuálnych požiadaviek.</p>
+				<p>Technologické riešenie, montáž a samotná prevádzka zariadenia sú nastavené na mieru pre objekt a zohľadňujú jeho využitie, prírodné podmienky a danosti danej lokality.</p>
+				<p>V spolupráci s Vami nastavujeme optimálny spôsob prevádzky. </p>
+				<div class="divider"></div>
+				<a href="#produkty" class="close-produkty"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Produkty</a>
+	   		</div>
 		   		
 		   		<div class="divider"></div>
 		   		<div class="divider"></div>
@@ -259,7 +274,7 @@
 												Na Troskách 26, 974 01 Banská Bystrica</b> alebo na <b>".$data['kontakt']."</b></p>
 												</div>
 											</div>
-												<div class='inzeraty-after stefe-btn'><i class='fa fa-arrows-v' aria-hidden='true'></i> Viac</div>
+												<div class='inzeraty-after stefe-btn'><i class='fa fa-arrow-circle-down' aria-hidden='true'></i> Viac</div>
 										</div>
 										";
 						  
@@ -313,10 +328,28 @@
 	  
 	  <script>
 	  	$(".inzeraty-after.stefe-btn").click(function(){
-			$(this).closest(".row.inzeraty").find(".inzeraty-content").toggleClass("active");
+			if($(this).closest(".row.inzeraty").find(".inzeraty-content").hasClass("active")){
+				$(this).closest(".row.inzeraty").find(".inzeraty-content").removeClass("active");
+				$(this).empty().append("<i class='fa fa-arrow-circle-down' aria-hidden='true'></i> Viac");
+			}else{
+				$(this).closest(".row.inzeraty").find(".inzeraty-content").addClass("active");
+				$(this).empty().append("<i class='fa fa-arrow-circle-up' aria-hidden='true'></i> Menej");
+			}
+			
 		});
 		$(".teplo-btn").click(function(){
-			$(".teplo").toggleClass("active");	  
+			$(".teplo").addClass("active").addClass("letter");
+			$(".chlad").removeClass("active").removeClass("letter");
+		});
+		$(".chlad-btn").click(function(){
+			$(".chlad").addClass("active").addClass("letter");	
+			$(".teplo").removeClass("active").removeClass("letter");
+		});
+		$(".close-produkty").click(function(){
+			setTimeout(function(){
+			  $(".teplo").removeClass("active").removeClass("letter");
+			  $(".chlad").removeClass("active").removeClass("letter");
+			}, 500);	
 		});
 	  </script>
 

@@ -193,6 +193,9 @@ a.btn.dropdown-toggle{
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+	-webkit-box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.3);
+	box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.3);
 }
 
 .header-pic.sk{
@@ -676,15 +679,54 @@ video.profilvid{
 	font-size: 1.5rem;
 }
 
-.teplo {
+.teplo, .chlad {
 	margin: 0 auto;
 	max-height: 0px;
 	overflow: hidden;
 	transition: all .5s ease;
-	max-width: 80%;
 	display: block;
+	opacity: 0;
 }
 
-.teplo.active{
-	max-height: 400px;
+.teplo.active, .chlad.active{
+	max-height: 650px;
+	opacity: 1;
+}
+
+.letter {
+	background: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	margin: 26px auto 0;
+	padding: 50px 50px 50px 50px;
+	position: relative;
+	width: 90%;
+	z-index: 1;
+	overflow: visible;
+}
+.letter:before, .letter:after {
+	content: " ";
+	height: 98%;
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+}
+.letter:before {
+	background: #fff;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+	left: -5px;
+	top: 4px;
+	transform: rotate(-2.5deg);
+}
+.letter:after {
+	background: #fff;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+	right: -3px;
+	top: 1px;
+	transform: rotate(1.4deg);
+}
+.close-produkty {
+	color:var(--stefeGreen);
+	font-size: 1.5rem;
+	margin:auto;
+	display:table;
 }
