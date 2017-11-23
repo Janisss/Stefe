@@ -66,7 +66,7 @@
               <a data-scroll class="nav-link" href="#">Stefe SK</a>
             </li>
             <li class="nav-item">
-              <a data-scroll class="nav-link" href="#sluzby">Služby</a>
+              <a data-scroll class="nav-link" href="#produkty">Produkty</a>
             </li>
             <li class="nav-item">
               <a data-scroll class="nav-link" href="#aktuality">Aktuality</a>
@@ -112,7 +112,7 @@
    		</div>
    </div>
    <div class="container" style="padding-top:30px">
-  		<h1 id="sluzby"><span>Produkty</span></h1>
+  		<h1 id="produkty"><span>Produkty</span></h1>
   		<span class="subheader">Vyberte si z ponuky naších služieb</span>
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-sm-12 menu-one">

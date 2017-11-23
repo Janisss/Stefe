@@ -75,7 +75,7 @@ h2{
 }
 .inzeraty h2{
 	font-size: 2.5rem;
-	margin: 25px 0;
+	margin: 25px 0 10px;
 	padding: 0;
 	color: var(--stefeGreen);
 }
@@ -620,6 +620,21 @@ video.profilvid{
 .inzeraty-content.active{
 	max-height: 200px;
 }
+
+/* texteditor */
+.simditor h3{
+	font-family: var(--stefeFont);
+	font-weight: 100;
+	font-size: 2rem;
+}
+
+.simditor h4{
+	font-family: var(--stefeFont);
+	font-weight: 100;
+	font-size: 1.2rem;
+	color: var(--stefeGreen);
+}
+
 .simditor img{
 	max-width: 100% !important;
 	height: auto;

@@ -2670,6 +2670,8 @@ Simditor = (function(superClass) {
   return Simditor;
 
 })(SimpleModule);
+	
+	// preklady
 
 Simditor.i18n = {
   'zh-CN': {
@@ -2696,9 +2698,9 @@ Simditor.i18n = {
     'linkText': '链接文字',
     'linkUrl': '链接地址',
     'linkTarget': '打开方式',
-    'openLinkInCurrentWindow': '在当前窗口中打开',
-    'openLinkInNewWindow': '在新窗口中打开',
-    'removeLink': '移除链接',
+    'openLinkInCurrentWindow': 'Otváranie v rovnakom okne',
+    'openLinkInNewWindow': 'Otváranie v novom okne',
+    'removeLink': 'Odstrániť link',
     'ol': 'Zoznam',
     'ul': 'Odrážky',
     'strikethrough': '删除线文字',
@@ -3196,8 +3198,12 @@ TitleButton = (function(superClass) {
         param: 'p'
       }, '|', {
         name: 'h3',
-        text: this._t('title'),
+        text: this._t('title') + ' veľký',
         param: 'h3'
+      } , {
+        name: 'h4',
+        text: this._t('title') + ' malý',
+        param: 'h4'
       }
     ];
     return TitleButton.__super__._init.call(this);
