@@ -130,11 +130,14 @@
 			</div>
 			<div class="divider"></div>
 			<div class="row">
-				<div class="col-lg-4 col-md-4 col-sm-12"><div class="stefe-icon"><i class="fa fa-pencil-square-o fa-custom" aria-hidden="true"></i><span>Eko efektivita</span></div></div>
+				<div class="col-lg-4 col-md-4 col-sm-12">
+					<div class="stefe-icon"><i class="fa fa-pencil-square-o fa-custom" aria-hidden="true"></i><span>Eko efektivita</span></div></div>
 				
-				<div class="col-lg-4 col-md-4 col-sm-12"><div class="stefe-icon"><i class="fa fa-wrench fa-custom" aria-hidden="true"></i><span>Správa meradiel</span></div></div>
+				<div class="col-lg-4 col-md-4 col-sm-12">
+					<div class="stefe-icon"><i class="fa fa-wrench fa-custom" aria-hidden="true"></i><span>Správa meradiel</span></div></div>
 				
-				<div class="col-lg-4 col-md-4 col-sm-12"><div class="stefe-icon"><i class="fa fa-file-text-o fa-custom" aria-hidden="true"></i><span>Správa objektov</span></div></div>
+				<div class="col-lg-4 col-md-4 col-sm-12">
+					<div class="stefe-icon"><i class="fa fa-file-text-o fa-custom" aria-hidden="true"></i><span>Správa objektov</span></div></div>
 			</div>
 		   		
 		   		<div class="divider"></div>
@@ -194,16 +197,16 @@
 				<div class="divider"></div>
 			<div class="row" style="text-align: center;">
 				<div class="col-md-3 col-sm-6 col-xs-6">
-					<div class="ref-icon"><img src="./img/SVG icons/shopping.svg" alt="Nákupné centrá"></div>
+					<div class="ref-icon one"><img src="./img/SVG icons/shopping.svg" alt="Nákupné centrá"></div>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-6">
-					<div class="ref-icon"><img src="./img/SVG icons/theatre_sport.svg" alt="Umenie šport a kultúra"></div>
+					<div class="ref-icon two"><img src="./img/SVG icons/theatre_sport.svg" alt="Umenie šport a kultúra"></div>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-6">
-					<div class="ref-icon"><img src="./img/SVG icons/flats.svg" alt="Obytné zóny"></div>
+					<div class="ref-icon three"><img src="./img/SVG icons/flats.svg" alt="Obytné zóny"></div>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-6">
-					<div class="ref-icon"><img src="./img/SVG icons/industry.svg" alt="Industriálne zóny"></div>
+					<div class="ref-icon four"><img src="./img/SVG icons/industry.svg" alt="Industriálne zóny"></div>
 				</div>
 			</div>
 			<!-- Referencie end -->

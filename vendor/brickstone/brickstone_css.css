@@ -574,13 +574,9 @@ video.profilvid{
 .title-header h3{
 	display: block !important;
 }
+
 .card h3{
 	display: none;
-}
-
-.ref-icon{
-	border-radius: 12px;
-	overflow: hidden;
 }
 
 .img-stolicka {
@@ -619,6 +615,45 @@ video.profilvid{
 }
 .inzeraty-content.active{
 	max-height: 200px;
+}
+
+.ref-icon{
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+.ref-icon img{
+	opacity: 1;
+	transition: all .5s ease;
+	border-radius: 12px;
+}
+
+.ref-icon img:hover{
+	opacity: 0;
+}
+
+.ref-icon.one{
+	background-image: url('../../img/SVG icons/galeria_lucenec.png');
+	border-radius: 12px;
+	background-size: cover;
+}
+
+.ref-icon.two{
+	background-image: url('../../img/SVG icons/divadlo_martin.png');
+	border-radius: 12px;
+	background-size: cover;
+}
+
+.ref-icon.three{
+	background-image: url('../../img/SVG icons/uhlisko_bb.png');
+	border-radius: 12px;
+	background-size: cover;
+}
+
+.ref-icon.four{
+	background-image: url('../../img/SVG icons/essel_slovakia.png');
+	border-radius: 12px;
+	background-size: cover;
 }
 
 /* texteditor */
