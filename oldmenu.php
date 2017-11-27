@@ -120,10 +120,16 @@
   		<h1 id="produkty"><span>Produkty</span></h1>
   		<span class="subheader">Vyberte si z ponuky naších služieb</span>
 			<div class="row">
-				<a href="#scrollprodukty" class="col-lg-6 col-md-6 col-sm-12 menu-one teplo-btn">
+				<div class="col-lg-6 col-md-6 col-sm-12 menu-one">
+						<div class="hover-menu">
+							<ul class="hover">
+								<a href="#scrollprodukty"><div class="teplo-btn"><li><i class="fa fa-fire" aria-hidden="true"></i> Diaľkové teplo</li></div></a>
+								<a href="#scrollprodukty"><div class="chlad-btn"><li><i class="fa fa-snowflake-o" aria-hidden="true"></i> Chlad</li></div></a>
+							</ul>
+						</div>
 					<div class="stefe-icon"><i class="fa fa-thermometer fa-custom" aria-hidden="true"></i><span>Výroba a dodávka</span></div>
-				</a>
-					
+				</div>
+				
 				<div class="col-lg-6 col-md-6 col-sm-12 menu-one">
 					<div class="hover-menu">
 							<ul class="hover">
@@ -151,11 +157,15 @@
 	   <div id="scrollprodukty"></div>
 	   		<div class="teplo">
 				<div class="divider"></div>
-	   			<h3>Fernwärme</h3>
-				<p>Wenn Sie in der Slowakei leben, ist die Warscheinlichkeit gross dass wir von STEFE ihr Heim gemütlich warm und Ihr Wasser angenehm Heiss machen. Als einer der Grössten Fernwärmeanbieter vergrössern und Verbessern wir unser Netz stetig um den bestmöglichsten Service für Sie zu garantieren, doch sehen Sie selbst ob auch sie schon Teil der grossen STEFE Familie sind:</p>
-				<p><b>Lokalitäten:</b></p>
-				mapa
-				<p>Als Fernwärmekunde steht bei Ihnen zu Hause im Keller vermutlich ein „Ding“, das aussieht, wie ein Heizkessel, an dem Sie Ihren Wärmebedarf regulieren können. Dieses Ding nennt sich Kompaktübergabestation und wird von uns zur Verfügung gestellt. Es ist der Endpunkt unserer gut isolierten Leitungen, die lange Kilometer bis zu einem Kesselhaus oder einem Kraftwerk gezogen werden, in dem wir die Wärme, die Sie benötigen, produzieren.</p>
+	   			<h3>Diaľkové teplo</h3>
+				<span class="subheader green">Výroba a dodávka</span>
+				<p>Bývate v Banskej Bystrici, Zvolene, Martine, Trnave, Rimavskej Sobote, Rožňave, Veľkom Krtíši, Revúcej, Klenovciach, Krupine, Levoči, Pliešovciach, Tornali, Brusne, Kováčovej alebo Kremnici?
+				V tom prípade ste s najväčšou pravdepodobnosťou klientom STEFE zakaždým, keď zapnete kúrenie alebo sa sprchujete. Sme Vaším dodávateľom tepla - mimochodom jedným z najväčších na Slovensku.
+				</p>
+				<p>Pravdepodobne máte v pivnici istú „vec“, ktorá vyzerá ako nejaký vykurovací kotol, na ktorom môžete regulovať prísun tepla. Tento predmet sa nazýva kompaktná odovzdávacia stanica tepla. Patrí nám. Je to konečný bod našich dobre izolovaných vedení, ktoré sú potiahnuté celým mestom až po kotolňu alebo elektráreň, v ktorej vyrábame potrebné teplo - efektívne, ekologicky a za férové ceny.</p>
+				<p>Máte otázku alebo nám chcete nahlásiť závadu?
+					<a href="#">Kontaktujte náš dispečing</a>. </p>
+				<p>Záleží nám na tom, aby sme Vám bezpečne dodali teplo. Naši dispečeri dohliadajú na naše kotly a kontrolujú sieť. Preto si môžete byť istí, že Vám chladno nebude: 24 hodín denne, 7 dní v týždni.</p>
 				<div class="divider"></div>
 				<a href="#produkty" class="close-produkty"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Produkty</a>
 	   		</div>

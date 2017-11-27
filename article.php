@@ -21,6 +21,7 @@
 	<script src="https://maps.googleapis.com/maps/api/js?key={{AIzaSyAwlvXnSvFdiMFgMJOvjAs9C3Bk3JbmhHo}}"></script>
 	<script src="/vendor/snazzy/snazzy-info-window.min.js"></script>
   <script src="/js/smooth-scroll.js"></script>
+	  <script src="https://apis.google.com/js/platform.js" async defer></script>
   </head>
 
   <body>
@@ -128,13 +129,18 @@
    <div class="container" style="padding-top:30px">
    	<h1><span><?php echo $header; ?></span></h1>
    	<span class="subheader"><?php echo "Vytvorené: ".$subheader; ?><br><a href="./index.php">Späť </a></span>
-	<article class="main-content letter">
+	<article class="main-content">
    	<div class="row">
    		<div class="col-lg-4"><?php echo"<div class='wrapperimg'><div class='img-round' style='background-image: url(./img/up/".$image.")'></div>" ?></div></div>
    		<div class="col-lg-8 align-self-center"><p class="content"><?php echo $outputtext; ?></p></div>
    	</div>
-	   <!--fcb butt-->
-   	<div class="fb-share-button float-right" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Zdieľať</a></div>
+	   <!-- SHARE -->
+	   <div class="float-right">
+	   		<!--fcb butt-->
+				<div class="fb-share-button float-right" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true" style="margin-bottom: 5px;"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Zdieľať</a></div>
+			<!-- google share -->
+				<div class="g-plus" data-action="share"></div>
+	   </div>
 	   <div class="divider"></div>
 	   <div class="divider"></div>
 	</article>
