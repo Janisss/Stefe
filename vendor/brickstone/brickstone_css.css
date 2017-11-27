@@ -679,7 +679,7 @@ video.profilvid{
 	font-size: 1.5rem;
 }
 
-.teplo, .chlad {
+.teplo, .chlad, .technickesluzby {
 	margin: 0 auto;
 	max-height: 0px;
 	overflow: hidden;
@@ -688,7 +688,7 @@ video.profilvid{
 	opacity: 0;
 }
 
-.teplo.active, .chlad.active{
+.teplo.active, .chlad.active, .technickesluzby.active{
 	max-height: 650px;
 	opacity: 1;
 }
@@ -729,4 +729,14 @@ video.profilvid{
 	font-size: 1.5rem;
 	margin:auto;
 	display:table;
+}
+
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: white;
 }
