@@ -154,7 +154,7 @@
 	   			<h3>Fernwärme</h3>
 				<p>Wenn Sie in der Slowakei leben, ist die Warscheinlichkeit gross dass wir von STEFE ihr Heim gemütlich warm und Ihr Wasser angenehm Heiss machen. Als einer der Grössten Fernwärmeanbieter vergrössern und Verbessern wir unser Netz stetig um den bestmöglichsten Service für Sie zu garantieren, doch sehen Sie selbst ob auch sie schon Teil der grossen STEFE Familie sind:</p>
 				<p><b>Lokalitäten:</b></p>
-				mapa
+				<img src="./img/mapa.svg" alt="Mapa" style="width: 100%;">
 				<p>Als Fernwärmekunde steht bei Ihnen zu Hause im Keller vermutlich ein „Ding“, das aussieht, wie ein Heizkessel, an dem Sie Ihren Wärmebedarf regulieren können. Dieses Ding nennt sich Kompaktübergabestation und wird von uns zur Verfügung gestellt. Es ist der Endpunkt unserer gut isolierten Leitungen, die lange Kilometer bis zu einem Kesselhaus oder einem Kraftwerk gezogen werden, in dem wir die Wärme, die Sie benötigen, produzieren.</p>
 				<div class="divider"></div>
 				<a href="#produkty" class="close-produkty"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Produkty</a>
