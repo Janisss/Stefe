@@ -159,7 +159,13 @@ if ($sessionname == ""){
 
 			foreach($datas_main as $data)
 		{
-			echo "<tr><th scope='row'>".$data["ID"]."</th><td>".$data["autor"]."</td><td>".$data["datum"]."</td><td>".$data["nazov"]."</td><td>".$data["text"]."</td><td>".$data["status"]."</td><td><form method='post' action='admin.php'><input type='text' name='idedit' hidden value='".$data["ID"]."'><input type='submit' name='zobraz' class='btn btn-success btn-sm' value='Uverejniť'> <input type='submit' name='skryt' class='btn btn-warning btn-sm' value='Skryť'> <input type='submit' name='del' class='btn btn-danger btn-sm' value='X'></form></td></tr>";
+			echo "<tr><th scope='row'>".$data["ID"]."</th><td>".$data["autor"]."</td><td>".$data["datum"]."</td><td>".$data["nazov"]."</td><td>".$data["text"]."</td><td>".$data["status"]."</td><td>
+			<form method='post' action='admin.php'>
+			<input type='text' name='idedit' hidden value='".$data["ID"]."'>
+			<input type='submit' name='zobraz' class='btn btn-success btn-sm' value='Uverejniť'>
+			<input type='submit' name='skryt' class='btn btn-warning btn-sm' value='Skryť'>
+			<input type='submit' name='del' class='btn btn-danger btn-sm' value='X'>
+			</form></td></tr>";
 		}
 ?>
   </tbody>

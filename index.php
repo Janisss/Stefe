@@ -123,7 +123,15 @@
 					<div class="stefe-icon"><i class="fa fa-thermometer fa-custom" aria-hidden="true"></i><span>Výroba a dodávka</span></div>
 				</div>
 				
-				<div class="col-lg-6 col-md-6 col-sm-12"><div class="stefe-icon"><i class="fa fa-snowflake-o fa-custom" aria-hidden="true"></i><span>Výstavba a montáž</span></div></div>
+				<div class="col-lg-6 col-md-6 col-sm-12 menu-one">
+					<div class="hover-menu">
+							<ul class="hover">
+								<a href="#scrollprodukty"><div class="technicke-btn"><li><i class="fa fa-wrench" aria-hidden="true"></i> Technické služby</li></div></a>
+								<a href="#scrollprodukty"><div class="chlad-btn"><li><i class="fa fa-server" aria-hidden="true"></i> Správa určených meradiel</li></div></a>
+							</ul>
+					</div>
+					<div class="stefe-icon"><i class="fa fa-cogs fa-custom" aria-hidden="true"></i><span>Služby</span></div>
+				</div>
 			</div>
 	   		
 			<div class="divider"></div>
@@ -165,6 +173,22 @@
 				<div class="divider"></div>
 				<a href="#produkty" class="close-produkty"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Produkty</a>
 	   		</div>
+	   <!-- TECHNICKE SLUZBY -->
+	   		<div class="technickesluzby">
+				<div class="divider"></div>
+	   			<h3>Technicke Služby</h3>
+				<span class="subheader green">Služby</span>
+				<p>Bývate v Banskej Bystrici, Zvolene, Martine, Trnave, Rimavskej Sobote, Rožňave, Veľkom Krtíši, Revúcej, Klenovciach, Krupine, Levoči, Pliešovciach, Tornali, Brusne, Kováčovej alebo Kremnici?
+				V tom prípade ste s najväčšou pravdepodobnosťou klientom STEFE zakaždým, keď zapnete kúrenie alebo sa sprchujete. Sme Vaším dodávateľom tepla - mimochodom jedným z najväčších na Slovensku.
+				</p>
+				<p>Pravdepodobne máte v pivnici istú „vec“, ktorá vyzerá ako nejaký vykurovací kotol, na ktorom môžete regulovať prísun tepla. Tento predmet sa nazýva kompaktná odovzdávacia stanica tepla. Patrí nám. Je to konečný bod našich dobre izolovaných vedení, ktoré sú potiahnuté celým mestom až po kotolňu alebo elektráreň, v ktorej vyrábame potrebné teplo - efektívne, ekologicky a za férové ceny.</p>
+				<p>Máte otázku alebo nám chcete nahlásiť závadu?
+					<a href="#">Kontaktujte náš dispečing</a>. </p>
+				<p>Záleží nám na tom, aby sme Vám bezpečne dodali teplo. Naši dispečeri dohliadajú na naše kotly a kontrolujú sieť. Preto si môžete byť istí, že Vám chladno nebude: 24 hodín denne, 7 dní v týždni.</p>
+				<div class="divider"></div>
+				<a href="#produkty" class="close-produkty"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Produkty</a>
+	   		</div>
+	   <!-- asdf-->
 		   		
 		   		<div class="divider"></div>
 		   		<div class="divider"></div>
@@ -212,7 +236,7 @@
 	   		<!-- video -->
 		   <div class="divider"></div>
 		    <div class="embed-responsive embed-responsive-16by9">
-				<iframe class="embed-responsive-item" src="http://www.youtube.com/embed?max-results=1&controls=0&showinfo=0&rel=0&listType=user_uploads&list=STEFE" frameborder="0" allowfullscreen style="padding:5px"></iframe>
+				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LF5-ZE1rp-Y" frameborder="0" allowfullscreen style="padding:5px"></iframe>
 		   </div>
 		   <div class="divider"></div>
 	   
@@ -340,15 +364,23 @@
 		$(".teplo-btn").click(function(){
 			$(".teplo").addClass("active").addClass("letter");
 			$(".chlad").removeClass("active").removeClass("letter");
+			$(".technickesluzby").removeClass("active").removeClass("letter");
 		});
 		$(".chlad-btn").click(function(){
 			$(".chlad").addClass("active").addClass("letter");	
 			$(".teplo").removeClass("active").removeClass("letter");
+			$(".technickesluzby").removeClass("active").removeClass("letter");
+		});
+		$(".technicke-btn").click(function(){
+			$(".technickesluzby").addClass("active").addClass("letter");	
+			$(".teplo").removeClass("active").removeClass("letter");
+			$(".chlad").removeClass("active").removeClass("letter");
 		});
 		$(".close-produkty").click(function(){
 			setTimeout(function(){
 			  $(".teplo").removeClass("active").removeClass("letter");
 			  $(".chlad").removeClass("active").removeClass("letter");
+			  $(".technickesluzby").removeClass("active").removeClass("letter");
 			}, 500);	
 		});
 	  </script>
