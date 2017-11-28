@@ -613,7 +613,7 @@ video.profilvid{
 	transition: max-height 1s ease;
 }
 .inzeraty-content.active{
-	max-height: 200px;
+	max-height: 500px;
 }
 
 .ref-icon{
