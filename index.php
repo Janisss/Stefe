@@ -151,12 +151,39 @@
 	   <div id="scrollprodukty"></div>
 	   		<div class="teplo">
 				<div class="divider"></div>
-	   			<h3>Fernwärme</h3>
-				<p>Wenn Sie in der Slowakei leben, ist die Warscheinlichkeit gross dass wir von STEFE ihr Heim gemütlich warm und Ihr Wasser angenehm Heiss machen. Als einer der Grössten Fernwärmeanbieter vergrössern und Verbessern wir unser Netz stetig um den bestmöglichsten Service für Sie zu garantieren, doch sehen Sie selbst ob auch sie schon Teil der grossen STEFE Familie sind:</p>
-				<p><b>Lokalitäten:</b></p>
-				<img src="./img/mapa.svg" alt="Mapa" style="width: 100%;">
-				<p>Als Fernwärmekunde steht bei Ihnen zu Hause im Keller vermutlich ein „Ding“, das aussieht, wie ein Heizkessel, an dem Sie Ihren Wärmebedarf regulieren können. Dieses Ding nennt sich Kompaktübergabestation und wird von uns zur Verfügung gestellt. Es ist der Endpunkt unserer gut isolierten Leitungen, die lange Kilometer bis zu einem Kesselhaus oder einem Kraftwerk gezogen werden, in dem wir die Wärme, die Sie benötigen, produzieren.</p>
-				<div class="divider"></div>
+				
+				<nav class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+				  <a class="nav-item nav-link sub active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa fa-fire fa-5x" aria-hidden="true"></i><h3>Fernwärme</h3></a>
+					
+				  <a class="nav-item nav-link sub" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa fa-snowflake-o fa-5x" aria-hidden="true"></i><h3>Kälte</h3></a>
+				</nav>
+				<div class="tab-content" id="nav-tabContent">
+				<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+					<div class="divider"></div>
+					<p>Wenn Sie in der Slowakei leben, ist die Warscheinlichkeit gross dass wir von STEFE ihr Heim gemütlich warm und Ihr Wasser angenehm Heiss machen. Als einer der Grössten Fernwärmeanbieter vergrössern und Verbessern wir unser Netz stetig um den bestmöglichsten Service für Sie zu garantieren, doch sehen Sie selbst ob auch sie schon Teil der grossen STEFE Familie sind:</p>
+					<p><b>Lokalitäten:</b></p>
+					<img src="./img/mapa.svg" alt="Mapa" style="width: 100%;margin-bottom: 20px;">
+					<p><b>Banska Bystrica, Zvolen, Martin, Trnava, Rimavska Sobota, Roznava, Velky Krtis, Revuca, Klenovec, Krupina, Levoča, Pliešovce, Tornaľa, Brusno, Kovacova, Kremnica.</b></p>
+					<!-- <p>Als Fernwärmekunde steht bei Ihnen zu Hause im Keller vermutlich ein „Ding“, das aussieht, wie ein Heizkessel, an dem Sie Ihren Wärmebedarf regulieren können. Dieses Ding nennt sich Kompaktübergabestation und wird von uns zur Verfügung gestellt. Es ist der Endpunkt unserer gut isolierten Leitungen, die lange Kilometer bis zu einem Kesselhaus oder einem Kraftwerk gezogen werden, in dem wir die Wärme, die Sie benötigen, produzieren.</p> -->
+					<h3><i class="fa fa-life-ring" aria-hidden="true"></i> 24/7 Nonstop-Support-Service</h3>
+					<p>Versorgungssicherheit ist sehr wichtig für uns. Unsere Dispatcher überwachen unsere Kessel und kontrollieren das Netz. So stellen sie sicher, dass es bei Ihnen nicht kalt wird: 24 Stunden pro Tag – 7 Tage die Woche.</p>
+					<p>Bei jeglichen Fragen oder Störungen steht Ihnen unser Dispatching jederzeit zur Verfügung. Wählen Sie in der oberen Menüleiste Ihre Stadt aus und rufen Sie uns unter der angeführten Telefonnummer an.</p>
+					<div class="divider"></div>
+				</div>
+				<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+					<div class="divider"></div>
+					<p>Wir garantieren eine zuverlässige, wirtschaftliche und umweltfreundliche Produktion der Kälte. Wir stellen die Optimierung des Betriebs und der Verteilung der Kälte während der Dauer des Vertrags sicher.</p>
+					<div class="row">
+						<div class="col-md-4"><i class="fa fa-eur fa-3x" aria-hidden="true"></i></div>
+						<div class="col-md-4"><i class="fa fa-leaf fa-3x" aria-hidden="true"></i></div>
+						<div class="col-md-4"><i class="fa fa-shield fa-3x" aria-hidden="true"></i></div>
+					</div>
+					<p><b>Maßgeschneiderte Lösung</b></p>
+					<p>Die technische Lösung, der Bau und der Betrieb der Anlage sind für das Objekt maßgeschneidert und berücksichtigen das Nutzungsverhalten, Umweltschutzanliegen und lokale Gegebenheiten.
+					Gemeinsam mit Ihnen definieren wir die optimale Betriebsweise.</p>
+				</div>
+				</div>
+	   			
 				<a href="#produkty" class="close-produkty"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Produkty</a>
 	   		</div>
 	   <!-- CHLAD -->
@@ -351,6 +378,10 @@
 		 $(window).on('load', function () {
 	     	$(".se-pre-con").fadeOut("fast");
 		 });
+		  
+		$('#myTab a').on('click', function (e) {
+		  $(this).tab('show')
+		})
 		  
 	  	$(".inzeraty-after.stefe-btn").click(function(){
 			if($(this).closest(".row.inzeraty").find(".inzeraty-content").hasClass("active")){

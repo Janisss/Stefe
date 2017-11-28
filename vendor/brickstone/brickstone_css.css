@@ -689,7 +689,7 @@ video.profilvid{
 }
 
 .teplo.active, .chlad.active, .technickesluzby.active{
-	max-height: 650px;
+	max-height: 1250px;
 	opacity: 1;
 }
 
@@ -739,4 +739,8 @@ video.profilvid{
 	height: 100%;
 	z-index: 9999;
 	background: white;
+}
+
+a.nav-link.sub{
+	color: var(--stefeGreen);
 }
