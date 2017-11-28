@@ -153,9 +153,9 @@
 				<div class="divider"></div>
 				
 				<nav class="nav nav-tabs nav-fill" id="myTab" role="tablist">
-				  <a class="nav-item nav-link sub active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa fa-fire fa-5x" aria-hidden="true"></i><h3>Fernwärme</h3></a>
+				  <button class="nav-item nav-link sub active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa fa-fire fa-5x" aria-hidden="true"></i><h3>Fernwärme</h3></button>
 					
-				  <a class="nav-item nav-link sub" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa fa-snowflake-o fa-5x" aria-hidden="true"></i><h3>Kälte</h3></a>
+				  <button class="nav-item nav-link sub" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa fa-snowflake-o fa-5x" aria-hidden="true"></i><h3>Kälte</h3></button>
 				</nav>
 				<div class="tab-content" id="nav-tabContent">
 				<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
@@ -381,7 +381,7 @@
 	     	$(".se-pre-con").fadeOut("fast");
 		 });
 		  
-		$('#myTab a').on('click', function (e) {
+		$('#myTab').on('click', function (e) {
 		  $(this).tab('show')
 		})
 		  
