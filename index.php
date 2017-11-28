@@ -176,10 +176,11 @@
 					<p>Wir garantieren eine zuverlässige, wirtschaftliche und umweltfreundliche Produktion der Kälte. Wir stellen die Optimierung des Betriebs und der Verteilung der Kälte während der Dauer des Vertrags sicher.</p>
 					<img src="./img/bears.png" alt="Mapa" style="width: 100%;margin-bottom: 20px;">
 					<div class="row">
-						<div class="col-md-4"><i class="fa fa-eur fa-5x" aria-hidden="true"></i></div>
-						<div class="col-md-4"><i class="fa fa-leaf fa-5x" aria-hidden="true"></i></div>
-						<div class="col-md-4"><i class="fa fa-shield fa-5x" aria-hidden="true"></i></div>
+						<div class="col-md-4 text-center"><i class="fa fa-eur fa-5x" aria-hidden="true"></i></div>
+						<div class="col-md-4 text-center"><i class="fa fa-leaf fa-5x" aria-hidden="true"></i></div>
+						<div class="col-md-4 text-center"><i class="fa fa-shield fa-5x" aria-hidden="true"></i></div>
 					</div>
+					<div class="divider"></div>
 					<p><b>Maßgeschneiderte Lösung</b></p>
 					<p>Die technische Lösung, der Bau und der Betrieb der Anlage sind für das Objekt maßgeschneidert und berücksichtigen das Nutzungsverhalten, Umweltschutzanliegen und lokale Gegebenheiten.
 					Gemeinsam mit Ihnen definieren wir die optimale Betriebsweise.</p>
@@ -214,7 +215,7 @@
 				<div class="divider"></div>
 				<a href="#produkty" class="close-produkty"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Produkty</a>
 	   		</div>
-	   <!-- asdf-->
+	   <!-- NEWS -->
 		   		
 		   		<div class="divider"></div>
 		   		<div class="divider"></div>

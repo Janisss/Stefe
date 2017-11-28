@@ -66,7 +66,7 @@
               <a data-scroll class="nav-link" href="#">Stefe BB</a>
             </li>
             <li class="nav-item">
-              <a data-scroll class="nav-link" href="#sluzby">Služby</a>
+              <a data-scroll class="nav-link" href="#produkty">Produkty</a>
             </li>
             <li class="nav-item">
               <a data-scroll class="nav-link" href="#aktuality">Aktuality</a>
@@ -97,7 +97,7 @@
 				<a class="dropdown-item" href="#">Rimavská Sobota</a>
 			  </div>
 			</div>
-			<a href="./index.php"><div class="btn stefe-btn float-right"><i class="fa fa-caret-square-o-left" aria-hidden="true"></i> Návrat na STEFE SK</div></a>
+			<a href="./index.php"><div class="btn stefe-btn float-right"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Návrat na STEFE SK</div></a>
 		</div>
    	</div>
    </div>
@@ -107,15 +107,12 @@
    </div>
    <div class="container" style="padding: 0;">
    		<div class="well">
-   			<blockquote class="blockquote">
-			  <div class="myslienka"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-			  Integer posuere erat a ante.Integer posuere erat a ante.</p></div>
-			  <footer class="blockquote-footer">Generálny riaditeľ STEFE SK <cite title="Source Title">Dalibor Líška</cite></footer>
-			</blockquote>
+   			<p class="myslienka">„Sme dynamický a kreatívny tím motivovaný spoločným cieľom – spokojný zákazník.“</p>
+			<p class="autor">Ing. Dalibor Líška/STEFE Banská Bystrica, a. s.</p>
    		</div>
    </div>
    <div class="container" style="padding-top:30px">
-  		<h1 id="sluzby"><span>Služby</span></h1>
+  		<h1 id="produkty"><span>Produkty</span></h1>
   		<span class="subheader">Vyberte si z ponuky naších služieb</span>
 			<div class="row" style="padding-left: 10px;padding-right:10px;">
 				<div class="col-lg-6 col-md-6 col-sm-12 menu-one">
@@ -144,6 +141,10 @@
 		   		
 		   		<div class="divider"></div>
 		   		<div class="divider"></div>
+			   <!-- NEWS -->
+		   		
+		   		<div class="divider"></div>
+		   		<div class="divider"></div>
 			   <h1 id="aktuality"><span>Aktuality</span></h1>
 			   <span class="subheader">Hlavné aktuality</span>
 				<div class="row" style="padding-left: 10px;padding-right:10px;">
@@ -152,32 +153,36 @@
 						$news = $database->select("content", [
 							"ID",
 							"nazov",
-							"text",
-							"loc",
+							"intro",
 							"image"
 						],[
 							"status" => "<span style='color:var(--stefeGreen)'>publikované!</span>",
 							"alarm" => "nie",
 							"loc" => "bb"
 						]);
-							$limitForeach = 0; //3
-						  foreach ($news as $data){
-							 if(++$limitForeach >= 1){
-								 echo "<div class='col-lg-4 col-md-6 col-sm-6'>
+					
+						$numbernewsread = 1;
+						$limitnews = 3; // koľko noviniek zobrazí
+						  foreach (array_reverse($news) as $data){
+							  $cleantext = strip_tags($data["intro"]);
+						  		if ($numbernewsread <= $limitnews) {
+						  			echo "<div class='col-lg-4 col-md-4 col-sm-4 col-xs-6'>
 							  			<article class='card'>
 							  				<header class='title-header'>
 							  					<h3>".$data["nazov"]."</h3>
 							  				</header>
 							  				<div class='card-block'>
 							  						<div class='img-card'>
-							  							<img src='./img/up/".$data["image"]."' alt='mini' class='w-100' />
-							  						</div><div class='newsintro'>".$data["text"]."
+														<div class='miniimage' style='background-image: url(./img/up/".$data["image"].")'></div>
+							  						</div><div class='newsintro'><p>".$cleantext."</p>
 							  					</div><a href='./article.php?ID=".$data["ID"]."' class='btn btn-block stefe-btn'>Čítať viac</a>
 							  				</div>
 							  			</article>
 							  		</div>";
-						  		}
-							 }
+							  		$numbernewsread += 1;
+						  		}else{
+						  			 }
+						  	}
 					?>
 					
 			</div>
@@ -185,9 +190,9 @@
 			<!-- VYPADKY -->
 			<div class="divider"></div>
 		   		<div class="divider"></div>
-			   <h1 id="vypadky"><span>Oznamy</span></h1>
+			   <h1 id="vypadky"><span>Informácie</span></h1>
 			   <span class="subheader">Aktuálne oznamy v: Banská Bystrica</span>
-					<button data-toggle="modal" data-target="#vypadokModal" class="btn alert-danger" style="margin-left: 15px;">Nahlásiť výpadok!</button><br><br>
+				<br>
 				<div class="row" style="padding-left: 10px;padding-right:10px;">
 				
 				<?php

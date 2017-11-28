@@ -457,7 +457,7 @@ video.profilvid{
 	background: var(--stefeGreen);
 	border-top-left-radius: 7px;
 	border-top-right-radius: 7px;
-	right: 16%;
+	right: 13%;
 	top: 60px;
 }
 .lang a{
@@ -743,4 +743,15 @@ video.profilvid{
 
 a.nav-link.sub{
 	color: var(--stefeGreen);
+}
+.nav-tabs, .nav-link:hover, .nav-link.active{
+	border: none !important;
+	cursor: pointer;
+}
+.nav-item{
+	background: transparent !important;
+}
+
+.stefe-icon span{
+	color: var(--stefeDark);
 }
