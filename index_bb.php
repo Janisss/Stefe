@@ -72,9 +72,6 @@
               <a data-scroll class="nav-link" href="#aktuality">Aktuality</a>
             </li>
             <li class="nav-item">
-              <a data-scroll class="nav-link" href="#vypadky">Výpadky</a>
-            </li>
-            <li class="nav-item">
               <a data-scroll class="nav-link" href="#oznamy">Oznamy</a>
             </li>
             <li class="nav-item">
@@ -93,8 +90,23 @@
 			<div class="dropdown show float-right stefe-dropdown">
 			  <a class="btn dropdown-toggle" href="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vyberte vaše mesto</a>
 			  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-				<a class="dropdown-item" href="#">Banská Bystrica</a>
+				<a class="dropdown-item" href="./index_bb.php">Banská Bystrica</a>
+				<a class="dropdown-item" href="#">Brusno</a>
+				<a class="dropdown-item" href="#">Kováčová</a>
+				<a class="dropdown-item" href="#">Martin</a>
 				<a class="dropdown-item" href="#">Rimavská Sobota</a>
+				<a class="dropdown-item" href="#">Rožňava</a>
+				<a class="dropdown-item" href="#">Klenovec</a>
+				<a class="dropdown-item" href="#">Krupina</a>
+				<a class="dropdown-item" href="#">Levoča</a>
+				<a class="dropdown-item" href="#">Lučenec</a>
+				<a class="dropdown-item" href="#">Pliešovce</a>
+				<a class="dropdown-item" href="#">Revúca</a>
+				<a class="dropdown-item" href="#">Tornaľa</a>
+				<a class="dropdown-item" href="#">Veľký Krtíš</a>
+				<a class="dropdown-item" href="#">Kremnica</a>
+				<a class="dropdown-item" href="#">Zvolen</a>
+				<a class="dropdown-item" href="#">Zvolenská Slatina</a>
 			  </div>
 			</div>
 			<a href="./index.php"><div class="btn stefe-btn float-right"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Návrat na STEFE SK</div></a>
@@ -175,7 +187,7 @@
 							  						<div class='img-card'>
 														<div class='miniimage' style='background-image: url(./img/up/".$data["image"].")'></div>
 							  						</div><div class='newsintro'><p>".$cleantext."</p>
-							  					</div><a href='./article.php?ID=".$data["ID"]."' class='btn btn-block stefe-btn'>Čítať viac</a>
+							  					</div><a href='./article_bb.php?ID=".$data["ID"]."' class='btn btn-block stefe-btn'>Čítať viac</a>
 							  				</div>
 							  			</article>
 							  		</div>";
@@ -190,7 +202,7 @@
 			<!-- VYPADKY -->
 			<div class="divider"></div>
 		   		<div class="divider"></div>
-			   <h1 id="vypadky"><span>Informácie</span></h1>
+			   <h1 id="oznamy"><span>Oznamy</span></h1>
 			   <span class="subheader">Aktuálne oznamy v: Banská Bystrica</span>
 				<br>
 				<div class="row" style="padding-left: 10px;padding-right:10px;">
@@ -267,7 +279,7 @@
     	<i class="fa fa-facebook fa-3x" style="padding: 0 0 20px 20px; color: white;" aria-hidden="true"></i>
 	    <i class="fa fa-google-plus-square fa-3x" style="padding: 0 0 20px 20px; color: white;" aria-hidden="true"></i>
     	<a class="float-right" style="padding-right: 15px; color: white;" href="./sitemap.php"><h4>Mapa stránky</h4></a>		
-    	<a class="float-right" style="padding-right: 15px; color: white;" href="./sitemap.php"><h4>Informácie</h4></a>		
+    	<!-- <a class="float-right" style="padding-right: 15px; color: white;" href="./sitemap.php"><h4>Informácie</h4></a> -->
     	</div>
     	</div>
     </footer>
