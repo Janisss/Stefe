@@ -61,7 +61,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav m-auto">
+          <ul class="navbar-nav m-auto main-menu">
             <li class="nav-item active">
               <a data-scroll class="nav-link" href="#">Stefe BB</a>
             </li>

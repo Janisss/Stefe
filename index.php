@@ -68,7 +68,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav m-auto">
+          <ul class="navbar-nav m-auto main-menu">
             <li class="nav-item active">
               <a data-scroll class="nav-link" href="#">Stefe SK</a>
             </li>
@@ -100,7 +100,22 @@
 			  <a class="btn dropdown-toggle" href="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vyberte vaše mesto</a>
 			  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 				<a class="dropdown-item" href="./index_bb.php">Banská Bystrica</a>
+				<a class="dropdown-item" href="#">Brusno</a>
+				<a class="dropdown-item" href="#">Kováčová</a>
+				<a class="dropdown-item" href="#">Martin</a>
 				<a class="dropdown-item" href="#">Rimavská Sobota</a>
+				<a class="dropdown-item" href="#">Rožňava</a>
+				<a class="dropdown-item" href="#">Klenovec</a>
+				<a class="dropdown-item" href="#">Krupina</a>
+				<a class="dropdown-item" href="#">Levoča</a>
+				<a class="dropdown-item" href="#">Lučenec</a>
+				<a class="dropdown-item" href="#">Pliešovce</a>
+				<a class="dropdown-item" href="#">Revúca</a>
+				<a class="dropdown-item" href="#">Tornaľa</a>
+				<a class="dropdown-item" href="#">Veľký Krtíš</a>
+				<a class="dropdown-item" href="#">Kremnica</a>
+				<a class="dropdown-item" href="#">Zvolen</a>
+				<a class="dropdown-item" href="#">Zvolenská Slatina</a>
 			  </div>
 			</div>
 		</div>
@@ -153,9 +168,9 @@
 				<div class="divider"></div>
 				
 				<nav class="nav nav-tabs nav-fill" id="myTab" role="tablist">
-				  <button class="nav-item nav-link sub active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa fa-fire fa-5x" aria-hidden="true"></i><h3>Fernwärme</h3></button>
+				  <button class="nav-item transparent nav-link sub active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa fa-fire fa-5x" aria-hidden="true"></i><h3>Fernwärme</h3></button>
 					
-				  <button class="nav-item nav-link sub" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa fa-snowflake-o fa-5x" aria-hidden="true"></i><h3>Kälte</h3></button>
+				  <button class="nav-item transparent nav-link sub" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa fa-snowflake-o fa-5x" aria-hidden="true"></i><h3>Kälte</h3></button>
 				</nav>
 				<div class="tab-content" id="nav-tabContent">
 				<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">

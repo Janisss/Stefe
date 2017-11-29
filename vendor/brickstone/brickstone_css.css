@@ -744,12 +744,12 @@ video.profilvid{
 a.nav-link.sub{
 	color: var(--stefeGreen);
 }
-.nav-tabs, .nav-link:hover, .nav-link.active{
-	border: none !important;
+.nav-tabs, .nav-link:hover, .nav-link.active, .nav-link{
+	border: white !important;
 	cursor: pointer;
 }
-.nav-item{
-	background: transparent !important;
+.nav-item.transparent{
+	background: white !important;
 }
 
 .stefe-icon span{
