@@ -134,85 +134,98 @@
    <div class="container" style="padding-top:30px">
   		<h1 id="produkty"><span>Produkty</span></h1>
   		<span class="subheader">Vyberte si z ponuky naších služieb</span>
-			<div class="row">
-				<a href="#scrollprodukty" class="col-lg-6 col-md-6 col-sm-12 menu-one teplo-btn">
-					<div class="stefe-icon"><i class="fa fa-thermometer fa-custom" aria-hidden="true"></i><span>Výroba a dodávka</span></div>
-				</a>
-					
-				<div class="col-lg-6 col-md-6 col-sm-12 menu-one">
-					<div class="hover-menu">
-							<ul class="hover">
-								<a href="#scrollprodukty"><div class="technicke-btn"><li><i class="fa fa-wrench" aria-hidden="true"></i> Technické služby</li></div></a>
-								<a href="#scrollprodukty"><div class="chlad-btn"><li><i class="fa fa-server" aria-hidden="true"></i> Správa určených meradiel</li></div></a>
-							</ul>
+	   		<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<a href="#scrollprodukty" class="link-clear">
+					<div class="material-button teplo-btn">
+						<div class="menu-icon"><i class="fa fa-thermometer fa-custom" aria-hidden="true"></i><span style="user-select: none;">Výroba a dodávka</span>
+						</div>
 					</div>
-					<div class="stefe-icon"><i class="fa fa-cogs fa-custom" aria-hidden="true"></i><span>Služby</span></div>
+					</a>
 				</div>
-			</div>
-	   		
-			<div class="divider"></div>
+				
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<a href="#scrollprodukty" class="link-clear">
+					<div class="material-button technicke-btn">
+						<div class="menu-icon"><i class="fa fa-cogs fa-custom" aria-hidden="true"></i><span style="user-select: none;">Služby</span>
+						</div>
+					</div>
+					</a>
+				</div>
+	   		</div>
 	   
-			<div class="row">
-				<div class="col-lg-4 col-md-4 col-sm-12">
-					<div class="stefe-icon"><i class="fa fa-pencil-square-o fa-custom" aria-hidden="true"></i><span>Eko efektivita</span></div></div>
+	   		<div class="divider"></div>
+	   
+	   		<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-12" style="overflow: hidden !important;">
+					<a href="#scrollprodukty" class="link-clear">
+					<div class="material-button poradenstvo-btn">
+						<div class="menu-icon"><i class="fa fa-question-circle-o fa-custom" aria-hidden="true"></i><span style="user-select: none;">Poradenstvo</span>
+						</div>
+					</div>
+					</a>
+				</div>
 				
 				<div class="col-lg-4 col-md-4 col-sm-12">
-					<div class="stefe-icon"><i class="fa fa-wrench fa-custom" aria-hidden="true"></i><span>Správa meradiel</span></div></div>
+					<a href="#scrollprodukty" class="link-clear">
+					<div class="material-button vystavba-btn">
+						<div class="menu-icon"><i class="fa fa-wrench fa-custom" aria-hidden="true"></i><span style="user-select: none;">Výstavba</span>
+						</div>
+					</div>
+					</a>
+				</div>
 				
 				<div class="col-lg-4 col-md-4 col-sm-12">
-					<div class="stefe-icon"><i class="fa fa-file-text-o fa-custom" aria-hidden="true"></i><span>Správa objektov</span></div></div>
-			</div>
+					<a href="#scrollprodukty" class="link-clear">
+					<div class="material-button prevadzka-btn">
+						<div class="menu-icon"><i class="fa fa-building-o fa-custom" aria-hidden="true"></i><span style="user-select: none;">Prevádzka</span>
+						</div>
+					</div>
+					</a>
+				</div>
+	   		</div>
+	   		
+	   		<div class="divider"></div>
+
 	   <!-- TEPLO -->
 	   <div id="scrollprodukty"></div>
 	   		<div class="teplo">
 				<div class="divider"></div>
 				
 				<nav class="nav nav-tabs nav-fill" id="myTab" role="tablist">
-				  <button class="nav-item transparent nav-link sub active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa fa-fire fa-5x" aria-hidden="true"></i><h3>Fernwärme</h3></button>
+				  <button class="nav-item transparent nav-link sub active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa fa-fire fa-5x" aria-hidden="true"></i><h3>Teplo</h3></button>
 					
-				  <button class="nav-item transparent nav-link sub" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa fa-snowflake-o fa-5x" aria-hidden="true"></i><h3>Kälte</h3></button>
+				  <button class="nav-item transparent nav-link sub" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa fa-snowflake-o fa-5x" aria-hidden="true"></i><h3>Chlad</h3></button>
 				</nav>
 				<div class="tab-content" id="nav-tabContent">
 				<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
 					<div class="divider"></div>
-					<p>Wenn Sie in der Slowakei leben, ist die Warscheinlichkeit gross dass wir von STEFE ihr Heim gemütlich warm und Ihr Wasser angenehm Heiss machen. Als einer der Grössten Fernwärmeanbieter vergrössern und Verbessern wir unser Netz stetig um den bestmöglichsten Service für Sie zu garantieren, doch sehen Sie selbst ob auch sie schon Teil der grossen STEFE Familie sind:</p>
-					<img src="./img/hrejive_teplo.png" alt="Teplo" style="width: 100%;margin-bottom: 20px;">
-					<p>Lokalitäten:</p>
-					<p><b>Banska Bystrica, Zvolen, Martin, Trnava, Rimavska Sobota, Roznava, Velky Krtis, Revuca, Klenovec, Krupina, Levoča, Pliešovce, Tornaľa, Brusno, Kovacova, Kremnica.</b></p>
-					<!-- <p>Als Fernwärmekunde steht bei Ihnen zu Hause im Keller vermutlich ein „Ding“, das aussieht, wie ein Heizkessel, an dem Sie Ihren Wärmebedarf regulieren können. Dieses Ding nennt sich Kompaktübergabestation und wird von uns zur Verfügung gestellt. Es ist der Endpunkt unserer gut isolierten Leitungen, die lange Kilometer bis zu einem Kesselhaus oder einem Kraftwerk gezogen werden, in dem wir die Wärme, die Sie benötigen, produzieren.</p> -->
-					<div class="divider"></div>
-					<h3><i class="fa fa-life-ring" aria-hidden="true"></i> 24/7 Nonstop-Support-Service</h3>
-					<p>Versorgungssicherheit ist sehr wichtig für uns. Unsere Dispatcher überwachen unsere Kessel und kontrollieren das Netz. So stellen sie sicher, dass es bei Ihnen nicht kalt wird: 24 Stunden pro Tag – 7 Tage die Woche.</p>
-					<p>Bei jeglichen Fragen oder Störungen steht Ihnen unser Dispatching jederzeit zur Verfügung. Wählen Sie in der oberen Menüleiste Ihre Stadt aus und rufen Sie uns unter der angeführten Telefonnummer an.</p>
+						<h3>Teplo</h3>
+						<p>Sie leben zwischen Trnava, Martin und Rožňava?<br>
+						Dann ist die Wahrscheinlichkeit groß, dass wir von STEFE bei Ihnen zuhause für Wärme sorgen. Wir machen Ihr Heim gemütlich warm und ihr Wasser angenehm heiß. 
+						Als einer der größten Wärmeversorger der Slowakei verbessern wir uns stetig  - für Sie.</p>
+						<p>Sie fragen sich wie Fernwärme funktioniert, dann sehen Sie sich doch dieses video an: <a href="https://www.youtube.com/watch?v=EPZIAY9mdH8&t=5s">Hier klicken</a></p>
+						<img src="./img/landscape.jpeg" alt="teplo" style="width: 100%;">
+						<p>Versorgungssicherheit ist sehr wichtig für uns. Unsere Dispatcher überwachen unsere Kessel und kontrollieren das Netz. So stellen sie sicher, dass es bei Ihnen nicht kalt wird: 24 Stunden pro Tag - 7 Tage die Woche</p>
+						<p>Sie haben Fragen? Unser Dispatching steht Ihnen jederzeit zur Verfügung. Wählen Sie in der oberen Menüleiste Ihre Stadt aus und rufen Sie uns unter der angeführten Telefonnummer an.</p>
+						<h3>Chlad</h3>
+						<p>Sie mögeńs lieber kühl?</p>
+						<p>Wir haben die passende Lösung für Sie. 
+						STEFE produziert und liefert Kälte gemäß Ihren individuellen Anforderungen.
+						Die technische Lösung, der Bau und der Betrieb der Anlage sind für Ihr Objekt maßgeschneidert und berücksichtigen Ihr Nutzungsverhalten, Umweltschutzanliegen und die lokalen Gegebenheiten.</p>
 					<div class="divider"></div>
 				</div>
 				<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
 					<div class="divider"></div>
-					<p>Wir garantieren eine zuverlässige, wirtschaftliche und umweltfreundliche Produktion der Kälte. Wir stellen die Optimierung des Betriebs und der Verteilung der Kälte während der Dauer des Vertrags sicher.</p>
-					<img src="./img/bears.png" alt="Mapa" style="width: 100%;margin-bottom: 20px;">
-					<div class="row">
-						<div class="col-md-4 text-center"><i class="fa fa-eur fa-5x" aria-hidden="true"></i></div>
-						<div class="col-md-4 text-center"><i class="fa fa-leaf fa-5x" aria-hidden="true"></i></div>
-						<div class="col-md-4 text-center"><i class="fa fa-shield fa-5x" aria-hidden="true"></i></div>
-					</div>
+						<h3>Chlad</h3>
+						<p>Sie mögeńs lieber kühl?</p>
+						<p>Wir haben die passende Lösung für Sie. 
+						STEFE produziert und liefert Kälte gemäß Ihren individuellen Anforderungen.
+						Die technische Lösung, der Bau und der Betrieb der Anlage sind für Ihr Objekt maßgeschneidert und berücksichtigen Ihr Nutzungsverhalten, Umweltschutzanliegen und die lokalen Gegebenheiten.</p>
 					<div class="divider"></div>
-					<p><b>Maßgeschneiderte Lösung</b></p>
-					<p>Die technische Lösung, der Bau und der Betrieb der Anlage sind für das Objekt maßgeschneidert und berücksichtigen das Nutzungsverhalten, Umweltschutzanliegen und lokale Gegebenheiten.
-					Gemeinsam mit Ihnen definieren wir die optimale Betriebsweise.</p>
 				</div>
 				</div>
 	   			
-				<a href="#produkty" class="close-produkty"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Produkty</a>
-	   		</div>
-	   <!-- CHLAD -->
-	   		<div class="chlad">
-				<div class="divider"></div>
-	   			<h3>Chlad</h3>
-				<span class="subheader green">Výroba a dodávka</span>
-				<p>Výrobu a dodávku chladu prevádzkuje STEFE na základe Vašich individuálnych požiadaviek.</p>
-				<p>Technologické riešenie, montáž a samotná prevádzka zariadenia sú nastavené na mieru pre objekt a zohľadňujú jeho využitie, prírodné podmienky a danosti danej lokality.</p>
-				<p>V spolupráci s Vami nastavujeme optimálny spôsob prevádzky. </p>
-				<div class="divider"></div>
 				<a href="#produkty" class="close-produkty"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Produkty</a>
 	   		</div>
 	   <!-- TECHNICKE SLUZBY -->
@@ -220,13 +233,77 @@
 				<div class="divider"></div>
 	   			<h3>Technicke Služby</h3>
 				<span class="subheader green">Služby</span>
-				<p>Bývate v Banskej Bystrici, Zvolene, Martine, Trnave, Rimavskej Sobote, Rožňave, Veľkom Krtíši, Revúcej, Klenovciach, Krupine, Levoči, Pliešovciach, Tornali, Brusne, Kováčovej alebo Kremnici?
-				V tom prípade ste s najväčšou pravdepodobnosťou klientom STEFE zakaždým, keď zapnete kúrenie alebo sa sprchujete. Sme Vaším dodávateľom tepla - mimochodom jedným z najväčších na Slovensku.
-				</p>
-				<p>Pravdepodobne máte v pivnici istú „vec“, ktorá vyzerá ako nejaký vykurovací kotol, na ktorom môžete regulovať prísun tepla. Tento predmet sa nazýva kompaktná odovzdávacia stanica tepla. Patrí nám. Je to konečný bod našich dobre izolovaných vedení, ktoré sú potiahnuté celým mestom až po kotolňu alebo elektráreň, v ktorej vyrábame potrebné teplo - efektívne, ekologicky a za férové ceny.</p>
-				<p>Máte otázku alebo nám chcete nahlásiť závadu?
-					<a href="#">Kontaktujte náš dispečing</a>. </p>
-				<p>Záleží nám na tom, aby sme Vám bezpečne dodali teplo. Naši dispečeri dohliadajú na naše kotly a kontrolujú sieť. Preto si môžete byť istí, že Vám chladno nebude: 24 hodín denne, 7 dní v týždni.</p>
+				<p>STEFE bietet unterschiedliche Dienstleistungen für Privat- und Geschäftspersonen.
+				Wir stellen Ihnen eine komplette Pflege der Heizungsanlage inklusive der Bedienung, des Betriebs, der Reparatur, Instandhaltung und des Fachservices sicher.
+			  </p>
+				<h3>Technische Dienstleistungen</h3>
+			  <p>Benötigen Sie jemanden, der... <br>
+				... defekte Pumpen tauscht?<br>
+				... Heizungsleitungen demontiert?<br>
+				... Heizkörper tauscht?<br>
+				... Wärmetauscher reinigt?</p>
+				<p>Dann sind Sie bei uns richtig.
+				Gerne informieren wir Sie in einem persönlichen Gespräch über unser umfangreiches Angebot.</p>
+			  <h3>Verwaltung der festgelegten Messgeräte</h3>
+			  <p>Wir demontieren, eichen und tauschen Ihren Wärmemengenzähler.
+			  Unsere bestens qualifizierten Mitarbeiter haben alle notwendigen Ausbildungen und Zertifikate dafür</p>
+				<h3>Andere Leistungen</h3>
+				<p>Wir bieten noch zahlreiche weitere Leistungen und sind offen für neue Ideen.
+				<br>
+				Sie sind an weitergehenden Informationen interessiert?
+				Wir freuen uns auf Ihre Anfrage!</p>
+				<div class="divider"></div>
+				<a href="#produkty" class="close-produkty"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Produkty</a>
+	   		</div>
+	   <!-- PORADENSTVO -->
+	   		<div class="poradenstvo">
+				<div class="divider"></div>
+	   			<h3>Beratung</h3>
+				<p>Interessieren Sie sich dafür, wie Sie den Wirkungsgrad ihrer Anlage steigern oder ihren Energieverbrauch reduzieren?<br>
+				Unsere Techniker und Energiebilanzierer beraten Sie gerne dabei, Ihre Energie effizienter und ökologischer zu nutzen.</p>
+				<h3>Projekte</h3>
+				<p>Gemeinsam entwickeln wir Projekte, die die Energieeffizienz verbessern, Eingangskosten ermäßgen und die Umweltverträglichkeit erhöhen. 
+				Im Rahmen dieser Projekte für den Kunden stellen wir Folgendes sicher: die energietechnische Studie, den Maßsnahmenvorschlag, die Wahl der Lieferanten für die Realisierung, das Projekt-Engineering, das Bau-Engineering, die Umsetzung der vorgeschlagenen Maßnahmen und den darauf folgenden Betrieb im Bedarfsfall.</p>
+				<img src="./img/poradenstvo.jpg" alt="poradenstvo" style="width: 100%;">
+				<h3>Individualität</h3>
+				<p>In der Zusammenarbeit mit unseren Partnern liefern wir Projekte, die maßgeschneidert den Bedürfnissen des Kunden werden, mit dem Ziel den Energieaufwand der Gebäude und der Wärme-Energieanlagen, sowie den Wärmeverbrauch bzw. Produktion von Wärme/Kälte zu ermäßigen.</p>
+				<p>Wir werden Partner des Kunden bei der Suche nach einer effektiven Lösung für den Betrieb der Wirtschaft mit Wärme und Energie, sowie auch für das Outsourcing in der Wärmeenergetik.</p>
+				<div class="divider"></div>
+				<a href="#produkty" class="close-produkty"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Produkty</a>
+	   		</div>
+	   <!-- VYSTAVBA -->
+	   		<div class="vystavba">
+				<div class="divider"></div>
+	   			<h3>Výstavba</h3>
+				<p>Wie groß muss die Anlage sein? <br>
+				Stimmen die technischen Parameter? <br>
+				Wo kann gespart werden, wo besser nicht?<br>
+				Was ist juristisch zu beachten? <br>
+				<br>
+				Wir kennen die Antworten auf diese Fragen.<br>
+				<br>
+				Wir errichten Ihre Heizung, ihre Belüftung oder ihr Kühlsystem. Wir kümmern uns um Konzeption und Planung.<br>
+				Wir begleiten das Projekt. Wir betreiben die Anlage.</p>
+				<h3>Investitionspartner</h3>
+				<p>Sie überlegen ein neues Gebäude zu errichten oder ein bestehendes Gebäude zu modernisieren?
+				Sie benötigen neue Wärme- oder Kälteerzeugungsanlagen und Innenleitungen oder auch eine bessere Isolierung?
+				Sie denken über innovative Energiekonzepte (Wärmepumpe, Kogeneration, Photovoltaik & Solarzellen) nach?</p>
+				<p>Dann sind wir Ihr Investitionspartner.
+				Wir sind offen für unterschiedliche Contracting-Modelle.</p>
+				<div class="divider"></div>
+				<a href="#produkty" class="close-produkty"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Produkty</a>
+	   		</div>
+	   <!-- PREVADZKA -->
+	   		<div class="prevadzka">
+				<div class="divider"></div>
+	   			<h3>Prevádzka</h3>
+				<p>Was wir hier für Sie machen:</p>
+				<p>Regelmäßige Kontrollen<br>
+				Administration und Verrechnung<br>
+				Kostenaufteilung<br>
+				Service<br>
+				Instandhaltung</p>
+				<p>Schon heute betreiben wir mehr als 40 Anlagen für Dritte. Unser kompetentes Personal unterstützt Sie gerne.</p>
 				<div class="divider"></div>
 				<a href="#produkty" class="close-produkty"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Produkty</a>
 	   		</div>
@@ -289,16 +366,16 @@
 				<div class="divider"></div>
 			<div class="row" style="text-align: center;">
 				<div class="col-md-3 col-sm-6 col-xs-6">
-					<div class="ref-icon one"><img src="./img/SVG icons/shopping.svg" alt="Nákupné centrá"></div>
+					<div class="ref-icon one material-button"><img src="./img/SVG icons/shopping.svg" alt="Nákupné centrá"></div>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-6">
-					<div class="ref-icon two"><img src="./img/SVG icons/theatre_sport.svg" alt="Umenie šport a kultúra"></div>
+					<div class="ref-icon two material-button"><img src="./img/SVG icons/theatre_sport.svg" alt="Umenie šport a kultúra"></div>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-6">
-					<div class="ref-icon three"><img src="./img/SVG icons/flats.svg" alt="Obytné zóny"></div>
+					<div class="ref-icon three material-button"><img src="./img/SVG icons/flats.svg" alt="Obytné zóny"></div>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-6">
-					<div class="ref-icon four"><img src="./img/SVG icons/industry.svg" alt="Industriálne zóny"></div>
+					<div class="ref-icon four material-button"><img src="./img/SVG icons/industry.svg" alt="Industriálne zóny"></div>
 				</div>
 			</div>
 			<!-- Referencie end -->
@@ -321,8 +398,49 @@
 						],[
 							"show" => true,
 						]);
-					
-						  foreach (array_reverse($inzeraty) as $data){
+	   
+	   					if(count($inzeraty) == 0){
+							echo "<div class='row inzeraty'>
+											<div class='col-md-3 img-stolicka'></div>
+												<div class='col-md-9'>
+												<h2>Vysnená práca</h2>
+												<hr>
+												<p><strong>V momente konkrétnu pozíciu nehľadáme.
+												Ale tešíme sa že Vás budeme môcť spoznať.</strong></p>
+												<p><strong>Pozícia:</strong> <span>Vysnená práca.</span></p>
+												<p><strong>Miesto výkonu:</strong> <span>Tam, kde sa kúri.</span></p>
+												<p><strong>Nástup:</strong> <span>Čo najskôr.</span></p>
+												<div class='inzeraty-content'><p>
+												<div class='row'>
+													<div class='col-md-6'>
+													<p><b>Požadujeme:</b></p>
+													<ul>
+													<li>samostatnosť,</li>
+													<li>zodpovednosť,</li>
+													<li>spoľahlivosť.</li>
+													</ul>
+													</div>
+													<div class='col-md-6'>
+													<p><b>Ponúkame:</b></p>
+													<ul>
+													<li>prácu v úspešnej, kontinuálne sa rozvíjajúcej spoločnosti,</li>
+													<li>príležitosť spoluvytvárať úspechy spoločnosti,</li>
+													<li>know-how medzinárodného holdingu,</li>
+													<li>rôzne programy starostlivosti o zamestnancov.</li>
+													</ul>
+													</div>
+												</div>
+												</p>
+												<hr>
+												<p>Vaše žiadosti spolu s profesijným životopisom a súhlasom k spracovaniu osobných údajov v zmysle z.č. 24/2013 Z.z. zašlite na adresu: STEFE SK, a.s., Na Troskách 26, 974 01 Banská Bystrica alebo na <a href='mailto:kariera@stefe.sk'>kariera@stefe.sk</a></p>
+												</div>
+											</div>
+												<div class='inzeraty-after stefe-btn'><i class='fa fa-arrow-circle-down' aria-hidden='true'></i> Viac</div>
+										</div>
+										";
+						}else{
+							
+							foreach (array_reverse($inzeraty) as $data){
 							  $cleaninzerat = $data["obsah"];
 						  			echo "<div class='row inzeraty'>
 											<div class='col-md-3 img-stolicka'></div>
@@ -345,6 +463,10 @@
 										";
 						  
 						  	}
+							
+						}
+					
+						  
 					?>
 
 			<!--Kariera koniec -->
@@ -414,25 +536,65 @@
 		  
 		$(".teplo-btn").click(function(){
 			$(".teplo").addClass("active").addClass("letter");
-			$(".chlad").removeClass("active").removeClass("letter");
 			$(".technickesluzby").removeClass("active").removeClass("letter");
-		});
-		$(".chlad-btn").click(function(){
-			$(".chlad").addClass("active").addClass("letter");	
-			$(".teplo").removeClass("active").removeClass("letter");
-			$(".technickesluzby").removeClass("active").removeClass("letter");
+			$(".poradenstvo").removeClass("active").removeClass("letter");
+			$(".vystavba").removeClass("active").removeClass("letter");
+			$(".prevadzka").removeClass("active").removeClass("letter");
 		});
 		$(".technicke-btn").click(function(){
 			$(".technickesluzby").addClass("active").addClass("letter");	
 			$(".teplo").removeClass("active").removeClass("letter");
-			$(".chlad").removeClass("active").removeClass("letter");
+			$(".poradenstvo").removeClass("active").removeClass("letter");
+			$(".vystavba").removeClass("active").removeClass("letter");
+			$(".prevadzka").removeClass("active").removeClass("letter");
+		});
+		$(".poradenstvo-btn").click(function(){
+			$(".poradenstvo").addClass("active").addClass("letter");	
+			$(".teplo").removeClass("active").removeClass("letter");
+			$(".technickesluzby").removeClass("active").removeClass("letter");
+			$(".vystavba").removeClass("active").removeClass("letter");
+			$(".prevadzka").removeClass("active").removeClass("letter");
+		});
+		$(".vystavba-btn").click(function(){
+			$(".vystavba").addClass("active").addClass("letter");	
+			$(".teplo").removeClass("active").removeClass("letter");
+			$(".technickesluzby").removeClass("active").removeClass("letter");
+			$(".poradenstvo").removeClass("active").removeClass("letter");
+			$(".prevadzka").removeClass("active").removeClass("letter");
+		});
+		$(".prevadzka-btn").click(function(){
+			$(".prevadzka").addClass("active").addClass("letter");	
+			$(".teplo").removeClass("active").removeClass("letter");
+			$(".technickesluzby").removeClass("active").removeClass("letter");
+			$(".poradenstvo").removeClass("active").removeClass("letter");
+			$(".vystavba").removeClass("active").removeClass("letter");
 		});
 		$(".close-produkty").click(function(){
 			setTimeout(function(){
 			  $(".teplo").removeClass("active").removeClass("letter");
-			  $(".chlad").removeClass("active").removeClass("letter");
 			  $(".technickesluzby").removeClass("active").removeClass("letter");
+			  $(".poradenstvo").removeClass("active").removeClass("letter");
+			  $(".vystavba").removeClass("active").removeClass("letter");
+			  $(".prevadzka").removeClass("active").removeClass("letter");
 			}, 500);	
+		});
+		  
+		  $(function() {
+			var taint, d, x, y;
+			$(".material-button").mouseenter(function(e){
+				if ($(this).find(".taint").length == 0) {
+					$(this).prepend("<span class='taint'></span>")
+				}
+				taint = $(this).find(".taint");
+				taint.removeClass("drop");
+				if(!taint.height() && !taint.width()) {
+					d = Math.max($(this).outerWidth(), $(this).outerHeight());
+				taint.css({height: d, width: d});
+				}
+				x = e.pageX - $(this).offset().left - taint.width()/2;
+				y = e.pageY - $(this).offset().top - taint.height()/2;
+				taint.css({top: y+'px', left: x+'px'}).addClass("drop");
+			});
 		});
 		  
 	  </script>

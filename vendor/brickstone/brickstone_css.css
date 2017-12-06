@@ -160,7 +160,7 @@ a.nav-link{
 	display: block;
 }
 
-a.nav-link:hover{
+a.nav-link:hover, a.link-clear{
 	color: var(--stefeDark);
 }
 
@@ -679,7 +679,7 @@ video.profilvid{
 	font-size: 1.5rem;
 }
 
-.teplo, .chlad, .technickesluzby {
+.teplo, .poradenstvo, .technickesluzby, .vystavba, .prevadzka {
 	margin: 0 auto;
 	max-height: 0px;
 	overflow: hidden;
@@ -688,8 +688,8 @@ video.profilvid{
 	opacity: 0;
 }
 
-.teplo.active, .chlad.active, .technickesluzby.active{
-	max-height: 1250px;
+.teplo.active, .poradenstvo.active, .technickesluzby.active, .vystavba.active, .prevadzka.active{
+	max-height: 1650px;
 	opacity: 1;
 }
 
@@ -754,4 +754,52 @@ a.nav-link.sub{
 
 .stefe-icon span{
 	color: var(--stefeDark);
+}
+
+.material-button{
+	position: relative;
+	user-select: none;
+	-webkit-user-select: none;
+	transition: all 200ms ease-in-out;
+	cursor: pointer;
+	border-radius: 12px;
+	overflow: hidden;
+	border: 1px solid var(--stefeGray);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+	-webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -khtml-border-radius: 12px;
+}
+
+
+.material-button:focus{
+	outline: none;
+}
+
+.taint{
+	display: block;
+	position: absolute;
+	background: rgba(110, 181, 44, 0.5);
+	border-radius: 100%;
+	transform: scale(0)
+}
+
+.taint.drop{
+	animation: ripple 0.65s linear;
+}
+
+@keyframes ripple{
+	100% {
+			opacity: 0;
+			transform: scale(2.5);
+	}
+}
+.menu-icon {
+	padding: 20px 10px;
+	font-family: var(--stefeFont);
+	font-size: 2.5rem;
+	font-weight: 100;
+	text-align: center;
+	user-select: none;
 }
