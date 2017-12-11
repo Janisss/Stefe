@@ -56,17 +56,20 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Služby</a>
+              <a class="nav-link" href="#">Produkty</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Aktuality</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Kariéra</a>
+              <a class="nav-link" href="#">Referencie</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Kontakty</a>
+              <a class="nav-link" href="#">Kariéra</a>
             </li>
+			<li class="nav-item">
+              <a class="nav-link" href="#">Kontakty</a>
+            </li>  
           </ul>
         </div>
       </div>
@@ -98,17 +101,28 @@
 				<li><a href="#">Stefe SK</a></li>
 					<ul>
 						<li><a href="#">Stefe Banská Bystrica</a></li>
-						<li><a href="#">Stefe Brezno</a></li>
-						<li><a href="#">Stefe Bratislava</a></li>
-						<li><a href="#">Stefe Lučenc</a></li>
-						<li><a href="#">Stefe Rimavksá Sobota</a></li>
+						<li><a href="#">Stefe Brusno</a></li>
+						<li><a href="#">Stefe Kováčová</a></li>
+						<li><a href="#">Stefe Martin</a></li>
+						<li><a href="#">Stefe Rimavská Sobota</a></li>
+						<li><a href="#">Stefe Rožňava</a></li>
+						<li><a href="#">Stefe Klenovec</a></li>
+						<li><a href="#">Stefe Krupina</a></li>
+						<li><a href="#">Stefe Levoča</a></li>
+						<li><a href="#">Stefe Lučenec</a></li>
+						<li><a href="#">Stefe Pliešovce</a></li>
+						<li><a href="#">Stefe Revúca</a></li>
+						<li><a href="#">Stefe Tornaľa</a></li>
+						<li><a href="#">Stefe Veľký Krtíš</a></li>
+						<li><a href="#">Stefe Kremnica</a></li>
+						<li><a href="#">Stefe Zvolen</a></li>
+						<li><a href="#">Stefe Zvolenská Slatina</a></li>
 					</ul>
-				<li><a href="#">Služby</a></li>
+				<li><a href="#">Produkty</a></li>
 				<li><a href="#">Aktuality</a></li>
+				<li><a href="#">Referencie</a></li>
 				<li><a href="#">Kariéra</a></li>
 				<li><a href="#">Kontakty</a></li>
-				<li><a href="#">Napíšte nám</a></li>
-				<li><a href="#">Admin</a></li>
 			</ul>
 
 		<div class="divider"></div>
