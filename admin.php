@@ -62,7 +62,7 @@ if ($sessionname == ""){
     <!-- navi end -->
     
       <div class="container first" style="padding: 0;">
-		  
+				  
       	<div class="header-admin">
 			<h3 style="color: white;">Admin - STEFE SK</h3>
       	</div>
@@ -71,7 +71,9 @@ if ($sessionname == ""){
       	<div class="divider"></div>
         	<h1 id="clanky"><span>Články</span></h1>
         	
+		<button type="button" class="btn stefe-btn btn-sm float-right" data-toggle="modal" data-target="#archiv" style="margin:0 0 0 5px;font-size: 1.1rem;">zobraziť archív</button>
 		<button type="button" class="btn stefe-btn btn-sm float-right" data-toggle="modal" data-target="#novyclanok" style="margin:0;font-size: 1.1rem;">+ pridať článok</button>
+		  
 	  <table class="table">
   <thead class="thead-inverse">
     <tr>
@@ -79,7 +81,7 @@ if ($sessionname == ""){
       <th>Autor</th>
       <th>Publikované</th>
       <th>Názov</th>
-      <th>Obsah</th>
+      <th>Úvod</th>
       <th>Status</th>
       <th>Upraviť</th>
     </tr>
@@ -110,7 +112,8 @@ if ($sessionname == ""){
 
 			$editID = $_POST["idedit"];
 			$database->update("content", [
-					"status" => "<span style='color:var(--stefeGreen)'>publikované!</span>"
+					"status" => "<span style='color:var(--stefeGreen)'>publikované!</span>",
+					"edit" => "visible"
 				], [
 					"ID" => $editID
 				]);
@@ -123,7 +126,8 @@ if ($sessionname == ""){
 			$editID = $_POST["idedit"];
 
 			$database->update("content", [
-					"status" => "skryté!"
+					"status" => "skryté!",
+					"edit" => "waiting"
 				], [
 					"ID" => $editID
 				]);
@@ -135,11 +139,12 @@ if ($sessionname == ""){
 
 			$editID = $_POST["idedit"];
 
-			$database->delete("content", [
-				"AND" => [
+			$database->update("content", [
+					"edit" => "hidden"
+				], [
 					"ID" => $editID
-				]
 			]);
+			
 			header('Location: '.$_SERVER['PHP_SELF']);
 			exit();
 		}
@@ -150,26 +155,84 @@ if ($sessionname == ""){
 		"autor",
 		"datum",
 		"nazov",
-		"text",
+		"intro",
 		"status",
 		"edit"
 		], [
-		"alarm" => "nie"
+		"alarm" => "nie",
+		"edit" => ["visible","waiting"]
 		]);
 
-			foreach($datas_main as $data)
+			foreach(array_reverse($datas_main) as $data)
 		{
-			echo "<tr><th scope='row'>".$data["ID"]."</th><td>".$data["autor"]."</td><td>".$data["datum"]."</td><td>".$data["nazov"]."</td><td>".$data["text"]."</td><td>".$data["status"]."</td><td>
+				$cleantext = $data["intro"];
+			echo "<tr><th scope='row'>".$data["ID"]."</th><td>".$data["autor"]."</td><td>".$data["datum"]."</td><td>".$data["nazov"]."</td><td>".$cleantext."</td><td>".$data["status"]."</td><td>
 			<form method='post' action='admin.php'>
-			<input type='text' name='idedit' hidden value='".$data["ID"]."'>
-			<input type='submit' name='zobraz' class='btn btn-success btn-sm' value='Uverejniť'>
-			<input type='submit' name='skryt' class='btn btn-warning btn-sm' value='Skryť'>
-			<input type='submit' name='del' class='btn btn-danger btn-sm' value='X'>
+			<input type='text' name='idedit' hidden value='".$data["ID"]."'>";
+				if($data["edit"] == "waiting"){
+					echo "<a href='./nahlad.php?ID=".$data["ID"]."' class='btn btn-block btn-warning btn-sm w-100' target='_blank'>Náhlad</a>
+						  <input type='submit' name='editMe' class='btn btn-success btn-sm w-100' value='Upraviť'>
+						  <input type='submit' name='zobraz' class='btn btn-success btn-sm w-100' value='Uverejniť'>
+						<input type='submit' name='delete' class='btn btn-danger btn-sm w-100' value='X'>";
+				}elseif($data["edit"] == "visible"){
+				};
+			echo "
+			<input type='submit' name='del' class='btn btn-danger btn-sm w-100' value='Archivovať'>
 			</form></td></tr>";
+			
 		}
 ?>
   </tbody>
 </table>
+
+<!-- edit modal -->
+<div id="modalEdit" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Upraviť článok</h4>
+      </div>
+      <div class="modal-body">
+        
+			<?php
+				if (isset($_POST["editMe"])) {
+					$myEditId = ($_POST['idedit']);
+					$myEditNadpis = $database->get("content", "nazov", [
+						"ID" => $myEditId
+					]);
+					$myEditIntro = $database->get("content", "intro", [
+						"ID" => $myEditId
+					]);
+					$myEditText = $database->get("content", "text", [
+						"ID" => $myEditId
+					]);
+					
+					echo "
+					<div class='form-group'>
+		        		<p>Nadpis článku:</p>
+					    <input name='nadpisEdit' type='text' class='form-control' id='nadpis' maxlength='25' aria-describedby='nadpisHelp' value='".$myEditNadpis."'>
+					    <small id='nadpisHelp' class='form-text text-muted>'Tento nadpis sa zobrazí v hlavičke článku.</small>
+					</div>
+					<div class='form-group'>
+	        		  <p>Krátky popis článku:</p>
+					    <input name='introtext' type='text' class='form-control' id='introtextEdit' maxlength='110' aria-describedby='nadpisHelp' value='".$myEditIntro."'>
+					    <small id='nadpisHelp' class='form-text text-muted'>Tento popis sa zobrazí v miniatúrnom náhlade článku.</small>
+					</div>
+							<textarea name='editarea' id='edit' cols='30' rows='10'>".$myEditText."</textarea>";
+				};
+			?>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- edit modal END -->
 
 <!-- ALARMY -->
 <div class="divider"></div>
@@ -201,15 +264,42 @@ if ($sessionname == ""){
 		"alarm" => "ano"
 		]);
 
-			foreach($datas_errors as $data)
+			foreach(array_reverse($datas_errors) as $data)
 		{
-			echo "<tr><th scope='row'>".$data["ID"]."</th><td>".$data["autor"]."</td><td>".$data["datum"]."</td><td>".$data["nazov"]."</td><td>".$data["text"]."</td><td>".$data["status"]."</td><td><form method='post' action='admin.php'><input type='text' name='idedit' hidden value='".$data["ID"]."'><input type='submit' name='del' class='btn btn-danger btn-sm' value='X'></form></td></tr>";
+			echo "<tr><th scope='row'>".$data["ID"]."</th><td>".$data["autor"]."</td><td>".$data["datum"]."</td><td>".$data["nazov"]."</td><td>".$data["text"]."</td><td>".$data["status"]."</td><td><form method='post' action='admin.php'><input type='text' name='idedit' hidden value='".$data["ID"]."'><input type='submit' name='del' class='btn btn-danger btn-sm' value='Archivovať'></form></td></tr>";
+		}
+?>
+  </tbody>
+</table>
+
+<!-- INZERATY -->
+<div class="divider"></div>
+<h1 id="vypadky"><span>Inzeráty</span></h1>
+<table class="table">
+  <thead class="thead-inverse">
+    <tr>
+      <th>ID</th>
+      <th>Popis</th>
+      <th>Pozícia</th>
+      <th>Miesto</th>
+      <th>Obsah</th>
+      <th>Upraviť</th>
+    </tr>
+  </thead>
+  <tbody>
+<?php	  
+	  
+	  $datas_inzeraty = $database->select("inzeraty", ["id","popis","pozicia","miesto","obsah"]);
+
+			foreach(array_reverse($datas_inzeraty) as $data)
+		{
+			echo "<tr><th scope='row'>".$data["id"]."</th><td>".$data["popis"]."</td><td>".$data["pozicia"]."</td><td>".$data["miesto"]."</td><td>".$data["obsah"]."</td><td><form method='post' action='admin.php'><input type='text' name='idedit' hidden value='".$data["ID"]."'><input type='submit' name='del' class='btn btn-danger btn-sm' value='X'></form></td></tr>";
 		}
 ?>
   </tbody>
 </table>
 </div><!-- /container -->
-
+	  
 
 <!-- POPUP HEADER TEXT -->
 <div id="novyclanok" class="modal fade" role="dialog">
@@ -300,7 +390,77 @@ if ($sessionname == ""){
   <div class="divider"></div>
   <div class="divider"></div>
 	  
+<!-- MODAL ARCHIV -->
+<div id="archiv" class="modal fade" role="dialog">
+  <div class="modal-dialog">
 
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Archív</h4>
+      </div>
+      <div class="modal-body">
+        <table class="table">
+  <thead class="thead-inverse">
+    <tr>
+      <th>ID</th>
+      <th>Autor</th>
+      <th>Publikované</th>
+      <th>Názov</th>
+      <th>Status</th>
+      <th>Upraviť</th>
+    </tr>
+  </thead>
+  <tbody>
+<?php	  
+	  function custom_echo($x, $length)
+		{
+		  if(strlen($x)<=$length)
+		  {
+			echo $x;
+		  }
+		  else
+		  {
+			$y=substr($x,0,$length) . '...';
+			echo $y;
+		  }
+		}
+
+	  
+	  $datas_archiv = $database->select("content", [
+		"ID",
+		"autor",
+		"datum",
+		"nazov",
+		"text",
+		"status",
+		"edit"
+		], [
+		"edit" => "hidden"
+		]);
+
+			foreach(array_reverse($datas_archiv) as $data)
+		{
+			echo "<tr><th scope='row'>".$data["ID"]."</th><td>".$data["autor"]."</td><td>".$data["datum"]."</td><td>".$data["nazov"]."</td><td>Archivované</td><td>
+			<form method='post' action='admin.php'>
+			<input type='text' name='idedit' hidden value='".$data["ID"]."'>
+			<a href='./nahlad.php?ID=".$data["ID"]."' class='btn btn-block btn-success btn-sm w-100' target='_blank'>Náhlad</a>
+			<input type='submit' name='zobraz' class='btn btn-success btn-sm w-100' value='Uverejniť'>
+			</form></td></tr>";
+			
+		}
+?>
+  </tbody>
+</table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn stefe-btn" data-dismiss="modal">Zatvoriť</button>
+      </div>
+    </div>
+
+  </div>
+</div>
  
 <!-- POPUP HEADER TEXT END -->
 <div class="logout">
@@ -335,7 +495,30 @@ if ($sessionname == ""){
 						cleanPaste: true,
 						upload: true,
 			});
+		  	var edit = new Simditor({textarea: $('#edit'), 
+						toolbar: [
+							'title',
+							'italic',
+							'bold',
+							'underline',
+							'ol',
+							'ul',
+							'link',
+							'image'
+						],
+						cleanPaste: true,
+						upload: true,
+			});
 	</script>
+	  		<?php
+				if (isset($_POST["editMe"])) {
+					echo "<script type='text/javascript'>
+							$(window).on('load',function(){
+								$('#modalEdit').modal('show');
+							});
+						</script>";
+				};
+			?>
 	
   </body>
 </html>

@@ -80,25 +80,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav m-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="./index.php">Stefe SK
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Služby</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Aktuality</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Kariéra</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Kontakty</a>
-            </li>
-          </ul>
+        	<div class="m-auto row"><div class="bg-warning">Náhľad článku! </div><button class="btn btn-info">Potvrdiť</button><button class="btn btn-secondary">Vrátiť</button><a class="btn btn-danger" href="javascript:window.open('','_self').close();">Zavrieť</a></div>
         </div>
       </div>
     </nav>

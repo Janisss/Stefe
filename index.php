@@ -192,20 +192,14 @@
 	   		<div class="teplo">
 				<div class="divider"></div>
 				
-				<nav class="nav nav-tabs nav-fill" id="myTab" role="tablist">
-				  <button class="nav-item transparent nav-link sub active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa fa-fire fa-5x" aria-hidden="true"></i><h3>Teplo</h3></button>
-					
-				  <button class="nav-item transparent nav-link sub" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa fa-snowflake-o fa-5x" aria-hidden="true"></i><h3>Chlad</h3></button>
-				</nav>
-				<div class="tab-content" id="nav-tabContent">
-				<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
 					<div class="divider"></div>
+						<img src="./img/landscape.jpeg" alt="teplo" class="w-100">
+						<div class="divider"></div>
 						<h3>Teplo</h3>
 						<p>Sie leben zwischen Trnava, Martin und Rožňava?<br>
 						Dann ist die Wahrscheinlichkeit groß, dass wir von STEFE bei Ihnen zuhause für Wärme sorgen. Wir machen Ihr Heim gemütlich warm und ihr Wasser angenehm heiß. 
 						Als einer der größten Wärmeversorger der Slowakei verbessern wir uns stetig  - für Sie.</p>
 						<p>Sie fragen sich wie Fernwärme funktioniert, dann sehen Sie sich doch dieses video an: <a href="https://www.youtube.com/watch?v=EPZIAY9mdH8&t=5s">Hier klicken</a></p>
-						<img src="./img/landscape.jpeg" alt="teplo" style="width: 100%;">
 						<p>Versorgungssicherheit ist sehr wichtig für uns. Unsere Dispatcher überwachen unsere Kessel und kontrollieren das Netz. So stellen sie sicher, dass es bei Ihnen nicht kalt wird: 24 Stunden pro Tag - 7 Tage die Woche</p>
 						<p>Sie haben Fragen? Unser Dispatching steht Ihnen jederzeit zur Verfügung. Wählen Sie in der oberen Menüleiste Ihre Stadt aus und rufen Sie uns unter der angeführten Telefonnummer an.</p>
 						<h3>Chlad</h3>
@@ -214,22 +208,13 @@
 						STEFE produziert und liefert Kälte gemäß Ihren individuellen Anforderungen.
 						Die technische Lösung, der Bau und der Betrieb der Anlage sind für Ihr Objekt maßgeschneidert und berücksichtigen Ihr Nutzungsverhalten, Umweltschutzanliegen und die lokalen Gegebenheiten.</p>
 					<div class="divider"></div>
-				</div>
-				<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-					<div class="divider"></div>
-						<h3>Chlad</h3>
-						<p>Sie mögeńs lieber kühl?</p>
-						<p>Wir haben die passende Lösung für Sie. 
-						STEFE produziert und liefert Kälte gemäß Ihren individuellen Anforderungen.
-						Die technische Lösung, der Bau und der Betrieb der Anlage sind für Ihr Objekt maßgeschneidert und berücksichtigen Ihr Nutzungsverhalten, Umweltschutzanliegen und die lokalen Gegebenheiten.</p>
-					<div class="divider"></div>
-				</div>
-				</div>
 	   			
 				<a href="#produkty" class="close-produkty"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Produkty</a>
 	   		</div>
 	   <!-- TECHNICKE SLUZBY -->
 	   		<div class="technickesluzby">
+				<div class="divider"></div>
+				<img src="./img/sluzby.png" alt="Služby" class="w-100">
 				<div class="divider"></div>
 	   			<h3>Technicke Služby</h3>
 				<span class="subheader green">Služby</span>
@@ -258,13 +243,14 @@
 	   <!-- PORADENSTVO -->
 	   		<div class="poradenstvo">
 				<div class="divider"></div>
+				<img src="./img/poradenstvo.png" alt="Poradenstvo" style="width: 100%;">
+				<div class="divider"></div>
 	   			<h3>Beratung</h3>
 				<p>Interessieren Sie sich dafür, wie Sie den Wirkungsgrad ihrer Anlage steigern oder ihren Energieverbrauch reduzieren?<br>
 				Unsere Techniker und Energiebilanzierer beraten Sie gerne dabei, Ihre Energie effizienter und ökologischer zu nutzen.</p>
 				<h3>Projekte</h3>
 				<p>Gemeinsam entwickeln wir Projekte, die die Energieeffizienz verbessern, Eingangskosten ermäßgen und die Umweltverträglichkeit erhöhen. 
 				Im Rahmen dieser Projekte für den Kunden stellen wir Folgendes sicher: die energietechnische Studie, den Maßsnahmenvorschlag, die Wahl der Lieferanten für die Realisierung, das Projekt-Engineering, das Bau-Engineering, die Umsetzung der vorgeschlagenen Maßnahmen und den darauf folgenden Betrieb im Bedarfsfall.</p>
-				<img src="./img/poradenstvo.jpg" alt="poradenstvo" style="width: 100%;">
 				<h3>Individualität</h3>
 				<p>In der Zusammenarbeit mit unseren Partnern liefern wir Projekte, die maßgeschneidert den Bedürfnissen des Kunden werden, mit dem Ziel den Energieaufwand der Gebäude und der Wärme-Energieanlagen, sowie den Wärmeverbrauch bzw. Produktion von Wärme/Kälte zu ermäßigen.</p>
 				<p>Wir werden Partner des Kunden bei der Suche nach einer effektiven Lösung für den Betrieb der Wirtschaft mit Wärme und Energie, sowie auch für das Outsourcing in der Wärmeenergetik.</p>
@@ -273,6 +259,8 @@
 	   		</div>
 	   <!-- VYSTAVBA -->
 	   		<div class="vystavba">
+				<div class="divider"></div>
+				<img src="./img/vystavba.png" alt="Výstavba" class="w-100">
 				<div class="divider"></div>
 	   			<h3>Výstavba</h3>
 				<p>Wie groß muss die Anlage sein? <br>
@@ -295,6 +283,8 @@
 	   		</div>
 	   <!-- PREVADZKA -->
 	   		<div class="prevadzka">
+				<div class="divider"></div>
+				<img src="./img/prevadzka.png" alt="Prevádzka" class="w-100">
 				<div class="divider"></div>
 	   			<h3>Prevádzka</h3>
 				<p>Was wir hier für Sie machen:</p>
