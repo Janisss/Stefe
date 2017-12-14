@@ -312,7 +312,7 @@
 							"intro",
 							"image"
 						],[
-							"status" => "<span style='color:var(--stefeGreen)'>publikované!</span>",
+							"edit" => "visible",
 							"alarm" => "nie"
 						]);
 					

@@ -214,12 +214,12 @@ if ($sessionname == ""){
 					<div class='form-group'>
 		        		<p>Nadpis článku:</p>
 					    <input name='nadpisEdit' type='text' class='form-control' id='nadpis' maxlength='25' aria-describedby='nadpisHelp' value='".$myEditNadpis."'>
-					    <small id='nadpisHelp' class='form-text text-muted>'Tento nadpis sa zobrazí v hlavičke článku.</small>
+					    <small class='form-text text-muted'>Tento nadpis sa zobrazí v hlavičke článku. </small>
 					</div>
 					<div class='form-group'>
 	        		  <p>Krátky popis článku:</p>
 					    <input name='introtext' type='text' class='form-control' id='introtextEdit' maxlength='110' aria-describedby='nadpisHelp' value='".$myEditIntro."'>
-					    <small id='nadpisHelp' class='form-text text-muted'>Tento popis sa zobrazí v miniatúrnom náhlade článku.</small>
+					    <small class='form-text text-muted'>Tento popis sa zobrazí v miniatúrnom náhlade článku. </small>
 					</div>
 							<textarea name='editarea' id='edit' cols='30' rows='10'>".$myEditText."</textarea>";
 				};
