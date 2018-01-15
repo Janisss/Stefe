@@ -193,7 +193,7 @@
 				<div class="divider"></div>
 				
 					<div class="divider"></div>
-						<img src="./img/landscape.jpeg" alt="teplo" class="w-100">
+						<img src="./img/vyroba.png" alt="teplo" class="w-100">
 						<div class="divider"></div>
 						<h3>Teplo</h3>
 						<p>Sie leben zwischen Trnava, Martin und Rožňava?<br>
@@ -321,7 +321,7 @@
 						  foreach (array_reverse($news) as $data){
 							  $cleantext = strip_tags($data["intro"]);
 						  		if ($numbernewsread <= $limitnews) {
-						  			echo "<div class='col-lg-4 col-md-4 col-sm-4 col-xs-6'>
+						  			echo "<div class=\"col-lg-4 col-md-4 col-sm-4 col-xs-6\">
 							  			<article class='card'>
 							  				<header class='title-header'>
 							  					<h3>".$data["nazov"]."</h3>
@@ -356,18 +356,89 @@
 				<div class="divider"></div>
 			<div class="row" style="text-align: center;">
 				<div class="col-md-3 col-sm-6 col-xs-6">
-					<div class="ref-icon one material-button"><img src="./img/SVG icons/shopping.svg" alt="Nákupné centrá"></div>
+					<a href="#scrollreferencie"><div class="ref-icon one material-button"><img src="./img/SVG icons/shopping.svg" alt="Nákupné centrá"></div></a>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-6">
-					<div class="ref-icon two material-button"><img src="./img/SVG icons/theatre_sport.svg" alt="Umenie šport a kultúra"></div>
+					<a href="#scrollreferencie"><div class="ref-icon two material-button"><img src="./img/SVG icons/theatre_sport.svg" alt="Umenie šport a kultúra"></div></a>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-6">
-					<div class="ref-icon three material-button"><img src="./img/SVG icons/flats.svg" alt="Obytné zóny"></div>
+					<a href="#scrollreferencie"><div class="ref-icon three material-button"><img src="./img/SVG icons/flats.svg" alt="Obytné zóny"></div></a>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-6">
-					<div class="ref-icon four material-button"><img src="./img/SVG icons/industry.svg" alt="Industriálne zóny"></div>
+					<a href="#scrollreferencie"><div class="ref-icon four material-button"><img src="./img/SVG icons/industry.svg" alt="Industriálne zóny"></div></a>
 				</div>
 			</div>
+			
+			<div id="scrollreferencie">
+				<div class="ref-one">
+					<h3>Výroba a dodávka tepla a chladu pre OC Galéria Lučenec </h3>
+					<p><b>Realizuje: STEFE ECB, s.r.o.</b></p>
+					<p><b>riešenie pre zákazníka: </b></p>
+					<p>Na výrobu tepla je použitá moderná technológia s využitím kondenzačných kotlov  s celkovým inštalovaným tepelným výkonom 1,7 MW a výrobu chladu zabezpečujú dve chladiace  jednotky  so skrutkovým kompresorom s celkovým inštalovaným výkonom 1,5 MW vrátane možnosti free-coolingu.</p>
+					<p><b>Služby pre zákazníka:</b></p>
+					<ol>
+						<li>zabezpečenie výroby, dodávky tepla a chladu</li>
+						<li>garantovanie spoľahlivej, hospodárnej a ekologickej výroby a dodávky tepla a chladu</li>
+						<li>zaručenie optimalizácie prevádzky, dodaného množstva tepla a chladu po dobu 15 rokov</li>
+					</ol>
+					<a href="#referencie" class="close-ref"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Referencie</a>
+				</div>
+				<div class="ref-two">
+					<h3>Rekonštrukcia zásobovania teplom a dodávka chladu pre Slovenské komorné divadlo v Martine</h3>
+					<p><b>Realizuje: STEFE Martin, a.s.</b></p>
+					<p><b>Služby pre zákazníka:</b></p>
+					<ol>
+						<li>realizácia kompletnej rekonštrukcie z dôvodu havarijného stavu</li>
+						<li>dodanie projektu technického riešenia</li>
+						<li>dodávka novej horúcovodnej KOST</li>
+						<li><b>hydraulické vyregulovanie systému po rekonštrukcii</b></li>
+						<li>vybudovanie chladiacej jednotky a rozvodov chladu</li>
+						<li>modernizácia vzduchotechniky s rekuperáciou v budove</li>
+						<li>prevádzka a údržba rekonštruovaných technologických zariadení</li>
+					</ol>
+					<p><b>Výhody pre zákazníka:</b></p>
+					<ol>
+						<li>dodanie diela na kľúč, financovanie diela spoločnosťou STEFE Martin</li>
+						<li>ročná úspora spotreby tepla 15%</li>
+					</ol>
+					<a href="#referencie" class="close-ref"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Referencie</a>
+				</div>
+				<div class="ref-three">
+					<h3>Projekt zásobovania teplom priemyselného areálu a vykurovanie výrobných hál pre SL Slovakia</h3>
+					<p><b>Realizuje: STEFE Banská Bystrica, a.s.</b></p>
+					<p><b>Riešenie pre zákazníka:</b></p>
+					<p>Vo vybraných výrobných halách sa pôvodný spôsob vykurovania prostredníctvom mobilných dieselagregátov nahradil plynovými infražiaričmi a destratifikátormi. Boli vybudované nové vnútroareálové plynové rozvody.</p>
+					<p><b>Služby pre zákazníka:</b></p>
+					<ol>
+						<li>projektový inžiniering (vypracovanie štúdie realizovateľnosti)</li>
+						<li>dodanie diela na kľúč (realizácia, vybavenie povolení, zabezpečenie zákonných povinností) </li>
+						<li>spôsob dlhodobého financovania – splácanie z úspor</li>
+						<li>zabezpečenie dotácie z prostriedkov programu Slovseff financovaného Slovenskou sporiteľňou a Európskou bankou pre obnovu a rozvoj</li>
+						<li>napojenie plynovej kotolne na 24 hodinových dispečing</li>
+					</ol>
+					<p><b>Výhody pre zákazníka:</b></p>
+					<p>okrem energetických a finančných úspor zásadnú zmenu kvality a komfortu vykurovania výrobných priestorov. </p>
+					<a href="#referencie" class="close-ref"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Referencie</a>
+				</div>
+				<div class="ref-four">
+					<h3>Projekt výmena ležatých rozvodov TÚV a  ÚK</h3>
+					<p><b>Realizuje: STEFE Zvolen s.r.o.</b></p>
+					<p><b>Riešenie pre zákazníka:</b></p>
+					<p>Výmena rozvodov sa realizovala z dôvodu veku potrubia a jeho havarijného stavu. Pôvodné ležaté rozvody boli situované v technickom suteréne bytového domu, kde opakovane vznikali poruchy na potrubí. Tieto poruchy nebolo možné vždy úplne odstrániť pre zlý prístup k potrubiam. 
+					Nová trasa ležatých potrubných rozvodov je teraz vedená pod stropom v pivničných priestoroch a na chodbách, odkiaľ následne pokračuje do jednotlivých bytov. Na realizáciu diela boli použité oceľové, plast hliníkové a polyetylénové potrubia vo svetlostiach od DN15 do DN50 ukončené armatúrami. Najskôr bola vybudovaná nová trasa potrubia realizáciou zváraním , od KOST bola vedená pod stropom až po poslednú stupačku v bytovom dome. Následne na to bol postupne  realizovaný prepoj na jednotlivé bytové stupačky a vykurovacie telesá. 
+					</p>
+					<p><b>Služby pre zákazníka:</b></p>
+					<ol>
+						<li>manažovanie celej výmeny počas doby 4 týždňov s prestávkami podľa požiadaviek zákazníka</li>
+						<li>dodávka diela - realizácia výmeny ležatých rozvodov TÚV, ÚK, podľa projektu predloženého zákazníkom </li>
+						<li>demontáž ležatých rozvodov </li>
+						<li>realizácia nových rozvodov, vrátane dodávky a montáže armatúr</li>
+						<li>po zrealizovaní diela sa všetky vykurovacie telesá odvzdušnili, plne sprevádzkovali, odskúšala sa funkčnosť rozvodu ÚK a TÚV.</li>
+					</ol>
+					<a href="#referencie" class="close-ref"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Referencie</a>
+				</div>
+			</div>
+
 			<!-- Referencie end -->
 			
 			<!-- KARIERA -->
@@ -525,47 +596,80 @@
 		});
 		  
 		$(".teplo-btn").click(function(){
-			$(".teplo").addClass("active").addClass("letter");
-			$(".technickesluzby").removeClass("active").removeClass("letter");
-			$(".poradenstvo").removeClass("active").removeClass("letter");
-			$(".vystavba").removeClass("active").removeClass("letter");
-			$(".prevadzka").removeClass("active").removeClass("letter");
+			$(".teplo").addClass("active letter");
+			$(".technickesluzby").removeClass("active letter");
+			$(".poradenstvo").removeClass("active letter");
+			$(".vystavba").removeClass("active letter");
+			$(".prevadzka").removeClass("active letter");
 		});
 		$(".technicke-btn").click(function(){
-			$(".technickesluzby").addClass("active").addClass("letter");	
-			$(".teplo").removeClass("active").removeClass("letter");
-			$(".poradenstvo").removeClass("active").removeClass("letter");
-			$(".vystavba").removeClass("active").removeClass("letter");
-			$(".prevadzka").removeClass("active").removeClass("letter");
+			$(".technickesluzby").addClass("active letter");	
+			$(".teplo").removeClass("active letter");
+			$(".poradenstvo").removeClass("active letter");
+			$(".vystavba").removeClass("active letter");
+			$(".prevadzka").removeClass("active letter");
 		});
 		$(".poradenstvo-btn").click(function(){
-			$(".poradenstvo").addClass("active").addClass("letter");	
-			$(".teplo").removeClass("active").removeClass("letter");
-			$(".technickesluzby").removeClass("active").removeClass("letter");
-			$(".vystavba").removeClass("active").removeClass("letter");
-			$(".prevadzka").removeClass("active").removeClass("letter");
+			$(".poradenstvo").addClass("active letter");	
+			$(".teplo").removeClass("active letter");
+			$(".technickesluzby").removeClass("active letter");
+			$(".vystavba").removeClass("active letter");
+			$(".prevadzka").removeClass("active letter");
 		});
 		$(".vystavba-btn").click(function(){
-			$(".vystavba").addClass("active").addClass("letter");	
-			$(".teplo").removeClass("active").removeClass("letter");
-			$(".technickesluzby").removeClass("active").removeClass("letter");
-			$(".poradenstvo").removeClass("active").removeClass("letter");
-			$(".prevadzka").removeClass("active").removeClass("letter");
+			$(".vystavba").addClass("active letter");	
+			$(".teplo").removeClass("active letter");
+			$(".technickesluzby").removeClass("active letter");
+			$(".poradenstvo").removeClass("active letter");
+			$(".prevadzka").removeClass("active letter");
 		});
 		$(".prevadzka-btn").click(function(){
-			$(".prevadzka").addClass("active").addClass("letter");	
-			$(".teplo").removeClass("active").removeClass("letter");
-			$(".technickesluzby").removeClass("active").removeClass("letter");
-			$(".poradenstvo").removeClass("active").removeClass("letter");
-			$(".vystavba").removeClass("active").removeClass("letter");
+			$(".prevadzka").addClass("active letter");	
+			$(".teplo").removeClass("active letter");
+			$(".technickesluzby").removeClass("active letter");
+			$(".poradenstvo").removeClass("active letter");
+			$(".vystavba").removeClass("active letter");
 		});
 		$(".close-produkty").click(function(){
 			setTimeout(function(){
-			  $(".teplo").removeClass("active").removeClass("letter");
-			  $(".technickesluzby").removeClass("active").removeClass("letter");
-			  $(".poradenstvo").removeClass("active").removeClass("letter");
-			  $(".vystavba").removeClass("active").removeClass("letter");
-			  $(".prevadzka").removeClass("active").removeClass("letter");
+			  $(".teplo").removeClass("active letter");
+			  $(".technickesluzby").removeClass("active letter");
+			  $(".poradenstvo").removeClass("active letter");
+			  $(".vystavba").removeClass("active letter");
+			  $(".prevadzka").removeClass("active letter");
+			}, 500);	
+		});
+
+		$(".ref-icon.one").click(function(){
+			$(".ref-one").addClass("active letter");
+			$(".ref-two").removeClass("active letter");
+			$(".ref-three").removeClass("active letter");
+			$(".ref-four").removeClass("active letter");
+		});
+		$(".ref-icon.two").click(function(){
+			$(".ref-two").addClass("active letter");	
+			$(".ref-one").removeClass("active letter");
+			$(".ref-three").removeClass("active letter");
+			$(".ref-four").removeClass("active letter");
+		});
+		$(".ref-icon.three").click(function(){
+			$(".ref-three").addClass("active letter");
+			$(".ref-one").removeClass("active letter");
+			$(".ref-two").removeClass("active letter");
+			$(".ref-four").removeClass("active letter");
+		});
+		$(".ref-icon.four").click(function(){
+			$(".ref-four").addClass("active letter");
+			$(".ref-one").removeClass("active letter");
+			$(".ref-two").removeClass("active letter");
+			$(".ref-three").removeClass("active letter");
+		});
+		$(".close-ref").click(function(){
+			setTimeout(function(){
+			  $(".ref-one").removeClass("active letter");
+			  $(".ref-two").removeClass("active letter");
+			  $(".ref-three").removeClass("active letter");
+			  $(".ref-four").removeClass("active letter");
 			}, 500);	
 		});
 		  

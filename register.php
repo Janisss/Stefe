@@ -202,6 +202,14 @@
                 <input type="text" id="celemeno" class="form-control" placeholder="Celé meno" name="celemeno">
                 <input type="password" id="inputPassword" class="form-control" placeholder=" Zadaj heslo" required name="heslo1">
                 <input type="password" id="inputPassword2" class="form-control" placeholder="Zopakuj heslo" required name="heslo2">
+				<select class="ht-tm-element custom-select w-100">
+				  <option selected="">Vyberte si lokalitu</option>
+				  <option value="SK">Slovensko</option>
+				  <option value=BB>Banska Bystrica</option>
+				  <option value="RS">Rimavská Sobota</option>
+				  <option value="LC">Lučenec</option>
+				</select>
+
                 <div id="remember" class="checkbox">
 				<br>
                 </div>
