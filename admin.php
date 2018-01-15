@@ -170,8 +170,12 @@ if ($sessionname == ""){
 			<form method='post' action='admin.php'>
 			<input type='text' name='idedit' hidden value='".$data["ID"]."'>";
 				if($data["edit"] == "waiting"){
-					echo "<a href='./nahlad.php?ID=".$data["ID"]."' class='btn btn-block btn-warning btn-sm w-100' target='_blank'>Náhlad</a>
+					echo "<a href='./nahlad.php?ID=".$data["ID"]."' class='btn btn-block btn-warning btn w-100' target='_blank'> <i class='fa fa-eye' aria-hidden='true'></i>Náhlad</a>
 						  <input type='submit' name='editMe' class='btn btn-success btn-sm w-100' value='Upraviť'>
+						  <button type='submit' class='btn btn-warning btn w-100'><i class='fa fa-pencil-square-o' aria-hidden='true'></i> Upraviť</button>
+						  <button type='submit' class='btn btn-danger btn w-100'><i class='fa fa-trash' aria-hidden='true'></i> Zmazať</button>
+						  <button type='submit' class='btn btn-success btn w-100'><i class='fa fa-check-circle-o' aria-hidden='true'></i> Uverejniť</button>
+						  <button type='submit' class='btn btn-secondary btn w-100'><i class='fa fa-archive' aria-hidden='true'></i> Archivovať</button>
 						  <input type='submit' name='zobraz' class='btn btn-success btn-sm w-100' value='Uverejniť'>
 						<input type='submit' name='delete' class='btn btn-danger btn-sm w-100' value='X'>";
 				}elseif($data["edit"] == "visible"){

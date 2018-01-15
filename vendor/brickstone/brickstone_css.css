@@ -691,8 +691,25 @@ video.profilvid{
 .teplo.active, .poradenstvo.active, .technickesluzby.active, .vystavba.active, .prevadzka.active{
 	max-height: 1650px;
 	opacity: 1;
+	overflow: hidden;
+	transition: all .5s ease;
+	display: block;
 }
-
+.ref-one, .ref-two, .ref-three, .ref-four{
+	margin: 0 auto;
+	max-height: 0px;
+	overflow: hidden;
+	transition: all .5s ease;
+	display: block;
+	opacity: 0;
+}
+.ref-one.active, .ref-two.active, .ref-three.active, .ref-four.active{
+	max-height: 1650px;
+	opacity: 1;
+	overflow: hidden;
+	transition: all .5s ease;
+	display: block;
+}
 .letter {
 	background: #fff;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -724,7 +741,7 @@ video.profilvid{
 	top: 1px;
 	transform: rotate(1.4deg);
 }
-.close-produkty {
+.close-produkty, .close-ref {
 	color:var(--stefeGreen);
 	font-size: 1.5rem;
 	margin:auto;
@@ -802,4 +819,7 @@ a.nav-link.sub{
 	font-weight: 100;
 	text-align: center;
 	user-select: none;
+}
+#scrollreferencie{
+	padding: 15px;
 }
