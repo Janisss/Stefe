@@ -352,7 +352,6 @@
 	   		<!-- Referencie -->
 			<h1 id="referencie"><span>Referencie</span></h1>
 			<span class="subheader">Naši klienti a partneri.</span>
-			<p class="maintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, eaque nisi porro delectus ipsa, facere consectetur unde, eum est voluptatem quos odio, quidem repellendus minima optio debitis in labore earum.</p>
 				<div class="divider"></div>
 			<div class="row" style="text-align: center;">
 				<div class="col-md-3 col-sm-6 col-xs-6">
