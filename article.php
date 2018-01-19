@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Stefe.sk - Banská Bystrica</title>
+    <title>Stefe.sk</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -25,6 +25,15 @@
   </head>
 
   <body>
+
+    <!-- LOADER -->
+      <div class="se-pre-con">
+      <div id="loader_hype_container" style="margin: -60px auto;position:relative;width:120px;height:120px;overflow:hidden;top:50%;">
+        <script type="text/javascript" charset="utf-8" src="loader.hyperesources/loader_hype_generated_script.js?58297"></script>
+      </div>
+      </div>
+    <!-- LOADER END -->
+    
 <!-- FACEBOOK -->
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -74,50 +83,71 @@
     <nav class="navbar navbar-expand-lg navbar-stefe">
       <div class="preheader">
       </div>
-      <div class="container">
-      	<a href="./index.php"><img src="./img/logo.svg" alt="Stefe" class="logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+      <div class="container customW">
+       <img src="./img/logo.svg" alt="Stefe" class="logo">
+        <button class="navbar-toggler opensMenu" type="button">
+          <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true" style="color: white;line-height: 1.5;"></i></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav m-auto">
+        <div id="menucko" class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav m-auto main-menu">
             <li class="nav-item active">
-              <a class="nav-link" href="./index.php">Stefe SK
-                <span class="sr-only">(current)</span>
-              </a>
+              <a data-scroll class="nav-link" href="./index.php">Stefe SK</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Služby</a>
+              <a data-scroll class="nav-link" href="./index.php#produkty">Produkty</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Aktuality</a>
+              <a data-scroll class="nav-link" href="./index.php#aktuality">Aktuality</a>
+            </li>
+      <li class="nav-item">
+              <a data-scroll class="nav-link" href="./index.php#referencie">Referencie</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Kariéra</a>
+              <a data-scroll class="nav-link" href="./index.php#kariera">Kariéra</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Kontakty</a>
+              <a data-scroll class="nav-link" href="./index.php#kontakty">Kontakty</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <!-- NAVI END -->
 
-
+    <!-- First line white -->
    <div class="container first">
-   	<div class="row">
-   		<div class="col-md-6 float-left hidden-md-down"><h2>STEFE - My Vás rozpálime!</h2></div>
-   		<div class="col-md-6 float-right">
-			<div class="dropdown show float-right stefe-dropdown">
-			  <a class="btn dropdown-toggle" href="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vyberte vaše mesto</a>
-			  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-				<a class="dropdown-item" href="#">Banská Bystrica</a>
-				<a class="dropdown-item" href="#">Rimavská Sobota</a>
-			  </div>
-			</div>
-		</div>
-   	</div>
+    <div class="row">
+      <div class="col-md-6 float-left hidden-md-down"><h2>STEFE - Hrejivé teplo domova</h2></div>
+      <div class="col-md-6 float-right">
+        <div class="container">
+      <div class="dropdown show float-right stefe-dropdown">
+        <a class="btn dropdown-toggle hit-me" href="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vyberte vaše mesto</a>
+        <div class="dropdown-menu toggleattr" aria-labelledby="dropdownMenuLink">
+        <a class="dropdown-item" href="./index_bb.php">Banská Bystrica</a>
+        <a class="dropdown-item" href="#">Brusno</a>
+        <a class="dropdown-item" href="#">Kováčová</a>
+        <a class="dropdown-item" href="#">Martin</a>
+        <a class="dropdown-item" href="#">Rimavská Sobota</a>
+        <a class="dropdown-item" href="#">Rožňava</a>
+        <a class="dropdown-item" href="#">Klenovec</a>
+        <a class="dropdown-item" href="#">Krupina</a>
+        <a class="dropdown-item" href="#">Levoča</a>
+        <a class="dropdown-item" href="#">Lučenec</a>
+        <a class="dropdown-item" href="#">Pliešovce</a>
+        <a class="dropdown-item" href="#">Revúca</a>
+        <a class="dropdown-item" href="#">Tornaľa</a>
+        <a class="dropdown-item" href="#">Veľký Krtíš</a>
+        <a class="dropdown-item" href="#">Kremnica</a>
+        <a class="dropdown-item" href="#">Zvolen</a>
+        <a class="dropdown-item" href="#">Zvolenská Slatina</a>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
    </div>
+   <!-- First line white END -->
+
    <div class="container-fluid" style="padding: 0;">
 		<div class="header-pic sk">
 		</div>
@@ -140,8 +170,7 @@
 				<div class="fb-share-button float-right" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true" style="margin-bottom: 5px;"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Zdieľať</a></div>
 			<!-- google share -->
 				<div class="g-plus" data-action="share"></div>
-		   <!-- späť -->
-		   		<div class="float-right" style="margin-right: 5px;"><a href="./index.php"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Späť</a></div>
+
 	   </div>
 	   <div class="divider"></div>
 	   <div class="divider"></div>
@@ -191,8 +220,7 @@
 						  	}
 					?>
 			</div>
-	  			<!-- späť -->
-		   			<div class="float-right" style="margin-right: 5px;"><a href="./index.php"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Späť</a></div>
+
 	  
 	<div class="divider"></div>
 	<div class="divider"></div>
@@ -204,7 +232,7 @@
     <footer id="kontakty">
     <div class="row nopadding">
       <div class="col-md-6 map nopadding">
-        <iframe src="https://snazzymaps.com/embed/16372" width="100%" height="400px" style="border:none;"></iframe>
+        <iframe src="https://snazzymaps.com/embed/16372" width="100%" height="450px" style="border:none;"></iframe>
       </div>
       <div class="col-md-6 kontakt nopadding">
         <div class="divider"></div>
@@ -218,17 +246,30 @@
             <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email">
             </div>
             <div class="form-group">
-            <textarea rows="5" class="form-control"></textarea>
+            <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Telefónne číslo">
             </div>
             <div class="form-group">
-            <button class="stefe-btn btn">Odoslať</button>
+            <textarea rows="5" class="form-control" placeholder="Správa"></textarea>
+            </div>
+            <div class="form-group">
+            <button class="stefe-btn btn float-right">Odoslať</button>
             </div>
           </div>
         </form>
-      <i class="fa fa-facebook fa-3x" style="padding: 0 0 20px 20px; color: white;" aria-hidden="true"></i>
-      <i class="fa fa-google-plus-square fa-3x" style="padding: 0 0 20px 20px; color: white;" aria-hidden="true"></i>
-      <a class="float-right" style="padding-right: 15px; color: white;" href="./sitemap.php"><h4>Mapa stránky</h4></a>    
+
+    <!-- SOCIAL -->
+    <div class="social">
+      <a href="https://www.facebook.com/energia.stefe/" target="_blank" style="display: block;"><i class="fa fa-facebook fa-2x" style="color: white;" aria-hidden="true"></i></a>
+      <a href="https://www.youtube.com/channel/UCphx4zd6hjALHTs81CQDNwA/featured" target="_blank" style="display: block;"><i class="fa fa-youtube fa-2x" style="display: block; color: white;" aria-hidden="true"></i></a>
+    </div>
+    <!-- SOCIAL END -->
+
       </div>
+      </div>
+      <div class="container-fluid" style="background: #69BE28; min-height: 40px; margin: 0; padding:0; color: white;text-align: center;">
+        <div class="container subfooter">
+          <span><a href="./sitemap.php">Mapa stránky</a> | <a href="http://brickstone.design/" target="_blank">Web od Brickstone.design</a></span>
+        </div>
       </div>
     </footer>
 
@@ -236,6 +277,188 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+      //custom width
+      function widthSize(){
+          window["customWidth"] = (($( window ).width() - $(".customW").width()) / 2);
+          $(".offset-left").filter(function(){
+            $(this).css({"left":window["customWidth"] + "px"});
+          });
+      $(".offset-right").filter(function(){
+        $(this).css({"right":window["customWidth"] + "px"});
+      });
+      };
+      
+      var stred_okna;
+      $( window ).resize(function() {
+        stred_okna = ($(window).height())/3;
+        $(".social").css({top: (stred_okna)+"px"});
+        widthSize()
+        scrollTopp()
+      });
+    
+      $(window).resize();
+
+
+     $(window).on('load', function () {
+        $(".se-pre-con").fadeOut("fast");
+     });
+
+
+
+    
+
+
+
+     $(window).scroll(function () {
+      scrollTopp()
+      widthSize()
+     });
+     function scrollTopp() {
+          if ($(document).scrollTop() > 120)
+            {
+              $(".hit-me").addClass("flip offset-right");
+              $(".hit-me").css({"right":window["customWidth"] + "px"});
+              $(".toggleattr").attr({"id":"custom-m"});
+              $(".toggleattr").css({"right":(window["customWidth"]) + 80 + "px"});
+
+            }else{
+              $(".hit-me").removeClass("flip offset-right");
+              $(".toggleattr").attr({"id":""});
+            }
+       };
+
+     // MENU MINU TOGGLER
+     $(".opensMenu").click(function(e){
+      e.stopPropagation();
+      $("#menucko").toggleClass("openMenu");
+        });
+     $(document).click(function(){
+          $("#menucko").removeClass("openMenu");
+        });
+    
+        
+     
+      
+    $('#myTab').on('click', function (e) {
+      $(this).tab('show')
+    })
+      
+      $(".inzeraty-after.stefe-btn").click(function(){
+      if($(this).closest(".row.inzeraty").find(".inzeraty-content").hasClass("active")){
+        $(this).closest(".row.inzeraty").find(".inzeraty-content").removeClass("active");
+        $(this).empty().append("<i class='fa fa-arrow-circle-down' aria-hidden='true'></i> Viac");
+      }else{
+        $(this).closest(".row.inzeraty").find(".inzeraty-content").addClass("active");
+        $(this).empty().append("<i class='fa fa-arrow-circle-up' aria-hidden='true'></i> Menej");
+      }
+      
+    });
+      
+    $(".teplo-btn").click(function(){
+      $(".teplo").addClass("active letter");
+      $(".technickesluzby").removeClass("active letter");
+      $(".poradenstvo").removeClass("active letter");
+      $(".vystavba").removeClass("active letter");
+      $(".prevadzka").removeClass("active letter");
+    });
+    $(".technicke-btn").click(function(){
+      $(".technickesluzby").addClass("active letter");  
+      $(".teplo").removeClass("active letter");
+      $(".poradenstvo").removeClass("active letter");
+      $(".vystavba").removeClass("active letter");
+      $(".prevadzka").removeClass("active letter");
+    });
+    $(".poradenstvo-btn").click(function(){
+      $(".poradenstvo").addClass("active letter");  
+      $(".teplo").removeClass("active letter");
+      $(".technickesluzby").removeClass("active letter");
+      $(".vystavba").removeClass("active letter");
+      $(".prevadzka").removeClass("active letter");
+    });
+    $(".vystavba-btn").click(function(){
+      $(".vystavba").addClass("active letter"); 
+      $(".teplo").removeClass("active letter");
+      $(".technickesluzby").removeClass("active letter");
+      $(".poradenstvo").removeClass("active letter");
+      $(".prevadzka").removeClass("active letter");
+    });
+    $(".prevadzka-btn").click(function(){
+      $(".prevadzka").addClass("active letter");  
+      $(".teplo").removeClass("active letter");
+      $(".technickesluzby").removeClass("active letter");
+      $(".poradenstvo").removeClass("active letter");
+      $(".vystavba").removeClass("active letter");
+    });
+    $(".close-produkty").click(function(){
+      setTimeout(function(){
+        $(".teplo").removeClass("active letter");
+        $(".technickesluzby").removeClass("active letter");
+        $(".poradenstvo").removeClass("active letter");
+        $(".vystavba").removeClass("active letter");
+        $(".prevadzka").removeClass("active letter");
+      }, 500);  
+    });
+
+    $(".ref-icon.one").click(function(){
+      $(".ref-one").addClass("active letter");
+      $(".ref-two").removeClass("active letter");
+      $(".ref-three").removeClass("active letter");
+      $(".ref-four").removeClass("active letter");
+    });
+    $(".ref-icon.two").click(function(){
+      $(".ref-two").addClass("active letter");  
+      $(".ref-one").removeClass("active letter");
+      $(".ref-three").removeClass("active letter");
+      $(".ref-four").removeClass("active letter");
+    });
+    $(".ref-icon.three").click(function(){
+      $(".ref-three").addClass("active letter");
+      $(".ref-one").removeClass("active letter");
+      $(".ref-two").removeClass("active letter");
+      $(".ref-four").removeClass("active letter");
+    });
+    $(".ref-icon.four").click(function(){
+      $(".ref-four").addClass("active letter");
+      $(".ref-one").removeClass("active letter");
+      $(".ref-two").removeClass("active letter");
+      $(".ref-three").removeClass("active letter");
+    });
+    $(".close-ref").click(function(){
+      setTimeout(function(){
+        $(".ref-one").removeClass("active letter");
+        $(".ref-two").removeClass("active letter");
+        $(".ref-three").removeClass("active letter");
+        $(".ref-four").removeClass("active letter");
+      }, 500);  
+    });
+      
+      $(function() {
+      var taint, d, x, y;
+      $(".material-button").mouseenter(function(e){
+        if ($(this).find(".taint").length == 0) {
+          $(this).prepend("<span class='taint'></span>")
+        }
+        taint = $(this).find(".taint");
+        taint.removeClass("drop");
+        if(!taint.height() && !taint.width()) {
+          d = Math.max($(this).outerWidth(), $(this).outerHeight());
+        taint.css({height: d, width: d});
+        }
+        x = e.pageX - $(this).offset().left - taint.width()/2;
+        y = e.pageY - $(this).offset().top - taint.height()/2;
+        taint.css({top: y+'px', left: x+'px'}).addClass("drop");
+      });
+    });
+
+      
+
+      /*
+
+      */
+      
+    </script>
 
   </body>
 

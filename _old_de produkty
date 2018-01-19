@@ -32,8 +32,8 @@
 	  	</div>
 	  <!-- LOADER END -->
 	  <div class="lang offset-right">
-			<a href="#">SK</a>	
-			<a href="./index_de.php">DE</a>	
+			<a href="">SK</a>	
+			<a href="">DE</a>	
 		</div>
 
 <script>
@@ -64,10 +64,10 @@
     	</div>
       <div class="container customW">
        <img src="./img/logo.svg" alt="Stefe" class="logo">
-        <button class="navbar-toggler opensMenu" type="button">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true" style="color: white;line-height: 1.5;"></i></span>
         </button>
-        <div id="menucko" class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav m-auto main-menu">
             <li class="nav-item active">
               <a data-scroll class="nav-link" href="#">Stefe SK</a>
@@ -91,12 +91,10 @@
         </div>
       </div>
     </nav>
-    <!-- NAVI END -->
 
-	<!-- First line white-->
    <div class="container first">
    	<div class="row">
-   		<div class="col-md-6 float-left iphone-hide"><h2>STEFE - Hrejivé teplo domova</h2></div>
+   		<div class="col-md-6 float-left hidden-md-down"><h2>STEFE - Hrejivé teplo domova</h2></div>
    		<div class="col-md-6 float-right">
    			<div class="container">
 			<div class="dropdown show float-right stefe-dropdown">
@@ -125,8 +123,6 @@
 		</div>
    	</div>
    </div>
-   <!-- First line white END -->
-
    <div class="container-fluid" style="padding: 0;">
 		<div class="header-pic sk">
 		</div>
@@ -139,7 +135,7 @@
    </div>
    <div class="container" style="padding-top:30px">
   		<h1 id="produkty"><span>Produkty</span></h1>
-  		<span class="subheader">Výroba a dodávka</span>
+  		<span class="subheader">Vyberte si z ponuky naších služieb</span>
 	   		<div class="row">
 				<div class="col-lg-6 col-md-6 col-sm-12">
 					<a href="#scrollprodukty" class="link-clear">
@@ -202,14 +198,17 @@
 						<img src="./img/vyroba.png" alt="teplo" class="w-100">
 						<div class="divider"></div>
 						<h3>Teplo</h3>
-						<p>Bývate niekde medzi Trnavou, Martinom a Rožňavou?<br>
-						Potom je veľmi pravdepodobné, že o Vaše teplo v domácnosti sa staráme my zo STEFE. Robíme Váš domov príjemne teplým a Vašu vodu príjemne horúcou. Ako jeden z najväčších dodávateľov tepla na Slovensku sa neustále zlepšujeme - kvôli Vám.</p>
-						<p>Ak sa pýtate, ako funguje diaľkové vykurovanie, pozrite si naše video: <a href="https://www.youtube.com/watch?v=EPZIAY9mdH8&t=5s">Kliknúť tu</a></p>
-						<p>Záleží nám na tom, aby sme Vám spoľahlivo dodali teplo. Naši dispečeri dohliadajú na naše kotly a kontrolujú sieť. Preto si môžete byť istí, že Vám chladno nebude: sme k dispozícii 24 hodín denne, 7 dní v týždni.</p>
-						<p>Máte otázky? Naši dispečeri sú Vám kedykoľvek k dispozícii. V hornom menu si zvoľte Vaše mesto a zavolajte nám na nižšie uvedené telefónne číslo.</p>
+						<p>Sie leben zwischen Trnava, Martin und Rožňava?<br>
+						Dann ist die Wahrscheinlichkeit groß, dass wir von STEFE bei Ihnen zuhause für Wärme sorgen. Wir machen Ihr Heim gemütlich warm und ihr Wasser angenehm heiß. 
+						Als einer der größten Wärmeversorger der Slowakei verbessern wir uns stetig  - für Sie.</p>
+						<p>Sie fragen sich wie Fernwärme funktioniert, dann sehen Sie sich doch dieses video an: <a href="https://www.youtube.com/watch?v=EPZIAY9mdH8&t=5s">Hier klicken</a></p>
+						<p>Versorgungssicherheit ist sehr wichtig für uns. Unsere Dispatcher überwachen unsere Kessel und kontrollieren das Netz. So stellen sie sicher, dass es bei Ihnen nicht kalt wird: 24 Stunden pro Tag - 7 Tage die Woche</p>
+						<p>Sie haben Fragen? Unser Dispatching steht Ihnen jederzeit zur Verfügung. Wählen Sie in der oberen Menüleiste Ihre Stadt aus und rufen Sie uns unter der angeführten Telefonnummer an.</p>
 						<h3>Chlad</h3>
-						<p>Máte radšej chladnejšie prostredie?</p>
-						<p>Máme pre Vás riešenie. STEFE vyrába a dodáva chlad podľa Vašich individuálnych požiadaviek. Technické parametre, montáž a prevádzka sú ušité na mieru a zohľadňujú jeho využitie, prírodné podmienky a danosti danej lokality.</p>
+						<p>Sie mögeńs lieber kühl?</p>
+						<p>Wir haben die passende Lösung für Sie. 
+						STEFE produziert und liefert Kälte gemäß Ihren individuellen Anforderungen.
+						Die technische Lösung, der Bau und der Betrieb der Anlage sind für Ihr Objekt maßgeschneidert und berücksichtigen Ihr Nutzungsverhalten, Umweltschutzanliegen und die lokalen Gegebenheiten.</p>
 					<div class="divider"></div>
 	   			
 				<a href="#produkty" class="close-produkty"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Produkty</a>
@@ -220,21 +219,26 @@
 				<img src="./img/sluzby.png" alt="Služby" class="w-100">
 				<div class="divider"></div>
 	   			<h3>Technicke Služby</h3>
-				<p>STEFE ponúka rozličné služby pre súkromné osoby a podnikateľov. Zabezpečíme Vám komplexnú starostlivosť o tepelné energetické zariadenia vrátane obsluhy, prevádzky, údržby, opravy a odborného servisu.
+				<span class="subheader green">Služby</span>
+				<p>STEFE bietet unterschiedliche Dienstleistungen für Privat- und Geschäftspersonen.
+				Wir stellen Ihnen eine komplette Pflege der Heizungsanlage inklusive der Bedienung, des Betriebs, der Reparatur, Instandhaltung und des Fachservices sicher.
 			  </p>
-				<h3>Technické služby</h3>
-			  <p>Potrebujete niekoho, kto ...<br>
-				... vymení pokazené čerpadlá?<br>
-				... demontuje tepelné rúry?<br>
-				... vymení vyhrievacie teleso?<br>
-				... vyčistí výmenník tepla?</p>
-				<p>Potom ste u nás správne. Radi Vás osobne poinformujeme o našej širokej ponuke.</p>
-			  <h3>Správa určených meradiel</h3>
-			  <p>Demontujeme, ciachujeme, kalibrujeme a vymieňame merače tepla. Naši vysokokvalifikovaní pracovníci majú pre tieto účely dosiahnuté potrebné vzdelanie a certifikáty.</p>
-				<h3>Iné služby</h3>
-				<p>Ponúkame aj mnohé iné služby a sme otvorení novým nápadom.
+				<h3>Technische Dienstleistungen</h3>
+			  <p>Benötigen Sie jemanden, der... <br>
+				... defekte Pumpen tauscht?<br>
+				... Heizungsleitungen demontiert?<br>
+				... Heizkörper tauscht?<br>
+				... Wärmetauscher reinigt?</p>
+				<p>Dann sind Sie bei uns richtig.
+				Gerne informieren wir Sie in einem persönlichen Gespräch über unser umfangreiches Angebot.</p>
+			  <h3>Verwaltung der festgelegten Messgeräte</h3>
+			  <p>Wir demontieren, eichen und tauschen Ihren Wärmemengenzähler.
+			  Unsere bestens qualifizierten Mitarbeiter haben alle notwendigen Ausbildungen und Zertifikate dafür</p>
+				<h3>Andere Leistungen</h3>
+				<p>Wir bieten noch zahlreiche weitere Leistungen und sind offen für neue Ideen.
 				<br>
-				Máte záujem o ďalšie informácie? Tešíme sa na Vaše otázky!</p>
+				Sie sind an weitergehenden Informationen interessiert?
+				Wir freuen uns auf Ihre Anfrage!</p>
 				<div class="divider"></div>
 				<a href="#produkty" class="close-produkty"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Produkty</a>
 	   		</div>
@@ -243,14 +247,15 @@
 				<div class="divider"></div>
 				<img src="./img/poradenstvo.png" alt="Poradenstvo" style="width: 100%;">
 				<div class="divider"></div>
-	   			<h3>Poradenstvo</h3>
-				<p>Zaujíma Vás, ako zvýšiť efektivitu Vášho zariadenia alebo ako znížiť jeho spotrebu energie?  <br>
-				Naši technickí a energetickí špecialisti Vám radi poradia, ako čo najefektívnejšie a najekologickejšie využiť energiu.</p>
-				<h3>Projekty</h3>
-				<p>Spoločne vytvárame projekty, v ktorých sa zameriavame nielen na zvýšenie energetickej efektívnosti, zníženie vstupných nákladov na energie, ale aj na vplyv týchto opatrení na životné prostredie. V rámci týchto projektov pre zákazníka zabezpečujeme: <br>energeticko-technickú štúdiu, návrh opatrení, výber dodávateľov na realizáciu, projektový inžiniering, stavebný inžiniering, realizáciu navrhnutých opatrení a následnú prevádzku v prípade potreby. </p>
-				<h3>Individualita</h3>
-				<p>V spolupráci s našimi partnermi poskytujeme projekty šité na mieru pre zákazníka s cieľom zníženia energetickej náročnosti budovy a tepelno-energetických zariadení, ako aj zníženia spotreby tepla, resp. výroby tepla/chladu. </p>
-				<p>Pre zákazníka sme partnerom pri hľadaní efektívneho riešenia prevádzky tepelného energetického hospodárstva ako aj pre outsourcing v tepelnej energetike.</p>
+	   			<h3>Beratung</h3>
+				<p>Interessieren Sie sich dafür, wie Sie den Wirkungsgrad ihrer Anlage steigern oder ihren Energieverbrauch reduzieren?<br>
+				Unsere Techniker und Energiebilanzierer beraten Sie gerne dabei, Ihre Energie effizienter und ökologischer zu nutzen.</p>
+				<h3>Projekte</h3>
+				<p>Gemeinsam entwickeln wir Projekte, die die Energieeffizienz verbessern, Eingangskosten ermäßgen und die Umweltverträglichkeit erhöhen. 
+				Im Rahmen dieser Projekte für den Kunden stellen wir Folgendes sicher: die energietechnische Studie, den Maßsnahmenvorschlag, die Wahl der Lieferanten für die Realisierung, das Projekt-Engineering, das Bau-Engineering, die Umsetzung der vorgeschlagenen Maßnahmen und den darauf folgenden Betrieb im Bedarfsfall.</p>
+				<h3>Individualität</h3>
+				<p>In der Zusammenarbeit mit unseren Partnern liefern wir Projekte, die maßgeschneidert den Bedürfnissen des Kunden werden, mit dem Ziel den Energieaufwand der Gebäude und der Wärme-Energieanlagen, sowie den Wärmeverbrauch bzw. Produktion von Wärme/Kälte zu ermäßigen.</p>
+				<p>Wir werden Partner des Kunden bei der Suche nach einer effektiven Lösung für den Betrieb der Wirtschaft mit Wärme und Energie, sowie auch für das Outsourcing in der Wärmeenergetik.</p>
 				<div class="divider"></div>
 				<a href="#produkty" class="close-produkty"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Produkty</a>
 	   		</div>
@@ -260,17 +265,21 @@
 				<img src="./img/vystavba.png" alt="Výstavba" class="w-100">
 				<div class="divider"></div>
 	   			<h3>Výstavba</h3>
-				<p>Aké veľké musí byť zariadenie?<br>
-				Sedia technické parametre?<br>
-				Kde sa dá ušetriť a kde radšej nešetriť?<br>
-				Na čo si dávať pozor z právneho hľadiska?<br>
+				<p>Wie groß muss die Anlage sein? <br>
+				Stimmen die technischen Parameter? <br>
+				Wo kann gespart werden, wo besser nicht?<br>
+				Was ist juristisch zu beachten? <br>
 				<br>
-				Poznáme odpovede na tieto otázky.<br>
+				Wir kennen die Antworten auf diese Fragen.<br>
 				<br>
-				Povedieme projekt. Sprevádzkujeme zariadenie.</p>
-				<h3>Investičný partner</h3>
-				<p>Máte v pláne postaviť novú budovu alebo zmodernizovať tú súčasnú? Potrebujete nové zariadenie na výrobu tepla alebo chladu a vnútorné vedenie alebo tiež lepšiu izoláciu? Uvažujete nad inovatívnym energetickým návrhom (tepelné čerpadlo, kogenerácia, fotovoltaické & solárne panely)?</p>
-				<p>V tom prípade sme Vaším investičným partnerom. Sme otvorení rôznym formám zmluvných vzťahov.</p>
+				Wir errichten Ihre Heizung, ihre Belüftung oder ihr Kühlsystem. Wir kümmern uns um Konzeption und Planung.<br>
+				Wir begleiten das Projekt. Wir betreiben die Anlage.</p>
+				<h3>Investitionspartner</h3>
+				<p>Sie überlegen ein neues Gebäude zu errichten oder ein bestehendes Gebäude zu modernisieren?
+				Sie benötigen neue Wärme- oder Kälteerzeugungsanlagen und Innenleitungen oder auch eine bessere Isolierung?
+				Sie denken über innovative Energiekonzepte (Wärmepumpe, Kogeneration, Photovoltaik & Solarzellen) nach?</p>
+				<p>Dann sind wir Ihr Investitionspartner.
+				Wir sind offen für unterschiedliche Contracting-Modelle.</p>
 				<div class="divider"></div>
 				<a href="#produkty" class="close-produkty"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Produkty</a>
 	   		</div>
@@ -280,13 +289,13 @@
 				<img src="./img/prevadzka.png" alt="Prevádzka" class="w-100">
 				<div class="divider"></div>
 	   			<h3>Prevádzka</h3>
-				<p>V tom prípade sme Vaším investičným partnerom. Sme otvorení rôznym formám zmluvných vzťahov.</p>
-				<p>Pravidelné kontroly<br>
-				Administratíva a vyúčtovanie<br>
-				Rozvrhnutie nákladov<br>
-				Servis<br>
-				Údržba</p>
-				<p>V súčasnosti prevádzkujeme viac než 40 zariadení pre tretie osoby. Náš kompetentný personál je Vám vždy k dispozícii.</p>
+				<p>Was wir hier für Sie machen:</p>
+				<p>Regelmäßige Kontrollen<br>
+				Administration und Verrechnung<br>
+				Kostenaufteilung<br>
+				Service<br>
+				Instandhaltung</p>
+				<p>Schon heute betreiben wir mehr als 40 Anlagen für Dritte. Unser kompetentes Personal unterstützt Sie gerne.</p>
 				<div class="divider"></div>
 				<a href="#produkty" class="close-produkty"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Produkty</a>
 	   		</div>
@@ -559,7 +568,7 @@
 						<textarea rows="5" class="form-control" placeholder="Správa"></textarea>
 			  	  </div>
 			  	  <div class="form-group">
-						<button class="stefe-btn btn float-right sendme">Odoslať</button>
+						<button class="stefe-btn btn float-right">Odoslať</button>
 			  	  </div>
     			</div>
     		</form>
@@ -569,7 +578,6 @@
 			<a href="https://www.facebook.com/energia.stefe/" target="_blank" style="display: block;"><i class="fa fa-facebook fa-2x" style="color: white;" aria-hidden="true"></i></a>
 	    <a href="https://www.youtube.com/channel/UCphx4zd6hjALHTs81CQDNwA/featured" target="_blank" style="display: block;"><i class="fa fa-youtube fa-2x" style="display: block; color: white;" aria-hidden="true"></i></a>
 		</div>
-		<!-- SOCIAL END -->
 
     	</div>
     	</div>
@@ -634,17 +642,6 @@
 		        	$(".toggleattr").attr({"id":""});
 		        }
 		   };
-
-		 // MENU MINU TOGGLER
-		 $(".opensMenu").click(function(e){
-		 	e.stopPropagation();
-			$("#menucko").toggleClass("openMenu");
-        });
-		 $(document).click(function(){
-        	$("#menucko").removeClass("openMenu");
-        });
-		
-        
 		 
 		  
 		$('#myTab').on('click', function (e) {
