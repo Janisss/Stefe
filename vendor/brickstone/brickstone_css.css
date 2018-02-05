@@ -1,12 +1,7 @@
 @charset "UTF-8";
 
-/*Main Settings*/
-:root{
-	--stefeGreen: #6EB52C;
-	--stefeGray: #F5F5F5;
-	--stefeDark: #4D4D4D;
-	--stefeBlack: #333333;
-	--stefeFont:"vag-rundschrift-d";
+@font-face { 
+    font-family: MyFont; src: url('myfont.ttf'); 
 }
 
 html{
@@ -15,7 +10,7 @@ html{
 
 p{
 	font-size: 1.2rem;
-	color: var(--stefeBlack);
+	color: #333333;
 	font-family: Arial;
 }
 
@@ -33,16 +28,20 @@ p.maintext{
 }
 
 h1{
-	font: 3.5rem var(--stefeFont);
+	font: 3.5rem "vag-rundschrift-d";
 	text-align: left;
 	position: relative;
 	z-index: 1;
 	font-weight: 100;
-	color: var(--stefeGreen);
+	color: #69BE28;
+}
+
+li{
+	font-size: 1.1rem;
 }
 
 h1:before{
-  border-top: 1px solid var(--stefeGreen);
+  border-top: 1px solid #69BE28;
   content: "";
   margin: 0 auto;
   position: absolute;
@@ -60,9 +59,9 @@ h1 span{
 }
 
 h2{
-	font-family: var(--stefeFont);
+	font-family: "vag-rundschrift-d";
 	font-weight: 100;
-	color: var(--stefeDark);
+	color: #4D4D4D;
 	letter-spacing: 1.5px;
 	padding: 10px;
 	margin: 5px 0;
@@ -74,37 +73,45 @@ h2{
 	padding-left: 10px;
 	padding-right: 10px;
 }
+.customW{
+	position: relative;
+}
 .inzeraty h2{
 	font-size: 2.5rem;
 	margin: 25px 0 10px;
 	padding: 0;
-	color: var(--stefeGreen);
+	color: #69BE28;
 }
-
+.inzeraty p, .inzeraty b{
+	font-size: 1.2rem;
+}
+nav li{
+	font-size: 1.5rem;
+}
 h3{
-	font-family: var(--stefeFont);
+	font-family: "vag-rundschrift-d";
 	font-weight: 100;
 	font-size: 2rem;
 }
 
 h4{
-	font-family: var(--stefeFont);
+	font-family: "vag-rundschrift-d";
 	font-weight: 100;
 	font-size: 1.5rem;
 }
 
 span.subheader.green{
-	color: var(--stefeGreen);
+	color: #69BE28;
 	padding: 0 0 15px;
 }
 
 /* text colors for article */
 .main-content h3{
-	color: var(--stefeDark);
+	color: #4D4D4D;
 }
 
 .main-content b{
-	color: var(--stefeGreen);
+	color: #69BE28;
 }
 
 .card-block p{
@@ -117,22 +124,22 @@ span.subheader.green{
 }
 
 label{
-	font-family: var(--stefeFont);
+	font-family: "vag-rundschrift-d";
 	font-size: 2rem;
 	color: white;
 }
 
 span.subheader{
-	font-family: var(--stefeFont);
+	font-family: "vag-rundschrift-d";
 	padding: 0 15px 20px;
 	display: block;
-	color: var(--stefeDark);
+	color: #4D4D4D;
 	font-style: oblique;
 }
 
 .container{
-	border-left: 1px solid var(--stefeGreen);
-	border-right: 1px solid var(--stefeGreen);
+	border-left: 1px solid #69BE28;
+	border-right: 1px solid #69BE28;
 }
 
 .navbar{
@@ -144,7 +151,7 @@ span.subheader{
 	z-index: 10;
 }
 .navbar-stefe{
-	background-color: var(--stefeGreen);
+	background-color: #69BE28;
 	font-weight: 400;
 	font-size: 1.5rem;
 	font-style: normal;
@@ -154,18 +161,18 @@ span.subheader{
 
 a.nav-link{
 	color: white;
-	font-family: var(--stefeFont);
+	font-family: "vag-rundschrift-d";
 	transition: all .2s ease;
 	margin: 0 5px;
 	display: block;
 }
 
 a.nav-link:hover, a.link-clear{
-	color: var(--stefeDark);
+	color: #4D4D4D;
 }
 
 a:hover{
-	color: var(--stefeDark);
+	color: #4D4D4D;
 	text-decoration: none !important;
 }
 
@@ -173,16 +180,17 @@ a:hover{
 	position: relative;
 	margin: -50px 0 0 0;
 	width: 82px;
+	height: 82px;
 }
 
 .stefe-dropdown{
-	background-color: var(--stefeGreen);
+	background-color: #69BE28;
 	margin: 10px 10px;
 	border-radius: 5px;
 }
 a.btn.dropdown-toggle{
 	color: white;
-	font-family: var(--stefeFont);
+	font-family: "vag-rundschrift-d";
 	font-weight: 100;
 	font-size: 1.3rem;
 }
@@ -207,20 +215,20 @@ a.btn.dropdown-toggle{
 }
 
 .well{
-	background-color: var(--stefeGreen);
+	background-color: #69BE28;
 	padding: 3vh 6vh;
 }
 
 .stefe-icon{
 	width: 100%;
 	height: auto;
-	background-color: var(--stefeGray);
+	background-color: #F5F5F5;
 	padding: 10px;
 	border-radius: 12px;
 }
 
 .stefe-icon span{
-	font-family: var(--stefeFont);
+	font-family: "vag-rundschrift-d";
 	font-size: 2.5rem;
 	font-weight: 100;
 	width: 100%;
@@ -231,7 +239,7 @@ a.btn.dropdown-toggle{
 
 i.fa-custom{
 	font-size: 6.5rem;
-	color: var(--stefeGreen);
+	color: #69BE28;
 	display: inline-block;
 	width: 100%;
 	text-align: center;
@@ -250,7 +258,7 @@ i.fa-customB{
 }
 
 .title-header{
-	background-color: var(--stefeGreen);
+	background-color: #69BE28;
 	color: white;
 }
 
@@ -279,17 +287,17 @@ i.fa-customB{
 }
 
 .stefe-btn{
-	font-family: var(--stefeFont);
+	font-family: "vag-rundschrift-d";
 	font-size: 1.3rem;
 	color: white;
-	background-color: var(--stefeGreen);
+	background-color: #69BE28;
 	margin: 10px;
 	width: auto;
 	font-weight: 100;
 }
 
 .kontakt{
-	background-color: var(--stefeGreen);
+	background-color: #69BE28;
 }
 
 .header-admin{
@@ -303,10 +311,10 @@ i.fa-customB{
 
 .formwrapper{
 	max-width: 50%;
-	margin: 20px;
+	margin: 20px 40px;
 }
 .thead-inverse th{
-	background-color: var(--stefeGreen);
+	background-color: #69BE28;
 }
 
 .btn-warning{
@@ -315,7 +323,7 @@ i.fa-customB{
 	border: none;
 }
 .btn-success{
-	background-color: var(--stefeGreen);
+	background-color: #69BE28;
 	cursor: pointer;
 	border: none;
 }
@@ -332,23 +340,23 @@ p.content{
 	margin: auto;
 	overflow: hidden;
 	background-size: cover;
-	border: 10px solid var(--stefeGray);
+	border: 10px solid #F5F5F5;
 }
 
 .modal-header{
-	border-bottom: 1px solid var(--stefeGreen);
+	border-bottom: 1px solid #69BE28;
 }
 
 .modal-footer{
-	border-top: 1px solid var(--stefeGreen);
+	border-top: 1px solid #69BE28;
 }
 
 .modal-title{
-	color: var(--stefeGreen);
+	color: #69BE28;
 }
 
 .logout{
-	background-color: var(--stefeGreen);
+	background-color: #69BE28;
 	color: white;
 	width: 200px;
 	padding: 5px;
@@ -367,7 +375,7 @@ p.content{
 }
 p.myslienka{
 	color: white;
-	font-family: var(--stefeFont);
+	font-family: "vag-rundschrift-d";
 	font-style: italic;
 	font-weight: 100;
 	max-width: 510px;
@@ -380,7 +388,7 @@ p.myslienka{
 
 
 .blockquote-footer{
-	color: var(--stefeDark);
+	color: #4D4D4D;
 	margin-top: 2rem;
 }
 
@@ -407,7 +415,7 @@ p.myslienka{
 	opacity: 0;
 	transition: all .5s ease;
 	border-radius: 12px;
-	background: var(--stefeGreen);
+	background: #69BE28;
 }
 
 ul.hover{
@@ -415,7 +423,7 @@ ul.hover{
 }
 
 ul.hover li{
-	background: var(--stefeGreen);
+	background: #69BE28;
 	list-style: none;
 	margin: 10px 0;
 	padding: 1px;
@@ -430,10 +438,10 @@ ul.hover li{
 
 ul.hover li:hover{
 	background: white;
-	color: var(--stefeGreen);
+	color: #69BE28;
 }
 ul.hover li:hover a{
-	color: var(--stefeGreen);
+	color: #69BE28;
 	transition: all .2s ease;
 }
 
@@ -444,7 +452,7 @@ ul.hover li a{
 
 ul.sitemap a{
 	font-size: 2rem;
-	color: var(--stefeGreen);
+	color: #69BE28;
 }
 
 video.profilvid{
@@ -452,17 +460,18 @@ video.profilvid{
 }
 
 .lang{
-	position: absolute;
+	position: fixed;
 	padding: 0 5px;
-	background: var(--stefeGreen);
+	background: #69BE28;
 	border-top-left-radius: 7px;
 	border-top-right-radius: 7px;
-	right: 13%;
-	top: 60px;
+	margin-top: -79px;
+	z-index: 999;
 }
 .lang a{
 	color: white;
-	font-size: 1rem;
+	font-size: 1.2rem;
+	margin: 0 3px;
 }
 
 .btn-sm{
@@ -623,8 +632,10 @@ video.profilvid{
 
 .ref-icon img{
 	opacity: 1;
-	transition: all .5s ease;
-	border-radius: 12px;
+    transition: all .5s ease;
+    border-radius: 12px;
+    width:100%;
+    height: 100%;
 }
 
 .ref-icon img:hover{
@@ -650,23 +661,23 @@ video.profilvid{
 }
 
 .ref-icon.four{
-	background-image: url('../../img/SVG icons/essel_slovakia.png');
+	background-image: url('../../img/essel_lupca.png');
 	border-radius: 12px;
 	background-size: cover;
 }
 
 /* texteditor */
 .simditor h3{
-	font-family: var(--stefeFont);
+	font-family: "vag-rundschrift-d";
 	font-weight: 100;
 	font-size: 2rem;
 }
 
 .simditor h4{
-	font-family: var(--stefeFont);
+	font-family: "vag-rundschrift-d";
 	font-weight: 100;
 	font-size: 1.2rem;
-	color: var(--stefeGreen);
+	color: #69BE28;
 }
 
 .simditor img{
@@ -742,7 +753,7 @@ video.profilvid{
 	transform: rotate(1.4deg);
 }
 .close-produkty, .close-ref {
-	color:var(--stefeGreen);
+	color:#69BE28;
 	font-size: 1.5rem;
 	margin:auto;
 	display:table;
@@ -759,7 +770,7 @@ video.profilvid{
 }
 
 a.nav-link.sub{
-	color: var(--stefeGreen);
+	color: #69BE28;
 }
 .nav-tabs, .nav-link:hover, .nav-link.active, .nav-link{
 	border: white !important;
@@ -770,7 +781,7 @@ a.nav-link.sub{
 }
 
 .stefe-icon span{
-	color: var(--stefeDark);
+	color: #4D4D4D;
 }
 
 .material-button{
@@ -781,7 +792,7 @@ a.nav-link.sub{
 	cursor: pointer;
 	border-radius: 12px;
 	overflow: hidden;
-	border: 1px solid var(--stefeGray);
+	border: 1px solid #F5F5F5;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
 	-webkit-border-radius: 12px;
     -moz-border-radius: 12px;
@@ -814,7 +825,7 @@ a.nav-link.sub{
 }
 .menu-icon {
 	padding: 20px 10px;
-	font-family: var(--stefeFont);
+	font-family: "vag-rundschrift-d";
 	font-size: 2.5rem;
 	font-weight: 100;
 	text-align: center;
@@ -822,4 +833,160 @@ a.nav-link.sub{
 }
 #scrollreferencie{
 	padding: 15px;
+}
+
+.social{
+	position: fixed;
+	left:0px;
+	z-index: 9;
+}
+.social a{
+	padding: 10px;
+	margin-top: 2px;
+	display: flex;
+	background: #69BE28;
+	transition: all .3s ease;
+	border-bottom-right-radius: 7px;
+	border-top-right-radius: 7px;
+}
+.social a:hover{
+	background:#4D4D4D;
+}
+.social i{
+	margin: auto;
+	display: block;
+}
+.offset-left{}
+.offset-right{}
+.hit-me.flip{
+	position: fixed;
+	top: 0;
+	z-index: 9999;
+	background: #69BE28;
+	margin: 12px 70px 0 0;
+}
+#custom-m{
+	position: fixed !important;
+	transform: none !important;
+	top: 52px !important;
+	left: auto !important;
+}
+.subfooter a{
+	color: white;
+	font-size: 1.3rem;
+	margin: 5px 5px;
+	line-height: 2.3;
+}
+
+input, textarea{
+	background: transparent !important;
+	border: none !important;
+	border-radius: 0 !important;
+	border-bottom: 2px solid white !important;
+	font-size: 1.2rem !important;
+	color: white !important;
+}
+textarea{
+	resize: none;
+}
+input::placeholder, textarea::placeholder{
+	color: white !important;
+	font-size: 1.2rem;
+}
+
+.i-center{
+	display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: #69BE28;
+}
+
+.informacie h4{
+	text-align: center;
+	margin:10px;
+	color: #212529;
+}
+.infromacie h4 a{
+	color: #212529;
+}
+.col-md-6.map.nopadding{
+	background: #69BE28;
+}
+
+.text{
+	margin: 15px;
+}
+.navbar-toggler{
+	border: 1px solid rgba(255, 255, 255, 1) !important;
+}
+div#navbarResponsive.navbar-collapse.collapse.show{
+	background: #69BE28;
+	margin-top: 280px;
+	text-align: center;
+	border-radius: 7px;
+}
+.stefe-btn.sendme:hover{
+	transition: all .3s ease;
+	background: white;
+	color: #69BE28;
+	cursor: pointer;
+}
+.dropdown-item.green{
+	background: #69BE28;
+	color: white;
+}
+
+.iphone-hide{
+	display: block;
+}
+/* PIXEL RATIO IPHONE*/
+@media all and (max-width:812px) and (-webkit-min-device-pixel-ratio: 3)
+		{
+
+	.teplo-btn,.poradenstvo-btn,.vystavba-btn{
+		margin-bottom: 20px;
+	}
+	.formwrapper{
+		width: 100% !important;
+		max-width: 80% !important;
+	}
+	.letter{
+		background: #fff;
+		box-shadow: none !important;
+		margin: auto !important;
+		padding: 0 !important;
+		position: relative !important;
+		width: 90% !important;
+		z-index: 1 !important;
+		overflow: visible !important;
+	}
+	.letter:after{
+		width: 0 !important;
+	}
+	.letter:before{
+		box-shadow: none !important;
+	}
+	.container.first h2{
+		font-size: 1.2rem !important;
+	}
+	.iphone-hide{
+		display: none !important;
+	}
+
+}
+
+/* MENU MINI */
+
+@media screen and (max-width: 990px) {
+
+   .openMenu {
+
+      display: block !important;
+      position: absolute !important;
+      background: #69BE28 !important;
+      width: 100% !important;
+      margin-top: 158px !important;
+      text-align: center !important;
+      border-radius: 7px !important;
+   }
 }

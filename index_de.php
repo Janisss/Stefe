@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Stefe.sk - Hlavná stránka</title>
+    <title>Stefe.sk - Homepage</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -32,8 +32,8 @@
 	  	</div>
 	  <!-- LOADER END -->
 	  <div class="lang offset-right">
-			<a href="#">SK</a>	
-			<a href="./index_de.php">DE</a>	
+			<a href="./index.php">SK</a>	
+			<a href="#">DE</a>	
 		</div>
 
 <script>
@@ -64,28 +64,28 @@
     	</div>
       <div class="container customW">
        <img src="./img/logo.svg" alt="Stefe" class="logo">
-        <button class="navbar-toggler opensMenu" type="button">
+        <button class="navbar-toggler opensMenu">
           <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true" style="color: white;line-height: 1.5;"></i></span>
         </button>
-        <div id="menucko" class="collapse navbar-collapse">
+        <div id="menucko" class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav m-auto main-menu">
             <li class="nav-item active">
               <a data-scroll class="nav-link" href="#">Stefe SK</a>
             </li>
             <li class="nav-item">
-              <a data-scroll class="nav-link" href="#produkty">Produkty</a>
+              <a data-scroll class="nav-link" href="#produkty">Produkte</a>
             </li>
             <li class="nav-item">
-              <a data-scroll class="nav-link" href="#aktuality">Aktuality</a>
+              <a data-scroll class="nav-link" href="#aktuality">News</a>
             </li>
 			<li class="nav-item">
-              <a data-scroll class="nav-link" href="#referencie">Referencie</a>
+              <a data-scroll class="nav-link" href="#referencie">Referenzen</a>
             </li>
             <li class="nav-item">
-              <a data-scroll class="nav-link" href="#kariera">Kariéra</a>
+              <a data-scroll class="nav-link" href="#kariera">Karriere</a>
             </li>
             <li class="nav-item">
-              <a data-scroll class="nav-link" href="#kontakty">Kontakty</a>
+              <a data-scroll class="nav-link" href="#kontakty">Kontakt</a>
             </li>
           </ul>
         </div>
@@ -96,11 +96,11 @@
 	<!-- First line white-->
    <div class="container first">
    	<div class="row">
-   		<div class="col-md-6 float-left iphone-hide"><h2>STEFE - Hrejivé teplo domova</h2></div>
+   		<div class="col-md-6 float-left hidden-md-down"><h2>STEFE - Hrejivé teplo domova</h2></div>
    		<div class="col-md-6 float-right">
    			<div class="container">
 			<div class="dropdown show float-right stefe-dropdown">
-			  <a class="btn dropdown-toggle hit-me" href="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vyberte vaše mesto</a>
+			  <a class="btn dropdown-toggle hit-me" href="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Wählen Sie Ihre Stadt</a>
 			  <div class="dropdown-menu toggleattr" aria-labelledby="dropdownMenuLink">
 				<a class="dropdown-item" href="./index_bb.php">Banská Bystrica</a>
 				<a class="dropdown-item" href="#">Brusno</a>
@@ -138,13 +138,13 @@
    		</div>
    </div>
    <div class="container" style="padding-top:30px">
-  		<h1 id="produkty"><span>Produkty</span></h1>
-  		<span class="subheader">Výroba a dodávka</span>
+  		<h1 id="produkty"><span>Produkte</span></h1>
+  		<span class="subheader">Produktion und Lieferung</span>
 	   		<div class="row">
 				<div class="col-lg-6 col-md-6 col-sm-12">
 					<a href="#scrollprodukty" class="link-clear">
 					<div class="material-button teplo-btn">
-						<div class="menu-icon"><i class="fa fa-thermometer fa-custom" aria-hidden="true"></i><span style="user-select: none;">Výroba a dodávka</span>
+						<div class="menu-icon"><i class="fa fa-thermometer fa-custom" aria-hidden="true"></i><span style="user-select: none;">Produktion und Lieferung</span>
 						</div>
 					</div>
 					</a>
@@ -153,7 +153,7 @@
 				<div class="col-lg-6 col-md-6 col-sm-12">
 					<a href="#scrollprodukty" class="link-clear">
 					<div class="material-button technicke-btn">
-						<div class="menu-icon"><i class="fa fa-cogs fa-custom" aria-hidden="true"></i><span style="user-select: none;">Služby</span>
+						<div class="menu-icon"><i class="fa fa-cogs fa-custom" aria-hidden="true"></i><span style="user-select: none;">Dienstleistungen</span>
 						</div>
 					</div>
 					</a>
@@ -166,7 +166,7 @@
 				<div class="col-lg-4 col-md-4 col-sm-12" style="overflow: hidden !important;">
 					<a href="#scrollprodukty" class="link-clear">
 					<div class="material-button poradenstvo-btn">
-						<div class="menu-icon"><i class="fa fa-question-circle-o fa-custom" aria-hidden="true"></i><span style="user-select: none;">Poradenstvo</span>
+						<div class="menu-icon"><i class="fa fa-question-circle-o fa-custom" aria-hidden="true"></i><span style="user-select: none;">Beratung</span>
 						</div>
 					</div>
 					</a>
@@ -175,7 +175,7 @@
 				<div class="col-lg-4 col-md-4 col-sm-12">
 					<a href="#scrollprodukty" class="link-clear">
 					<div class="material-button vystavba-btn">
-						<div class="menu-icon"><i class="fa fa-wrench fa-custom" aria-hidden="true"></i><span style="user-select: none;">Výstavba</span>
+						<div class="menu-icon"><i class="fa fa-wrench fa-custom" aria-hidden="true"></i><span style="user-select: none;">Ausbau</span>
 						</div>
 					</div>
 					</a>
@@ -184,7 +184,7 @@
 				<div class="col-lg-4 col-md-4 col-sm-12">
 					<a href="#scrollprodukty" class="link-clear">
 					<div class="material-button prevadzka-btn">
-						<div class="menu-icon"><i class="fa fa-building-o fa-custom" aria-hidden="true"></i><span style="user-select: none;">Prevádzka</span>
+						<div class="menu-icon"><i class="fa fa-building-o fa-custom" aria-hidden="true"></i><span style="user-select: none;">Anlagebetrieb</span>
 						</div>
 					</div>
 					</a>
@@ -201,101 +201,102 @@
 					<div class="divider"></div>
 						<img src="./img/vyroba.png" alt="teplo" class="w-100">
 						<div class="divider"></div>
-						<h3>Teplo</h3>
-						<p>Bývate niekde medzi Trnavou, Martinom a Rožňavou?<br>
-						Potom je veľmi pravdepodobné, že o Vaše teplo v domácnosti sa staráme my zo STEFE. Robíme Váš domov príjemne teplým a Vašu vodu príjemne horúcou. Ako jeden z najväčších dodávateľov tepla na Slovensku sa neustále zlepšujeme - kvôli Vám.</p>
-						<p>Ak sa pýtate, ako funguje diaľkové vykurovanie, pozrite si naše video: <a href="https://www.youtube.com/watch?v=EPZIAY9mdH8&t=5s">Kliknúť tu</a></p>
-						<p>Záleží nám na tom, aby sme Vám spoľahlivo dodali teplo. Naši dispečeri dohliadajú na naše kotly a kontrolujú sieť. Preto si môžete byť istí, že Vám chladno nebude: sme k dispozícii 24 hodín denne, 7 dní v týždni.</p>
-						<p>Máte otázky? Naši dispečeri sú Vám kedykoľvek k dispozícii. V hornom menu si zvoľte Vaše mesto a zavolajte nám na nižšie uvedené telefónne číslo.</p>
-						<h3>Chlad</h3>
-						<p>Máte radšej chladnejšie prostredie?</p>
-						<p>Máme pre Vás riešenie. STEFE vyrába a dodáva chlad podľa Vašich individuálnych požiadaviek. Technické parametre, montáž a prevádzka sú ušité na mieru a zohľadňujú jeho využitie, prírodné podmienky a danosti danej lokality.</p>
+						<h3>Wärme</h3>
+						<p>Sie leben zwischen Trnava, Martin und Rožňava?<br>
+						Dann ist die Wahrscheinlichkeit groß, dass wir von STEFE bei Ihnen zuhause für Wärme sorgen. Wir machen Ihr Heim gemütlich warm und ihr Wasser angenehm heiß. Als einer der größten Wärmeversorger der Slowakei verbessern wir uns stetig - für Sie. <br>
+						Sie fragen sich wie Fernwärme funktioniert, dann sehen Sie sich doch dieses video an:<a href="https://www.youtube.com/watch?v=EPZIAY9mdH8&t=5s">Hier klicken</a></p>
+						<p>Versorgungssicherheit ist sehr wichtig für uns. Unsere Dispatcher überwachen unsere Kessel und kontrollieren das Netz. So stellen sie sicher, dass es bei Ihnen nicht kalt wird: 24 Stunden pro Tag - 7 Tage die Woche</p>
+						<p>Sie haben Fragen? Unser Dispatching steht Ihnen jederzeit zur Verfügung. Wählen Sie in der oberen Menüleiste Ihre Stadt aus und rufen Sie uns unter der angeführten Telefonnummer an.</p>
+						<h3>Kälte</h3>
+						<p>Sie mögens lieber kühl?</p>
+						<p>Wir haben die passende Lösung für Sie. STEFE produziert und liefert Kälte gemäß Ihren individuellen Anforderungen. Die technische Lösung, der Bau und der Betrieb der Anlage sind für Ihr Objekt maßgeschneidert und berücksichtigen Ihr Nutzungsverhalten, Umweltschutzanliegen und die lokalen Gegebenheiten.</p>
 					<div class="divider"></div>
 	   			
-				<a href="#produkty" class="close-produkty"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Produkty</a>
+				<a href="#produkty" class="close-produkty"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Produkte</a>
 	   		</div>
 	   <!-- TECHNICKE SLUZBY -->
 	   		<div class="technickesluzby">
 				<div class="divider"></div>
 				<img src="./img/sluzby.png" alt="Služby" class="w-100">
 				<div class="divider"></div>
-	   			<h3>Technicke Služby</h3>
-				<p>STEFE ponúka rozličné služby pre súkromné osoby a podnikateľov. Zabezpečíme Vám komplexnú starostlivosť o tepelné energetické zariadenia vrátane obsluhy, prevádzky, údržby, opravy a odborného servisu.
+	   			<h3>Technische Dienstleistungen</h3>
+				<p>STEFE bietet unterschiedliche Dienstleistungen für Privat- und Geschäftspersonen. Wir stellen Ihnen eine komplette Pflege der Heizungsanlage inklusive der Bedienung, des Betriebs, der Reparatur, Instandhaltung und des Fachservices sicher.
 			  </p>
-				<h3>Technické služby</h3>
-			  <p>Potrebujete niekoho, kto ...<br>
-				... vymení pokazené čerpadlá?<br>
-				... demontuje tepelné rúry?<br>
-				... vymení vyhrievacie teleso?<br>
-				... vyčistí výmenník tepla?</p>
-				<p>Potom ste u nás správne. Radi Vás osobne poinformujeme o našej širokej ponuke.</p>
-			  <h3>Správa určených meradiel</h3>
-			  <p>Demontujeme, ciachujeme, kalibrujeme a vymieňame merače tepla. Naši vysokokvalifikovaní pracovníci majú pre tieto účely dosiahnuté potrebné vzdelanie a certifikáty.</p>
-				<h3>Iné služby</h3>
-				<p>Ponúkame aj mnohé iné služby a sme otvorení novým nápadom.
+				<h3>Technische Dienstleistungen</h3>
+			  <p>Benötigen Sie jemanden, der... <br>
+				... defekte Pumpen tauscht?<br>
+				... Heizungsleitungen demontiert?<br>
+				... Heizkörper tauscht?<br>
+				... Wärmetauscher reinigt?</p>
+				<p>Dann sind Sie bei uns richtig. Gerne informieren wir Sie in einem persönlichen Gespräch über unser umfangreiches Angebot.</p>
+			  <h3>Verwaltung der festgelegten Messgeräte</h3>
+			  <p>Wir demontieren, eichen und tauschen Ihren Wärmemengenzähler. Unsere bestens qualifizierten Mitarbeiter haben alle notwendigen Ausbildungen und Zertifikate dafür.</p>
+				<h3>Andere Leistungen</h3>
+				<p>Wir bieten noch zahlreiche weitere Leistungen und sind offen für neue Ideen. 
 				<br>
-				Máte záujem o ďalšie informácie? Tešíme sa na Vaše otázky!</p>
+				Sie sind an weitergehenden Informationen interessiert? Wir freuen uns auf Ihre Anfrage!</p>
 				<div class="divider"></div>
-				<a href="#produkty" class="close-produkty"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Produkty</a>
+				<a href="#produkty" class="close-produkty"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Produkte</a>
 	   		</div>
 	   <!-- PORADENSTVO -->
 	   		<div class="poradenstvo">
 				<div class="divider"></div>
 				<img src="./img/poradenstvo.png" alt="Poradenstvo" style="width: 100%;">
 				<div class="divider"></div>
-	   			<h3>Poradenstvo</h3>
-				<p>Zaujíma Vás, ako zvýšiť efektivitu Vášho zariadenia alebo ako znížiť jeho spotrebu energie?  <br>
-				Naši technickí a energetickí špecialisti Vám radi poradia, ako čo najefektívnejšie a najekologickejšie využiť energiu.</p>
-				<h3>Projekty</h3>
-				<p>Spoločne vytvárame projekty, v ktorých sa zameriavame nielen na zvýšenie energetickej efektívnosti, zníženie vstupných nákladov na energie, ale aj na vplyv týchto opatrení na životné prostredie. V rámci týchto projektov pre zákazníka zabezpečujeme: <br>energeticko-technickú štúdiu, návrh opatrení, výber dodávateľov na realizáciu, projektový inžiniering, stavebný inžiniering, realizáciu navrhnutých opatrení a následnú prevádzku v prípade potreby. </p>
-				<h3>Individualita</h3>
-				<p>V spolupráci s našimi partnermi poskytujeme projekty šité na mieru pre zákazníka s cieľom zníženia energetickej náročnosti budovy a tepelno-energetických zariadení, ako aj zníženia spotreby tepla, resp. výroby tepla/chladu. </p>
-				<p>Pre zákazníka sme partnerom pri hľadaní efektívneho riešenia prevádzky tepelného energetického hospodárstva ako aj pre outsourcing v tepelnej energetike.</p>
+	   			<h3>Beratung</h3>
+				<p>Interessieren Sie sich dafür, wie Sie den Wirkungsgrad ihrer Anlage steigern oder ihren Energieverbrauch reduzieren?<br>
+				Unsere Techniker und Energiebilanzierer beraten Sie gerne dabei, Ihre Energie effizienter und ökologischer zu nutzen.</p>
+				<h3>Projekte</h3>
+				<p>Gemeinsam entwickeln wir Projekte, die die Energieeffizienz verbessern, Eingangskosten ermäßgen und die Umweltverträglichkeit erhöhen. Im Rahmen dieser Projekte für den Kunden stellen wir Folgendes sicher:<br>die energietechnische Studie, den Maßsnahmenvorschlag, die Wahl der Lieferanten für die Realisierung, das Projekt-Engineering, das Bau-Engineering, die Umsetzung der vorgeschlagenen Maßnahmen und den darauf folgenden Betrieb im Bedarfsfall.</p>
+				<h3>Individualität</h3>
+				<p>In der Zusammenarbeit mit unseren Partnern liefern wir Projekte, die maßgeschneidert den Bedürfnissen des Kunden werden, mit dem Ziel den Energieaufwand der Gebäude und der Wärme-Energieanlagen, sowie den Wärmeverbrauch bzw. Produktion von Wärme/Kälte zu ermäßigen.</p>
+				<p>Wir werden Partner des Kunden bei der Suche nach einer effektiven Lösung für den Betrieb der Wirtschaft mit Wärme und Energie, sowie auch für das Outsourcing in der Wärmeenergetik.</p>
 				<div class="divider"></div>
-				<a href="#produkty" class="close-produkty"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Produkty</a>
+				<a href="#produkty" class="close-produkty"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Produkte</a>
 	   		</div>
 	   <!-- VYSTAVBA -->
 	   		<div class="vystavba">
 				<div class="divider"></div>
 				<img src="./img/vystavba.png" alt="Výstavba" class="w-100">
 				<div class="divider"></div>
-	   			<h3>Výstavba</h3>
-				<p>Aké veľké musí byť zariadenie?<br>
-				Sedia technické parametre?<br>
-				Kde sa dá ušetriť a kde radšej nešetriť?<br>
-				Na čo si dávať pozor z právneho hľadiska?<br>
+	   			<h3>Ausbau</h3>
+				<p>Wie groß muss die Anlage sein? <br>
+				Stimmen die technischen Parameter? <br>
+				Wo kann gespart werden, wo besser nicht?<br>
+				Was ist juristisch zu beachten? <br>
 				<br>
-				Poznáme odpovede na tieto otázky.<br>
+				Wir kennen die Antworten auf diese Fragen.<br>
 				<br>
-				Povedieme projekt. Sprevádzkujeme zariadenie.</p>
-				<h3>Investičný partner</h3>
-				<p>Máte v pláne postaviť novú budovu alebo zmodernizovať tú súčasnú? Potrebujete nové zariadenie na výrobu tepla alebo chladu a vnútorné vedenie alebo tiež lepšiu izoláciu? Uvažujete nad inovatívnym energetickým návrhom (tepelné čerpadlo, kogenerácia, fotovoltaické & solárne panely)?</p>
-				<p>V tom prípade sme Vaším investičným partnerom. Sme otvorení rôznym formám zmluvných vzťahov.</p>
+				Wir errichten Ihre Heizung, ihre Belüftung oder ihr Kühlsystem. Wir kümmern uns um Konzeption und Planung.</p>
+				<p>Wir begleiten das Projekt. Wir betreiben die Anlage.</p>
+				<h3>Investitionspartner</h3>
+				<p>Sie überlegen ein neues Gebäude zu errichten oder ein bestehendes Gebäude zu modernisieren? Sie benötigen neue Wärme- oder Kälteerzeugungsanlagen und Innenleitungen oder auch eine bessere Isolierung? Sie denken über innovative Energiekonzepte (Wärmepumpe, Kogeneration, Photovoltaik & Solarzellen) nach?</p>
+				<p>Dann sind wir Ihr Investitionspartner. Wir sind offen für unterschiedliche Contracting-Modelle.</p>
 				<div class="divider"></div>
-				<a href="#produkty" class="close-produkty"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Produkty</a>
+				<a href="#produkty" class="close-produkty"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Produkte</a>
 	   		</div>
 	   <!-- PREVADZKA -->
 	   		<div class="prevadzka">
 				<div class="divider"></div>
 				<img src="./img/prevadzka.png" alt="Prevádzka" class="w-100">
 				<div class="divider"></div>
-	   			<h3>Prevádzka</h3>
-				<p>V tom prípade sme Vaším investičným partnerom. Sme otvorení rôznym formám zmluvných vzťahov.</p>
-				<p>Pravidelné kontroly<br>
-				Administratíva a vyúčtovanie<br>
-				Rozvrhnutie nákladov<br>
-				Servis<br>
-				Údržba</p>
-				<p>V súčasnosti prevádzkujeme viac než 40 zariadení pre tretie osoby. Náš kompetentný personál je Vám vždy k dispozícii.</p>
+	   			<h3>Anlagebetrieb</h3>
+				<p>Was wir hier für Sie machen:</p>
+				<p>Regelmäßige Kontrollen<br>
+				Administration und Verrechnung<br>
+				Kostenaufteilung<br>
+				Service<br>
+				Instandhaltung</p>
+				<p>Schon heute betreiben wir mehr als 40 Anlagen für Dritte. Unser kompetentes Personal unterstützt Sie gerne.</p>
 				<div class="divider"></div>
-				<a href="#produkty" class="close-produkty"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Produkty</a>
+				<a href="#produkty" class="close-produkty"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Produkte</a>
 	   		</div>
 	   <!-- NEWS -->
 		   		
 		   		<div class="divider"></div>
 		   		<div class="divider"></div>
-			   <h1 id="aktuality"><span>Aktuality</span></h1>
-			   <span class="subheader">Hlavné aktuality</span>
+			   <h1 id="aktuality"><span>News</span></h1>
+			   <span class="subheader">Haupt News</span>
 				<div class="row" style="padding-left: 10px;padding-right:10px;">
 
 					<?php
@@ -343,93 +344,91 @@
 		   <div class="divider"></div>
 	   
 	   		<!-- Referencie -->
-			<h1 id="referencie"><span>Referencie</span></h1>
-			<span class="subheader">Naši klienti, naša práca a partneri.</span>
+			<h1 id="referencie"><span>Referenzen</span></h1>
+			<span class="subheader">Unsere Klienten, Arbeit und Partner.</span>
 				<div class="divider"></div>
 			<div class="row" style="text-align: center;">
 				<div class="col-md-3 col-sm-6 col-xs-6">
-					<a href="#scrollreferencie"><div class="ref-icon one material-button"><img src="./img/SVG icons/shopping.svg" alt="Nákupné centrá"></div></a>
+					<a href="#scrollreferencie"><div class="ref-icon one material-button"><img src="./img/SVG icons/shopping_de.svg" alt="Nákupné centrá"></div></a>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-6">
-					<a href="#scrollreferencie"><div class="ref-icon two material-button"><img src="./img/SVG icons/theatre_sport.svg" alt="Umenie šport a kultúra"></div></a>
+					<a href="#scrollreferencie"><div class="ref-icon two material-button"><img src="./img/SVG icons/theatre_sport_de.svg" alt="Umenie šport a kultúra"></div></a>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-6">
-					<a href="#scrollreferencie"><div class="ref-icon three material-button"><img src="./img/SVG icons/flats.svg" alt="Obytné zóny"></div></a>
+					<a href="#scrollreferencie"><div class="ref-icon three material-button"><img src="./img/SVG icons/flats_de.svg" alt="Obytné zóny"></div></a>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-6">
-					<a href="#scrollreferencie"><div class="ref-icon four material-button"><img src="./img/SVG icons/industry.svg" alt="Industriálne zóny"></div></a>
+					<a href="#scrollreferencie"><div class="ref-icon four material-button"><img src="./img/SVG icons/industry_de.svg" alt="Industriálne zóny"></div></a>
 				</div>
 			</div>
 			
 			<div id="scrollreferencie">
 				<div class="ref-one">
 					<img src="./img/Referencia_1.png" alt="Ref" style="width: 100%;padding-bottom: 10px;"> 
-					<h3>Výroba a dodávka tepla a chladu pre OC Galéria Lučenec </h3>
-					<p><b>Realizuje: STEFE ECB, s.r.o.</b></p>
-					<p><b>riešenie pre zákazníka: </b></p>
-					<p>Na výrobu tepla je použitá moderná technológia s využitím kondenzačných kotlov  s celkovým inštalovaným tepelným výkonom 1,7 MW a výrobu chladu zabezpečujú dve chladiace  jednotky  so skrutkovým kompresorom s celkovým inštalovaným výkonom 1,5 MW vrátane možnosti free-coolingu.</p>
-					<p><b>Služby pre zákazníka:</b></p>
+					<h3>Produktion und Lieferung von Wärme und Kälte für das Einkaufszentrum Galéria Lučenec</h3>
+					<p><b>Durchgeführt von: STEFE ECB, s.r.o.</b></p>
+					<p><b>Lösung für den Kunden:</b></p>
+					<p>Für die Produktion von Wärme wird eine moderne Technologie anhand von Kondensationskessel mit der gesamt installierten Wärmeleistung von 1,7 MW verwendet. Die Produktion von Kälte wird anhand von zwei Kühleinheiten mit einem Schraubenkompressor, dessen gesamt installierte Leistung  1,5 MW einschließlich der Free Cooling Option darstellt, sichergestellt.</p>
+					<p><b>Dienstleistungen für den Kunden:</b></p>
 					<ol>
-						<li>zabezpečenie výroby, dodávky tepla a chladu</li>
-						<li>garantovanie spoľahlivej, hospodárnej a ekologickej výroby a dodávky tepla a chladu</li>
-						<li>zaručenie optimalizácie prevádzky, dodaného množstva tepla a chladu po dobu 15 rokov</li>
+						<li>Sicherstellung der Produktion und Lieferung von Wärme und Kälte</li>
+						<li>Garantie einer zuverlässigen, wirtschaftlichen und ökologischen Produktion und Lieferung von Wärme und Kälte</li>
+						<li>Sicherstellung der Optimierung vom Betrieb, der gelieferten Wärme- und Kältemenge innerhalb von 15 Jahren</li>
 					</ol>
-					<a href="#referencie" class="close-ref"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Referencie</a>
+					<a href="#referencie" class="close-ref"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Referenzen</a>
 				</div>
 				<div class="ref-two">
 					<img src="./img/Referencia_2.png" alt="Ref" style="width: 100%;padding-bottom: 10px;"> 
-					<h3>Rekonštrukcia zásobovania teplom a dodávka chladu pre Slovenské komorné divadlo v Martine</h3>
-					<p><b>Realizuje: STEFE Martin, a.s.</b></p>
-					<p><b>Služby pre zákazníka:</b></p>
+					<h3>Rekonstruktion der Wärmeversorgung und Kältelieferung für das Theater Slovenské komorné divadlo in Martin</h3>
+					<p><b>Durchgeführt von: STEFE Martin, a.s.</b></p>
+					<p><b>Dienstleistungen für den Kunden:</b></p>
 					<ol>
-						<li>realizácia kompletnej rekonštrukcie z dôvodu havarijného stavu</li>
-						<li>dodanie projektu technického riešenia</li>
-						<li>dodávka novej horúcovodnej KOST</li>
-						<li><b>hydraulické vyregulovanie systému po rekonštrukcii</b></li>
-						<li>vybudovanie chladiacej jednotky a rozvodov chladu</li>
-						<li>modernizácia vzduchotechniky s rekuperáciou v budove</li>
-						<li>prevádzka a údržba rekonštruovaných technologických zariadení</li>
+						<li>Realisierung einer kompletten Rekonstruktion aufgrund Grund des schlechten Zustandes</li>
+						<li>Lieferung des Projektes einer technischen Lösung</li>
+						<li>Lieferung einer neuen Kompaktübergabestation</li>
+						<li><b>Hydraulischer Abgleich des Systems nach der Rekonstruktion</b></li>
+						<li>Ausbau von Kühleinheit und Kälteverteilungen</li>
+						<li>Modernisierung der Luftanlage mit der Rekuperation im Gebäude</li>
+						<li>Betrieb und Instandhaltung der rekonstruierten technologischen Anlagen</li>
 					</ol>
-					<p><b>Výhody pre zákazníka:</b></p>
+					<p><b>Vorteile für den Kunden:</b></p>
 					<ol>
-						<li>dodanie diela na kľúč, financovanie diela spoločnosťou STEFE Martin</li>
-						<li>ročná úspora spotreby tepla 15%</li>
+						<li>Realisierung und Finanzierung des Projekts durch STEFE Martin</li>
+						<li>Wärmeeinsparung von 15% pro Jahr</li>
 					</ol>
-					<a href="#referencie" class="close-ref"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Referencie</a>
+					<a href="#referencie" class="close-ref"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Referenzen</a>
 				</div>
 				<div class="ref-three">
 					<img src="./img/Referencia_3.png" alt="Ref" style="width: 100%;padding-bottom: 10px;"> 
-					<h3>Projekt zásobovania teplom priemyselného areálu a vykurovanie výrobných hál pre SL Slovakia</h3>
-					<p><b>Realizuje: STEFE Banská Bystrica, a.s.</b></p>
-					<p><b>Riešenie pre zákazníka:</b></p>
-					<p>Vo vybraných výrobných halách sa pôvodný spôsob vykurovania prostredníctvom mobilných dieselagregátov nahradil plynovými infražiaričmi a destratifikátormi. Boli vybudované nové vnútroareálové plynové rozvody.</p>
-					<p><b>Služby pre zákazníka:</b></p>
+					<h3>Wärmelieferung für ein Industrieareal und der Heizung von Produktionshallen der Gesellschaft SL Slovakia </h3>
+					<p><b>Durchgeführt von: STEFE Banská Bystrica, a.s.</b></p>
+					<p><b>Lösung für den Kunden:</b></p>
+					<p>In den gewünschten Produktionshallen wurde die ursprüngliche mobile Dieselaggregat-Heizung durch neue  Gasinfrastrahler und Destratifikatoren ersetzt. Dazu wurden neue Innenareal-Gasverteilungen eingebaut.</p>
+					<p><b>Dienstleistungen für den Kunden:</b></p>
 					<ol>
-						<li>projektový inžiniering (vypracovanie štúdie realizovateľnosti)</li>
-						<li>dodanie diela na kľúč (realizácia, vybavenie povolení, zabezpečenie zákonných povinností) </li>
-						<li>spôsob dlhodobého financovania – splácanie z úspor</li>
-						<li>zabezpečenie dotácie z prostriedkov programu Slovseff financovaného Slovenskou sporiteľňou a Európskou bankou pre obnovu a rozvoj</li>
-						<li>napojenie plynovej kotolne na 24 hodinových dispečing</li>
+						<li>Projekt Engineering (Ausarbeiten einer Machbarkeitsstudie)</li>
+						<li>Projektrealisierung (Einholen von Bewilligungen, Sicherstellung von gesetzlichen Pflichten)</li>
+						<li>Form einer langfristigen Finanzierung - Rückzahlung von  Ersparnissen</li>
+						<li>Sicherstellung von Subventionen von Slovseff Fonds (ein Programm, welches von der Slovenská sporiteľňa und der Europäischen Bank für Wiederaufbau und Entwicklung finanziert wird).</li>
+						<li>Anschluss des Gaskessels an das 24h-Dispatching</li>
 					</ol>
-					<p><b>Výhody pre zákazníka:</b></p>
-					<p>okrem energetických a finančných úspor zásadnú zmenu kvality a komfortu vykurovania výrobných priestorov. </p>
+					<p><b>Vorteile für den Kunden:</b></p>
+					<p>Außer Energie- und Finanzersparnissen hat sich die Qualität der Heizung von Produktionsräumen geändert.</p>
 					<a href="#referencie" class="close-ref"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Referencie</a>
 				</div>
 				<div class="ref-four">
 					<img src="./img/Referencia_4.png" alt="Ref" style="width: 100%;padding-bottom: 10px;"> 
-					<h3>Projekt výmena ležatých rozvodov TÚV a  ÚK</h3>
-					<p><b>Realizuje: STEFE Zvolen s.r.o.</b></p>
+					<h3>Projekt Austausch von liegenden Leitungen für Warmwasser und Zentralheizung</h3>
+					<p><b>Durchgeführt von: STEFE Zvolen s.r.o.</b></p>
 					<p><b>Riešenie pre zákazníka:</b></p>
-					<p>Výmena rozvodov sa realizovala z dôvodu veku potrubia a jeho havarijného stavu. Pôvodné ležaté rozvody boli situované v technickom suteréne bytového domu, kde opakovane vznikali poruchy na potrubí. Tieto poruchy nebolo možné vždy úplne odstrániť pre zlý prístup k potrubiam. 
-					Nová trasa ležatých potrubných rozvodov je teraz vedená pod stropom v pivničných priestoroch a na chodbách, odkiaľ následne pokračuje do jednotlivých bytov. Na realizáciu diela boli použité oceľové, plast hliníkové a polyetylénové potrubia vo svetlostiach od DN15 do DN50 ukončené armatúrami. Najskôr bola vybudovaná nová trasa potrubia realizáciou zváraním , od KOST bola vedená pod stropom až po poslednú stupačku v bytovom dome. Následne na to bol postupne  realizovaný prepoj na jednotlivé bytové stupačky a vykurovacie telesá. 
+					<p>Der Austausch von Leitungen wurde aufgrund des Alters und des schlechten Zustandes der Rohrleitungen durchgeführt. Die ursprünglich liegenden Leitungen haben sich im technischen Souterrain des Wohnungshauses befunden, wo wiederholt Störungen entstanden sind. Diese Störungen konnten wegen dem schlechten Zugang zu den Rohrleitungen nicht beseitigt werden. Zur Behebung dieses Problems wurde eine neue Trasse von liegenden Rohrleitungen unter der Decke in den Kellerräumen gelegt, von wo sie zu den einzelnen Wohnungen gezogen wird. Für die Realisierung wurden Stahl-, Kunststoff-Aluminium- und Polyäthylenrohrleitungen in den Helligkeiten von DN15 bis DN50 benutzt, die mit Armaturen abgeschlossen wurden. Zuerst wurde ausgehend von der Kompaktübergabestation eine neue Trasse von Rohrleitungen verlegt. Danach wurde allmählich die Verbindung zu den einzelnen Wohnungssteigleitungen und den Heizkörper durchgeführt.
 					</p>
-					<p><b>Služby pre zákazníka:</b></p>
+					<p><b>Dienstleistungen für den Kunden:</b></p>
 					<ol>
-						<li>manažovanie celej výmeny počas doby 4 týždňov s prestávkami podľa požiadaviek zákazníka</li>
-						<li>dodávka diela - realizácia výmeny ležatých rozvodov TÚV, ÚK, podľa projektu predloženého zákazníkom </li>
-						<li>demontáž ležatých rozvodov </li>
-						<li>realizácia nových rozvodov, vrátane dodávky a montáže armatúr</li>
-						<li>po zrealizovaní diela sa všetky vykurovacie telesá odvzdušnili, plne sprevádzkovali, odskúšala sa funkčnosť rozvodu ÚK a TÚV.</li>
+						<li>Management des kompletten Austausch während 4 Wochen mit Pausen auf Wunsch des Kunden</li>
+						<li>Projektrealisierung - Austausch der Warmwasserleitungen und der Zentralheizung nach dem vom Kunden vorgelegten Projekt</li>
+						<li>Lieferung und der Montage von Armaturen</li>
+						<li>Entlüftung der Armaturen, Heizkörper und Leitungen , Druckprüfung und Test der Funktionsfähigkeit von Leitungen für Zentralheizung und Warmwasser </li>
 					</ol>
 					<a href="#referencie" class="close-ref"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Referencie</a>
 				</div>
@@ -440,8 +439,8 @@
 			<!-- KARIERA -->
 			<div class="divider"></div>
 		   	<div class="divider"></div>
-			<h1 id="kariera"><span>Kariéra</span></h1>
-			<span class="subheader">Hľadať prácu</span>
+			<h1 id="kariera"><span>Karriere</span></h1>
+			<span class="subheader">Arbeit suchen</span>
 	   
 	   		<?php
 						$inzeraty = $database->select("inzeraty", [
@@ -515,7 +514,7 @@
 												Na Troskách 26, 974 01 Banská Bystrica</b> alebo na <b>".$data['kontakt']."</b></p>
 												</div>
 											</div>
-												<div class='inzeraty-after stefe-btn'><i class='fa fa-arrow-circle-down' aria-hidden='true'></i> Viac</div>
+												<div class='inzeraty-after stefe-btn'><i class='fa fa-arrow-circle-down' aria-hidden='true'></i> Mehr</div>
 										</div>
 										";
 						  
@@ -546,20 +545,20 @@
     		<form action="">
     			<div class="formwrapper">
     				<div class="form-group">
-						<label for="meno">Kontaktuje nás:</label>
-						<input type="name" class="form-control" aria-describedby="emailHelp" placeholder="Vaše meno a priezvisko">
+						<label for="meno">Kontaktieren Sie uns:</label>
+						<input type="name" class="form-control" aria-describedby="emailHelp" placeholder="Name und Vorname">
 				  	</div>
 				  	<div class="form-group">
 						<input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email">
 				  	</div>
 				  	<div class="form-group">
-						<input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Telefónne číslo">
+						<input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Telefonnummer">
 				  	</div>
 				  	<div class="form-group">
-						<textarea rows="5" class="form-control" placeholder="Správa"></textarea>
+						<textarea rows="5" class="form-control" placeholder="Nachricht"></textarea>
 			  	  </div>
 			  	  <div class="form-group">
-						<button class="stefe-btn btn float-right sendme">Odoslať</button>
+						<button class="stefe-btn btn float-right sendme">Sende</button>
 			  	  </div>
     			</div>
     		</form>
@@ -575,7 +574,7 @@
     	</div>
     	<div class="container-fluid" style="background: #69BE28; min-height: 40px; margin: 0; padding:0; color: white;text-align: center;">
     		<div class="container subfooter">
-    			<span><a href="./sitemap.php">Mapa stránky</a> | <a href="http://brickstone.design/" target="_blank">Web od Brickstone.design</a></span>
+    			<span><a href="./sitemap.php">Sitemap</a> | <a href="http://brickstone.design/" target="_blank">Web by Brickstone.design</a></span>
     		</div>
     	</div>
     </footer>

@@ -15,35 +15,14 @@
 	<script src="https://use.typekit.net/udj8vhg.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
     <!-- Custom styles for this template -->
-    <link href="vendor/brickstone/brickstone_css.css" rel="stylesheet" type="text/css">
+    <link href="vendor/brickstone/brickstone_css.css?v=<?= rand(000000,9999999) ?>" rel="stylesheet" type="text/css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/vendor/snazzy/snazzy-info-window.min.css">
 	<script src="https://maps.googleapis.com/maps/api/js?key={{AIzaSyAwlvXnSvFdiMFgMJOvjAs9C3Bk3JbmhHo}}"></script>
 	<script src="/vendor/snazzy/snazzy-info-window.min.js"></script>
-  <script src="/js/smooth-scroll.js"></script>
-	  <script src="https://apis.google.com/js/platform.js" async defer></script>
   </head>
 
   <body>
-
-    <!-- LOADER -->
-      <div class="se-pre-con">
-      <div id="loader_hype_container" style="margin: -60px auto;position:relative;width:120px;height:120px;overflow:hidden;top:50%;">
-        <script type="text/javascript" charset="utf-8" src="loader.hyperesources/loader_hype_generated_script.js?58297"></script>
-      </div>
-      </div>
-    <!-- LOADER END -->
-    
-<!-- FACEBOOK -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/sk_SK/sdk.js#xfbml=1&version=v2.10&appId=441539876025445";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
 
   	<?php
 	  use Medoo\Medoo;
@@ -58,72 +37,51 @@
 		'port' => 3312,
 		'charset' => 'utf8',
 		]);
-
-		$clanokID = $_GET['ID'];
-		
-		$header = $database->get("content", "nazov", [
-				"ID" => $clanokID
-			]);
-	  	
-		$text = $database->get("content", "text", [
-				"ID" => $clanokID
-			]);
-	  	$outputtextstyle = preg_replace('/(<[^>]+) style=".*?"/i', '$1', $text); //remove style attr
-		$outputtext = str_replace("<strong>" , "", $outputtextstyle);// remove strong style
-	  
-		$subheader = $database->get("content", "datum", [
-				"ID" => $clanokID
-			]);
-		$image = $database->get("content", "image", [
-				"ID" => $clanokID
-			]);
 	?>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-stefe">
       <div class="preheader">
       </div>
-      <div class="container customW">
+      <div class="container">
        <a href="./index.php"><img src="./img/logo.svg" alt="Stefe" class="logo"></a>
-        <button class="navbar-toggler opensMenu">
+        <button class="navbar-toggler opensMenu" type="button">
           <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true" style="color: white;line-height: 1.5;"></i></span>
         </button>
         <div id="menucko" class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav m-auto main-menu">
+          <ul class="navbar-nav m-auto">
             <li class="nav-item active">
-              <a data-scroll class="nav-link" href="./index_bb.php">Stefe BB</a>
+              <a class="nav-link" href="./index.php">Stefe SK
+                <span class="sr-only">(current)</span>
+              </a>
             </li>
             <li class="nav-item">
-              <a data-scroll class="nav-link" href="./index.php#produkty">Produkty</a>
+              <a class="nav-link" href="#">Produkty</a>
             </li>
             <li class="nav-item">
-              <a data-scroll class="nav-link" href="./index.php#aktuality">Aktuality</a>
-            </li>
-      <li class="nav-item">
-              <a data-scroll class="nav-link" href="./index.php#referencie">Referencie</a>
+              <a class="nav-link" href="#">Aktuality</a>
             </li>
             <li class="nav-item">
-              <a data-scroll class="nav-link" href="./index.php#kariera">Kariéra</a>
+              <a class="nav-link" href="#">Referencie</a>
             </li>
             <li class="nav-item">
-              <a data-scroll class="nav-link" href="./index.php#kontakty">Kontakty</a>
+              <a class="nav-link" href="#">Kariéra</a>
             </li>
+			<li class="nav-item">
+              <a class="nav-link" href="#">Kontakty</a>
+            </li>  
           </ul>
         </div>
       </div>
     </nav>
-    <!-- NAVI END -->
-
-    <!-- First line white -->
    <div class="container first">
-    <div class="row">
-      <div class="col-md-6 float-left hidden-md-down"><h2>STEFE - Banská Bystrica</h2></div>
-      <div class="col-md-6 float-right">
-        <div class="container">
-      <div class="dropdown show float-right stefe-dropdown">
-        <a class="btn dropdown-toggle hit-me" href="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vyberte vaše mesto</a>
-        	<div class="dropdown-menu toggleattr" aria-labelledby="dropdownMenuLink">
-			  	<a class="dropdown-item green" href="./index.php"><i class="fa fa-home" aria-hidden="true"></i> Stefe SK</a>
+   	<div class="row">
+   		<div class="col-md-6 float-left hidden-md-down"><h2>STEFE - Hrejivé teplo domova</h2></div>
+   		<div class="col-md-6 float-right">
+   			<div class="container">
+			<div class="dropdown show float-right stefe-dropdown">
+			  <a class="btn dropdown-toggle hit-me" href="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vyberte vaše mesto</a>
+			  <div class="dropdown-menu toggleattr" aria-labelledby="dropdownMenuLink">
 				<a class="dropdown-item" href="./index_bb.php">Banská Bystrica</a>
 				<a class="dropdown-item" href="#">Brusno</a>
 				<a class="dropdown-item" href="#">Kováčová</a>
@@ -141,140 +99,120 @@
 				<a class="dropdown-item" href="#">Kremnica</a>
 				<a class="dropdown-item" href="#">Zvolen</a>
 				<a class="dropdown-item" href="#">Zvolenská Slatina</a>
+			  </div>
 			</div>
-      </div>
-      </div>
-    </div>
-    </div>
+			</div>
+		</div>
+   	</div>
    </div>
-   <!-- First line white END -->
-
    <div class="container-fluid" style="padding: 0;">
-		<div class="header-pic bb">
+		<div class="header-pic sk">
 		</div>
    </div>
-   <div class="container" style="padding: 0;">
-   		<div class="well">
-   		</div>
-   </div>
-   <div class="container" style="padding-top:30px">
-   	<h1><span><?php echo $header; ?></span></h1>
-   	<span class="subheader"><?php echo "Vytvorené: ".$subheader; ?><br><a href="./index.php">Späť </a></span>
-	<article class="main-content">
-   	<div class="row">
-   		<div class="col-lg-4"><?php echo"<div class='wrapperimg'><div class='img-round' style='background-image: url(./img/up/".$image.")'></div>" ?></div></div>
-   		<div class="col-lg-8 align-self-center"><p class="content"><?php echo $outputtext; ?></p></div>
-   	</div>
-	   <!-- SHARE -->
-	   <div class="float-right">
-	   		<!--fcb butt-->
-				<div class="fb-share-button float-right" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true" style="margin-bottom: 5px;"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Zdieľať</a></div>
-			<!-- google share -->
-				<div class="g-plus" data-action="share"></div>
 
-	   </div>
-	   <div class="divider"></div>
-	   <div class="divider"></div>
-	</article>
-   	<div class="divider"></div>
-   
+	<div class="container informacie">
+	<div class="divider"></div>
+		<h1><span>Informácie</span></h1>
+		<span class="subheader">Dennostupne, Priemerné denné teploty</span>
+		<div class="text">
+		<p><b>Pri porovnávaní spotreby tepla na vykurovanie za jednotlivé mesiace v rámci roka sa naši odberatelia často stretávajú s pojmom "dennostupeň".</b></p>
+		<p>Počet dennostupňov za určité časové obdobie charakterizuje klimatické podmienky. Čím sú klimatické podmienky náročnejšie, t.z. čím je vonku chladnejšie, tým je počet dennostupňov vyšší.</p>
+		<p><b>Dennostupeň (°D) predstavuje rozdiel vnútornej teploty v byte (v priemere 20°C) a priemernej vonkajšej teploty.</b></p>
+		<p>Napríklad: <br>	
+		Priemerná vonkajšia denná teplota je - 2°C. Potom °D = 20 - (-2) = 22 <br>
+		Alebo priemerná vonkajšia denná teplota je + 5°C. Potom °D = 20 - 5 = 15</p>
+		<p><b>Dennostupne sa používajú pri výpočte tzv. merných spotrieb tepla na vykurovanie.</b> Táto merná spotreba cez dennostupne by mala byť na rovnakej úrovni. Samozrejme, ak sa v bytovom dome zrealizuje nejaké racionalizačné opatrenie, merná spotreba tepla na vykurovanie sa musí znížiť.</p>
+		<p>Pre potreby operatívnych vyhodnocovaní, napr. ročných spotrieb tepla na vykurovanie v bytových domoch, uvádzame ako pomôcku vývoj dennostupňov v Banskej Bystrici v jednotlivých mesiacoch za posledných 10 rokov. </p>
 
-   	<!-- Aktuality -->
-   	<div class="divider"></div>
-		   		<div class="divider"></div>
-			   <h1><span>Ďalšie aktuality</span></h1>
-			   <span class="subheader">Zaujal Vás tento článok?</span>
-				<div class="row" style="padding-left: 10px;padding-right:10px;">
-
-					<?php
-						$news = $database->select("content", [
-							"ID",
-							"nazov",
-							"text",
-							"image"
-						],[
-							"status" => "<span style='color:var(--stefeGreen)'>publikované!</span>",
-							"alarm" => "nie",
-							"loc" => "bb"
-						]);
-					
-						$numbernewsread = 1;
-						$limitnews = 9; // koľko noviniek zobrazí
-						  foreach (array_reverse($news) as $data){
-							  $cleantext = strip_tags($data["text"]);
-						  		if ($numbernewsread <= $limitnews) {
-						  			echo "<div class='col-lg-4 col-md-4 col-sm-4 col-xs-6'>
-							  			<article class='card'>
-							  				<header class='title-header'>
-							  					<h3>".$data["nazov"]."</h3>
-							  				</header>
-							  				<div class='card-block'>
-							  						<div class='img-card'>
-														<div class='miniimage' style='background-image: url(./img/up/".$data["image"].")'></div>
-							  						</div><div class='newsintro'><p>".$cleantext."</p>
-							  					</div><a href='./article.php?ID=".$data["ID"]."' class='btn btn-block stefe-btn'>Čítať viac</a>
-							  				</div>
-							  			</article>
-							  		</div>";
-							  		$numbernewsread += 1;
-						  		}else{
-						  			 }
-						  	}
-					?>
+		</div>
+			<div class="row" style="margin-bottom: 40px;">
+				<div class="col-md-4">
+					<a href="./PDF/BB/priemerne-denne-teploty-2015.pdf">
+						<i class="fa fa-file-pdf-o fa-5x i-center" aria-hidden="true"></i>
+						<h4>Priemerné denné teploty 2015</h4>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="./PDF/BB/priemerne-denne-teploty-2016.pdf">
+						<i class="fa fa-file-pdf-o fa-5x i-center" aria-hidden="true"></i>
+						<h4>Priemerné denné teploty 2016</h4>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="./PDF/BB/priemerne-denne-teploty-2017.pdf">
+						<i class="fa fa-file-pdf-o fa-5x i-center" aria-hidden="true"></i>
+						<h4>Priemerné denné teploty 2017</h4>
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<i class="fa fa-file-pdf-o fa-5x i-center" aria-hidden="true"></i>
+					<h4>PDF názov súboru</h4>
+				</div>
+				<div class="col-md-4">
+					<i class="fa fa-file-pdf-o fa-5x i-center" aria-hidden="true"></i>
+					<h4>PDF názov súboru</h4>
+				</div>
+				<div class="col-md-4">
+					<i class="fa fa-file-pdf-o fa-5x i-center" aria-hidden="true"></i>
+					<h4>PDF názov súboru</h4>
+				</div>
 			</div>
 
-	  
-	<div class="divider"></div>
-	<div class="divider"></div>
-	<div class="divider"></div>
-	<div class="divider"></div>
-	<div class="divider"></div>
-   </div>
+		<div class="divider"></div>
+		<div class="divider"></div>
+		<div class="divider"></div>
+		<div class="divider"></div>
+		<div class="divider"></div>
+	</div>
+
+
+			
 	
-    <footer id="kontakty">
+	
+ <footer id="kontakty">
     <div class="row nopadding">
-      <div class="col-md-6 map nopadding">
-        <iframe src="https://snazzymaps.com/embed/16372" width="100%" height="450px" style="border:none;"></iframe>
-      </div>
-      <div class="col-md-6 kontakt nopadding">
-        <div class="divider"></div>
-        <form action="">
-          <div class="formwrapper">
-            <div class="form-group">
-            <label for="meno">Kontaktuje nás:</label>
-            <input type="name" class="form-control" aria-describedby="emailHelp" placeholder="Vaše meno a priezvisko">
-            </div>
-            <div class="form-group">
-            <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email">
-            </div>
-            <div class="form-group">
-            <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Telefónne číslo">
-            </div>
-            <div class="form-group">
-            <textarea rows="5" class="form-control" placeholder="Správa"></textarea>
-            </div>
-            <div class="form-group">
-            <button class="stefe-btn btn float-right">Odoslať</button>
-            </div>
-          </div>
-        </form>
+    	<div class="col-md-6 map nopadding">
+    		<iframe src="https://snazzymaps.com/embed/16372" width="100%" height="450px" style="border:none;"></iframe>
+    	</div>
+    	<div class="col-md-6 kontakt nopadding">
+    		<div class="divider"></div>
+    		<form action="">
+    			<div class="formwrapper">
+    				<div class="form-group">
+						<label for="meno">Kontaktuje nás:</label>
+						<input type="name" class="form-control" aria-describedby="emailHelp" placeholder="Vaše meno a priezvisko">
+				  	</div>
+				  	<div class="form-group">
+						<input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email">
+				  	</div>
+				  	<div class="form-group">
+						<input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Telefónne číslo">
+				  	</div>
+				  	<div class="form-group">
+						<textarea rows="5" class="form-control" placeholder="Správa"></textarea>
+			  	  </div>
+			  	  <div class="form-group">
+						<button class="stefe-btn btn float-right">Odoslať</button>
+			  	  </div>
+    			</div>
+    		</form>
 
-    <!-- SOCIAL -->
-    <div class="social">
-      <a href="https://www.facebook.com/energia.stefe/" target="_blank" style="display: block;"><i class="fa fa-facebook fa-2x" style="color: white;" aria-hidden="true"></i></a>
-      <a href="https://www.youtube.com/channel/UCphx4zd6hjALHTs81CQDNwA/featured" target="_blank" style="display: block;"><i class="fa fa-youtube fa-2x" style="display: block; color: white;" aria-hidden="true"></i></a>
-    </div>
-    <!-- SOCIAL END -->
+		<!-- SOCIAL -->
+		<div class="social">
+			<a href="https://www.facebook.com/energia.stefe/" target="_blank" style="display: block;"><i class="fa fa-facebook fa-2x" style="color: white;" aria-hidden="true"></i></a>
+	    <a href="https://www.youtube.com/channel/UCphx4zd6hjALHTs81CQDNwA/featured" target="_blank" style="display: block;"><i class="fa fa-youtube fa-2x" style="color: white;" aria-hidden="true"></i></a>
+		</div>
 
-      </div>
-      </div>
-      <div class="container-fluid" style="background: #69BE28; min-height: 40px; margin: 0; padding:0; color: white;text-align: center;">
-        <div class="container subfooter">
-          <span><a href="./sitemap.php">Mapa stránky</a> | <a href="http://brickstone.design/" target="_blank">Web od Brickstone.design</a></span>
-        </div>
-      </div>
+    	</div>
+    	</div>
+    	<div class="container-fluid" style="background: #69BE28; min-height: 40px; margin: 0; padding:0; color: white;text-align: center;">
+    		<div class="container subfooter">
+    			<span><a href="./informacie.php">Informácie</a> | <a href="./sitemap.php">Mapa stránky</a> | <a href="www.brickstone.design" target="_blank">Web od Brickstone.design</a></span>
+    		</div>
+    	</div>
     </footer>
-
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
